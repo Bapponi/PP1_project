@@ -1,0 +1,139 @@
+INFO  06:09:55,021 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  06:09:55,031 - #2 program
+INFO  06:09:55,031 - #17 MJProgram
+INFO  06:09:55,031 - #6 const
+INFO  06:09:55,031 - #17 int
+INFO  06:09:55,031 - #17 Savo
+INFO  06:09:55,032 - #34 =
+INFO  06:09:55,032 - #20 true
+INFO  06:09:55,032 - #39 ,
+INFO  06:09:55,033 - #17 pika
+INFO  06:09:55,033 - #34 =
+INFO  06:09:55,033 - #18 20
+INFO  06:09:55,034 - #39 ,
+INFO  06:09:55,034 - #17 sika
+INFO  06:09:55,034 - #34 =
+INFO  06:09:55,034 - #19 's'
+INFO  06:09:55,034 - #37 ;
+INFO  06:09:55,034 - #17 int
+INFO  06:09:55,035 - #17 Babo
+INFO  06:09:55,035 - #43 [
+INFO  06:09:55,035 - #44 ]
+INFO  06:09:55,035 - #43 [
+INFO  06:09:55,036 - #44 ]
+INFO  06:09:55,036 - #43 [
+INFO  06:09:55,036 - #44 ]
+INFO  06:09:55,036 - #39 ,
+INFO  06:09:55,037 - #17 papo
+INFO  06:09:55,037 - #43 [
+INFO  06:09:55,037 - #44 ]
+INFO  06:09:55,037 - #43 [
+INFO  06:09:55,037 - #44 ]
+INFO  06:09:55,037 - #39 ,
+INFO  06:09:55,037 - #17 japo
+INFO  06:09:55,037 - #43 [
+INFO  06:09:55,037 - #44 ]
+INFO  06:09:55,037 - #37 ;
+INFO  06:09:55,038 - #4 class
+INFO  06:09:55,038 - #17 onaMoja
+INFO  06:09:55,038 - #45 {
+INFO  06:09:55,039 - #17 int
+INFO  06:09:55,039 - #17 sabo
+INFO  06:09:55,039 - #43 [
+INFO  06:09:55,039 - #44 ]
+INFO  06:09:55,039 - #37 ;
+INFO  06:09:55,039 - #18 1
+INFO  06:09:55,039 - #46 }
+INFO  06:09:55,041 - #45 {
+INFO  06:09:55,042 - #46 }
+INFO  06:09:55,043 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      AllDeclaration(
+        NoAllDecl(
+        ) [NoAllDecl]
+        AllDeclDerived1(
+          ConstDecl(
+            Type(
+            ) [Type]
+            AllConstDerived1(
+            ) [AllConstDerived1]
+            AllConstDeclBodyList(
+              AllConstDeclBodyList(
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+                ConstDeclBody(
+                  AllConstDerived2(
+                  ) [AllConstDerived2]
+                ) [ConstDeclBody]
+              ) [AllConstDeclBodyList]
+              ConstDeclBody(
+                AllConst(
+                ) [AllConst]
+              ) [ConstDeclBody]
+            ) [AllConstDeclBodyList]
+          ) [ConstDecl]
+        ) [AllDeclDerived1]
+      ) [AllDeclaration]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+                AllBrackets(
+                  AllBrackets(
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived3(
+      ClassDecl(
+        NoExtendsType(
+        ) [NoExtendsType]
+        AllVarDeclList(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+            ) [Type]
+            AllBrackets(
+              NoBrackets(
+              ) [NoBrackets]
+            ) [AllBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        ClassDeclBody(
+        ) [ClassDeclBody]
+      ) [ClassDecl]
+    ) [AllDeclDerived3]
+  ) [AllDeclaration]
+) [Program]
+INFO  06:09:55,043 - ===================================
+INFO  06:09:55,044 -  Print count calls = 0
+INFO  06:09:55,044 -  Deklarisanih promenljivih ima = 0

@@ -1,0 +1,85 @@
+INFO  05:41:01,458 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  05:41:01,467 - #2 program
+INFO  05:41:01,467 - #17 int
+INFO  05:41:01,467 - #17 Babo
+INFO  05:41:01,467 - #43 [
+INFO  05:41:01,468 - #44 ]
+INFO  05:41:01,468 - #43 [
+INFO  05:41:01,468 - #44 ]
+INFO  05:41:01,468 - #43 [
+INFO  05:41:01,468 - #44 ]
+INFO  05:41:01,468 - #39 ,
+INFO  05:41:01,469 - #17 papo
+INFO  05:41:01,469 - #43 [
+INFO  05:41:01,469 - #44 ]
+INFO  05:41:01,469 - #43 [
+INFO  05:41:01,469 - #44 ]
+INFO  05:41:01,469 - #39 ,
+INFO  05:41:01,469 - #17 japo
+INFO  05:41:01,470 - #43 [
+INFO  05:41:01,470 - #44 ]
+INFO  05:41:01,470 - #37 ;
+INFO  05:41:01,473 - #6 const
+INFO  05:41:01,474 - #17 string
+INFO  05:41:01,474 - #17 Savo
+INFO  05:41:01,474 - #34 =
+INFO  05:41:01,474 - #18 19
+INFO  05:41:01,474 - #37 ;
+INFO  05:41:01,475 - #17 MJProgram
+INFO  05:41:01,476 - #45 {
+INFO  05:41:01,476 - #46 }
+INFO  05:41:01,476 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      NoAllDecl(
+      ) [NoAllDecl]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+                AllBrackets(
+                  AllBrackets(
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived1(
+      ConstDecl(
+        Type(
+        ) [Type]
+        AllConstDerived2(
+        ) [AllConstDerived2]
+        NoConstDeclBodyList(
+        ) [NoConstDeclBodyList]
+      ) [ConstDecl]
+    ) [AllDeclDerived1]
+  ) [AllDeclaration]
+) [Program]
+INFO  05:41:01,476 - ===================================
+INFO  05:41:01,478 -  Print count calls = 0
+INFO  05:41:01,478 -  Deklarisanih promenljivih ima = 0

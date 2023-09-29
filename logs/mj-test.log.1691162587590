@@ -1,0 +1,283 @@
+INFO  17:22:34,038 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler3\test\program.mj
+INFO  17:22:34,101 - #4 program
+INFO  17:22:34,101 - #48 MJProgram
+INFO  17:22:34,101 - #8 const
+INFO  17:22:34,102 - #48 int
+INFO  17:22:34,102 - #48 Savo
+INFO  17:22:34,104 - #34 =
+INFO  17:22:34,104 - #20 true
+INFO  17:22:34,104 - #39 ,
+INFO  17:22:34,105 - #48 pika
+INFO  17:22:34,105 - #34 =
+INFO  17:22:34,105 - #49 20
+INFO  17:22:34,105 - #39 ,
+INFO  17:22:34,106 - #48 sika
+INFO  17:22:34,106 - #34 =
+INFO  17:22:34,106 - #19 's'
+INFO  17:22:34,106 - #37 ;
+INFO  17:22:34,107 - #48 int
+INFO  17:22:34,108 - #48 Babo
+INFO  17:22:34,109 - #43 [
+INFO  17:22:34,117 - #44 ]
+INFO  17:22:34,117 - #43 [
+INFO  17:22:34,118 - #44 ]
+INFO  17:22:34,118 - #43 [
+INFO  17:22:34,118 - #44 ]
+INFO  17:22:34,118 - #39 ,
+INFO  17:22:34,119 - #48 papo
+INFO  17:22:34,119 - #43 [
+INFO  17:22:34,119 - #44 ]
+INFO  17:22:34,119 - #43 [
+INFO  17:22:34,119 - #44 ]
+INFO  17:22:34,119 - #39 ,
+INFO  17:22:34,120 - #48 japo
+INFO  17:22:34,120 - #43 [
+INFO  17:22:34,120 - #44 ]
+INFO  17:22:34,120 - #39 ,
+INFO  17:22:34,120 - #48 kapo
+INFO  17:22:34,121 - #37 ;
+INFO  17:22:34,121 - #6 class
+INFO  17:22:34,121 - #48 onaMoja
+INFO  17:22:34,122 - #16 extends
+INFO  17:22:34,122 - #48 azo
+INFO  17:22:34,122 - #39 ,
+INFO  17:22:34,123 - #48 spazo
+INFO  17:22:34,123 - #45 {
+INFO  17:22:34,123 - #48 int
+INFO  17:22:34,124 - #48 sabo
+INFO  17:22:34,124 - #43 [
+INFO  17:22:34,124 - #44 ]
+INFO  17:22:34,124 - #37 ;
+INFO  17:22:34,124 - #45 {
+INFO  17:22:34,124 - #15 void
+INFO  17:22:34,125 - #48 imeMetode
+INFO  17:22:34,126 - #41 (
+INFO  17:22:34,126 - #48 int
+INFO  17:22:34,127 - #48 pera
+INFO  17:22:34,127 - #43 [
+INFO  17:22:34,127 - #44 ]
+INFO  17:22:34,127 - #48 char
+INFO  17:22:34,127 - #48 zika
+INFO  17:22:34,127 - #42 )
+INFO  17:22:34,127 - #48 char
+INFO  17:22:34,127 - #48 popo
+INFO  17:22:34,127 - #37 ;
+INFO  17:22:34,128 - #45 {
+INFO  17:22:34,128 - #46 }
+INFO  17:22:34,129 - #46 }
+INFO  17:22:34,130 - #39 ,
+INFO  17:22:34,130 - #45 {
+INFO  17:22:34,130 - #48 int
+INFO  17:22:34,130 - #48 nestoDrugo
+INFO  17:22:34,130 - #41 (
+INFO  17:22:34,130 - #42 )
+INFO  17:22:34,131 - #45 {
+INFO  17:22:34,131 - #46 }
+INFO  17:22:34,131 - #46 }
+INFO  17:22:34,131 - #46 }
+INFO  17:22:34,131 - #45 {
+INFO  17:22:34,133 - #46 }
+INFO  17:22:34,140 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  AllDeclarationsList(
+    AllDeclarationsList(
+      AllDeclarationsList(
+        NoAllDecl(
+        ) [NoAllDecl]
+        ConstDeclarations(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+           Savo
+            AllConstDerived1(
+            ) [AllConstDerived1]
+            AllConstDeclBodyList(
+              AllConstDeclBodyList(
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+                ConstDeclBody(
+                 pika
+                  AllConstDerived2(
+                   20
+                  ) [AllConstDerived2]
+                ) [ConstDeclBody]
+              ) [AllConstDeclBodyList]
+              ConstDeclBody(
+               sika
+                AllConst(
+                ) [AllConst]
+              ) [ConstDeclBody]
+            ) [AllConstDeclBodyList]
+          ) [ConstDecl]
+        ) [ConstDeclarations]
+      ) [AllDeclarationsList]
+      VarDeclarations(
+        VarDecl(
+          VarDeclTypeName(
+            Type(
+             int
+            ) [Type]
+          ) [VarDeclTypeName]
+         Babo
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              AllVarDeclBodyList(
+                NoVarDeclBodyList(
+                ) [NoVarDeclBodyList]
+                VarDeclBody(
+                 papo
+                  AllBrackets(
+                    AllBrackets(
+                      NoBrackets(
+                      ) [NoBrackets]
+                    ) [AllBrackets]
+                  ) [AllBrackets]
+                ) [VarDeclBody]
+              ) [AllVarDeclBodyList]
+              VarDeclBody(
+               japo
+                AllBrackets(
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+             kapo
+              NoBrackets(
+              ) [NoBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+    ) [AllDeclarationsList]
+    ClassDeclarations(
+      ClassDecl(
+       onaMoja
+        AllExtendsType(
+          SingleExtendsType(
+            Type(
+             azo
+            ) [Type]
+          ) [SingleExtendsType]
+          Type(
+           spazo
+          ) [Type]
+        ) [AllExtendsType]
+        AllVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclTypeName]
+           sabo
+            AllBrackets(
+              NoBrackets(
+              ) [NoBrackets]
+            ) [AllBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        AllClassDeclBody(
+          SingleClassDeclBody(
+            AllMethodDeclList(
+              NoMethodDeclListList(
+              ) [NoMethodDeclListList]
+              MethodDecl(
+                MethodTypeName(
+                  VoidPart(
+                  ) [VoidPart]
+                 imeMetode
+                ) [MethodTypeName]
+                SingleFormParsListB(
+                  AllFormParams(
+                    SingleFormPars(
+                      Type(
+                       int
+                      ) [Type]
+                     pera
+                      AllBrackets(
+                        NoBrackets(
+                        ) [NoBrackets]
+                      ) [AllBrackets]
+                    ) [SingleFormPars]
+                    Type(
+                     char
+                    ) [Type]
+                   zika
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllFormParams]
+                ) [SingleFormParsListB]
+                AllVarDeclList(
+                  NoVarDeclList(
+                  ) [NoVarDeclList]
+                  VarDecl(
+                    VarDeclTypeName(
+                      Type(
+                       char
+                      ) [Type]
+                    ) [VarDeclTypeName]
+                   popo
+                    NoBrackets(
+                    ) [NoBrackets]
+                    NoVarDeclBodyList(
+                    ) [NoVarDeclBodyList]
+                  ) [VarDecl]
+                ) [AllVarDeclList]
+                NoStatementList(
+                ) [NoStatementList]
+              ) [MethodDecl]
+            ) [AllMethodDeclList]
+          ) [SingleClassDeclBody]
+          AllMethodDeclList(
+            NoMethodDeclListList(
+            ) [NoMethodDeclListList]
+            MethodDecl(
+              MethodTypeName(
+                TypePart(
+                  Type(
+                   int
+                  ) [Type]
+                ) [TypePart]
+               nestoDrugo
+              ) [MethodTypeName]
+              NoFormParsListB(
+              ) [NoFormParsListB]
+              NoVarDeclList(
+              ) [NoVarDeclList]
+              NoStatementList(
+              ) [NoStatementList]
+            ) [MethodDecl]
+          ) [AllMethodDeclList]
+        ) [AllClassDeclBody]
+      ) [ClassDecl]
+    ) [ClassDeclarations]
+  ) [AllDeclarationsList]
+  NoMethodDeclListList(
+  ) [NoMethodDeclListList]
+) [Program]
+INFO  17:22:34,140 - ===================================
+INFO  17:22:34,145 - Deklarisana promenljiva papo na liniji 4
+INFO  17:22:34,145 - Deklarisana promenljiva japo na liniji 4
+INFO  17:22:34,145 - Deklarisana promenljiva kapo na liniji 4
+INFO  17:22:34,145 - Deklarisana promenljiva Babo na liniji 4
+ERROR 17:22:34,145 - Nije pronadjen tip azo u tabeli simbola! 
+ERROR 17:22:34,145 - Nije pronadjen tip spazo u tabeli simbola! 
+INFO  17:22:34,145 - Deklarisana promenljiva sabo na liniji 7
+INFO  17:22:34,145 - Deklarisana promenljiva popo na liniji 13

@@ -1,0 +1,105 @@
+INFO  05:50:44,937 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  05:50:44,946 - #2 program
+INFO  05:50:44,946 - #17 int
+INFO  05:50:44,946 - #17 Babo
+INFO  05:50:44,947 - #43 [
+INFO  05:50:44,947 - #44 ]
+INFO  05:50:44,947 - #43 [
+INFO  05:50:44,947 - #44 ]
+INFO  05:50:44,947 - #43 [
+INFO  05:50:44,947 - #44 ]
+INFO  05:50:44,947 - #39 ,
+INFO  05:50:44,948 - #17 papo
+INFO  05:50:44,948 - #43 [
+INFO  05:50:44,948 - #44 ]
+INFO  05:50:44,948 - #43 [
+INFO  05:50:44,948 - #44 ]
+INFO  05:50:44,948 - #39 ,
+INFO  05:50:44,948 - #17 japo
+INFO  05:50:44,949 - #43 [
+INFO  05:50:44,949 - #44 ]
+INFO  05:50:44,949 - #37 ;
+INFO  05:50:44,949 - #6 const
+INFO  05:50:44,949 - #17 int
+INFO  05:50:44,950 - #17 Savo
+INFO  05:50:44,950 - #34 =
+INFO  05:50:44,950 - #20 true
+INFO  05:50:44,950 - #39 ,
+INFO  05:50:44,950 - #17 pika
+INFO  05:50:44,950 - #34 =
+INFO  05:50:44,950 - #18 20
+INFO  05:50:44,951 - #39 ,
+INFO  05:50:44,951 - #17 sika
+INFO  05:50:44,951 - #34 =
+INFO  05:50:44,952 - #19 's'
+INFO  05:50:44,952 - #37 ;
+INFO  05:50:44,952 - #17 MJProgram
+INFO  05:50:44,952 - #45 {
+INFO  05:50:44,952 - #46 }
+INFO  05:50:44,953 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      NoAllDecl(
+      ) [NoAllDecl]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+                AllBrackets(
+                  AllBrackets(
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived1(
+      ConstDecl(
+        Type(
+        ) [Type]
+        AllConstDerived1(
+        ) [AllConstDerived1]
+        AllConstDeclBodyList(
+          AllConstDeclBodyList(
+            NoConstDeclBodyList(
+            ) [NoConstDeclBodyList]
+            ConstDeclBody(
+              AllConstDerived2(
+              ) [AllConstDerived2]
+            ) [ConstDeclBody]
+          ) [AllConstDeclBodyList]
+          ConstDeclBody(
+            AllConst(
+            ) [AllConst]
+          ) [ConstDeclBody]
+        ) [AllConstDeclBodyList]
+      ) [ConstDecl]
+    ) [AllDeclDerived1]
+  ) [AllDeclaration]
+) [Program]
+INFO  05:50:44,953 - ===================================
+INFO  05:50:44,954 -  Print count calls = 0
+INFO  05:50:44,954 -  Deklarisanih promenljivih ima = 0

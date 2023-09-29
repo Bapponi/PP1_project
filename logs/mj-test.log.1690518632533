@@ -1,0 +1,198 @@
+INFO  06:29:00,556 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  06:29:00,566 - #2 program
+INFO  06:29:00,566 - #17 MJProgram
+INFO  06:29:00,566 - #6 const
+INFO  06:29:00,568 - #17 int
+INFO  06:29:00,568 - #17 Savo
+INFO  06:29:00,568 - #34 =
+INFO  06:29:00,568 - #20 true
+INFO  06:29:00,568 - #39 ,
+INFO  06:29:00,569 - #17 pika
+INFO  06:29:00,570 - #34 =
+INFO  06:29:00,570 - #18 20
+INFO  06:29:00,570 - #39 ,
+INFO  06:29:00,570 - #17 sika
+INFO  06:29:00,571 - #34 =
+INFO  06:29:00,571 - #19 's'
+INFO  06:29:00,571 - #37 ;
+INFO  06:29:00,571 - #17 int
+INFO  06:29:00,571 - #17 Babo
+INFO  06:29:00,572 - #43 [
+INFO  06:29:00,573 - #44 ]
+INFO  06:29:00,573 - #43 [
+INFO  06:29:00,573 - #44 ]
+INFO  06:29:00,573 - #43 [
+INFO  06:29:00,573 - #44 ]
+INFO  06:29:00,573 - #39 ,
+INFO  06:29:00,573 - #17 papo
+INFO  06:29:00,573 - #43 [
+INFO  06:29:00,573 - #44 ]
+INFO  06:29:00,574 - #43 [
+INFO  06:29:00,574 - #44 ]
+INFO  06:29:00,574 - #39 ,
+INFO  06:29:00,574 - #17 japo
+INFO  06:29:00,574 - #43 [
+INFO  06:29:00,574 - #44 ]
+INFO  06:29:00,574 - #37 ;
+INFO  06:29:00,574 - #4 class
+INFO  06:29:00,575 - #17 onaMoja
+INFO  06:29:00,575 - #14 extends
+INFO  06:29:00,575 - #17 azo
+INFO  06:29:00,575 - #39 ,
+INFO  06:29:00,575 - #17 spazo
+INFO  06:29:00,575 - #45 {
+INFO  06:29:00,575 - #17 int
+INFO  06:29:00,576 - #17 sabo
+INFO  06:29:00,576 - #43 [
+INFO  06:29:00,576 - #44 ]
+INFO  06:29:00,576 - #37 ;
+INFO  06:29:00,576 - #45 {
+INFO  06:29:00,576 - #13 void
+INFO  06:29:00,577 - #17 asd
+INFO  06:29:00,577 - #46 }
+INFO  06:29:00,577 - #39 ,
+INFO  06:29:00,577 - #45 {
+INFO  06:29:00,577 - #13 void
+INFO  06:29:00,577 - #17 dafa
+INFO  06:29:00,577 - #13 void
+INFO  06:29:00,577 - #46 }
+INFO  06:29:00,577 - #46 }
+INFO  06:29:00,577 - #45 {
+INFO  06:29:00,578 - #46 }
+INFO  06:29:00,579 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      AllDeclaration(
+        NoAllDecl(
+        ) [NoAllDecl]
+        AllDeclDerived1(
+          ConstDecl(
+            Type(
+            ) [Type]
+            AllConstDerived1(
+            ) [AllConstDerived1]
+            AllConstDeclBodyList(
+              AllConstDeclBodyList(
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+                ConstDeclBody(
+                  AllConstDerived2(
+                  ) [AllConstDerived2]
+                ) [ConstDeclBody]
+              ) [AllConstDeclBodyList]
+              ConstDeclBody(
+                AllConst(
+                ) [AllConst]
+              ) [ConstDeclBody]
+            ) [AllConstDeclBodyList]
+          ) [ConstDecl]
+        ) [AllDeclDerived1]
+      ) [AllDeclaration]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+                AllBrackets(
+                  AllBrackets(
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived3(
+      ClassDecl(
+        AllExtendsType(
+          SingleExtendsType(
+            Type(
+            ) [Type]
+          ) [SingleExtendsType]
+          Type(
+          ) [Type]
+        ) [AllExtendsType]
+        AllVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          VarDecl(
+            Type(
+            ) [Type]
+            AllBrackets(
+              NoBrackets(
+              ) [NoBrackets]
+            ) [AllBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        AllClassDeclBody(
+          SingleClassDeclBody(
+            AllMethodDeclList(
+              AllMethodDeclList(
+                NoMethodDeclListList(
+                ) [NoMethodDeclListList]
+                MethodDecl(
+                  VoidOrType(
+                  ) [VoidOrType]
+                ) [MethodDecl]
+              ) [AllMethodDeclList]
+              MethodDecl(
+                VoidOrTypeDerived1(
+                  Type(
+                  ) [Type]
+                ) [VoidOrTypeDerived1]
+              ) [MethodDecl]
+            ) [AllMethodDeclList]
+          ) [SingleClassDeclBody]
+          AllMethodDeclList(
+            AllMethodDeclList(
+              AllMethodDeclList(
+                NoMethodDeclListList(
+                ) [NoMethodDeclListList]
+                MethodDecl(
+                  VoidOrType(
+                  ) [VoidOrType]
+                ) [MethodDecl]
+              ) [AllMethodDeclList]
+              MethodDecl(
+                VoidOrTypeDerived1(
+                  Type(
+                  ) [Type]
+                ) [VoidOrTypeDerived1]
+              ) [MethodDecl]
+            ) [AllMethodDeclList]
+            MethodDecl(
+              VoidOrType(
+              ) [VoidOrType]
+            ) [MethodDecl]
+          ) [AllMethodDeclList]
+        ) [AllClassDeclBody]
+      ) [ClassDecl]
+    ) [AllDeclDerived3]
+  ) [AllDeclaration]
+) [Program]
+INFO  06:29:00,579 - ===================================
+INFO  06:29:00,580 -  Print count calls = 0
+INFO  06:29:00,580 -  Deklarisanih promenljivih ima = 0

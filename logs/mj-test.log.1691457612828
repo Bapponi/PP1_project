@@ -1,0 +1,948 @@
+INFO  03:12:21,610 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler3\test\program.mj
+INFO  03:12:21,638 - #4 program
+INFO  03:12:21,639 - #48 MJProgram
+INFO  03:12:21,639 - #8 const
+INFO  03:12:21,639 - #48 bool
+INFO  03:12:21,639 - #48 nesto
+INFO  03:12:21,640 - #34 =
+INFO  03:12:21,640 - #20 false
+INFO  03:12:21,640 - #39 ,
+INFO  03:12:21,641 - #48 drugo
+INFO  03:12:21,641 - #34 =
+INFO  03:12:21,641 - #20 true
+INFO  03:12:21,641 - #37 ;
+INFO  03:12:21,642 - #8 const
+INFO  03:12:21,642 - #48 int
+INFO  03:12:21,642 - #48 savo
+INFO  03:12:21,643 - #34 =
+INFO  03:12:21,643 - #49 3
+INFO  03:12:21,643 - #39 ,
+INFO  03:12:21,643 - #48 pika
+INFO  03:12:21,644 - #34 =
+INFO  03:12:21,644 - #49 20
+INFO  03:12:21,644 - #37 ;
+INFO  03:12:21,644 - #8 const
+INFO  03:12:21,644 - #48 char
+INFO  03:12:21,644 - #48 kako
+INFO  03:12:21,644 - #34 =
+INFO  03:12:21,644 - #19 'c'
+INFO  03:12:21,644 - #39 ,
+INFO  03:12:21,644 - #48 sika
+INFO  03:12:21,644 - #34 =
+INFO  03:12:21,644 - #19 's'
+INFO  03:12:21,644 - #37 ;
+INFO  03:12:21,644 - #48 int
+INFO  03:12:21,644 - #48 babo
+INFO  03:12:21,646 - #43 [
+INFO  03:12:21,646 - #44 ]
+INFO  03:12:21,646 - #39 ,
+INFO  03:12:21,647 - #48 papo
+INFO  03:12:21,647 - #43 [
+INFO  03:12:21,647 - #44 ]
+INFO  03:12:21,647 - #39 ,
+INFO  03:12:21,647 - #48 kapo
+INFO  03:12:21,647 - #37 ;
+INFO  03:12:21,648 - #6 class
+INFO  03:12:21,648 - #48 nekaTamo
+INFO  03:12:21,648 - #45 {
+INFO  03:12:21,650 - #46 }
+INFO  03:12:21,650 - #6 class
+INFO  03:12:21,651 - #48 onaMoja
+INFO  03:12:21,651 - #16 extends
+INFO  03:12:21,651 - #48 nekaTamo
+INFO  03:12:21,651 - #45 {
+INFO  03:12:21,651 - #48 int
+INFO  03:12:21,651 - #48 sabo
+INFO  03:12:21,651 - #43 [
+INFO  03:12:21,651 - #44 ]
+INFO  03:12:21,651 - #37 ;
+INFO  03:12:21,651 - #45 {
+INFO  03:12:21,651 - #15 void
+INFO  03:12:21,652 - #48 imeFunkcije
+INFO  03:12:21,652 - #41 (
+INFO  03:12:21,652 - #42 )
+INFO  03:12:21,653 - #45 {
+INFO  03:12:21,653 - #46 }
+INFO  03:12:21,653 - #48 int
+INFO  03:12:21,653 - #48 imeMetode
+INFO  03:12:21,653 - #41 (
+INFO  03:12:21,654 - #48 int
+INFO  03:12:21,654 - #48 pera
+INFO  03:12:21,654 - #43 [
+INFO  03:12:21,654 - #44 ]
+INFO  03:12:21,654 - #39 ,
+INFO  03:12:21,654 - #48 char
+INFO  03:12:21,654 - #48 zika
+INFO  03:12:21,654 - #42 )
+INFO  03:12:21,655 - #48 char
+INFO  03:12:21,655 - #48 popo
+INFO  03:12:21,655 - #37 ;
+INFO  03:12:21,655 - #45 {
+INFO  03:12:21,655 - #48 pera
+INFO  03:12:21,655 - #43 [
+INFO  03:12:21,655 - #22 -
+INFO  03:12:21,655 - #49 9
+INFO  03:12:21,656 - #21 +
+INFO  03:12:21,657 - #49 8
+INFO  03:12:21,657 - #22 -
+INFO  03:12:21,657 - #49 7
+INFO  03:12:21,658 - #44 ]
+INFO  03:12:21,658 - #40 .
+INFO  03:12:21,658 - #48 papo
+INFO  03:12:21,658 - #43 [
+INFO  03:12:21,659 - #22 -
+INFO  03:12:21,659 - #49 9
+INFO  03:12:21,659 - #44 ]
+INFO  03:12:21,659 - #34 =
+INFO  03:12:21,659 - #22 -
+INFO  03:12:21,660 - #49 9
+INFO  03:12:21,660 - #37 ;
+INFO  03:12:21,660 - #9 if
+INFO  03:12:21,660 - #41 (
+INFO  03:12:21,660 - #49 3
+INFO  03:12:21,661 - #32 &&
+INFO  03:12:21,662 - #49 4
+INFO  03:12:21,662 - #42 )
+INFO  03:12:21,662 - #45 {
+INFO  03:12:21,662 - #5 break
+INFO  03:12:21,662 - #37 ;
+INFO  03:12:21,662 - #46 }
+INFO  03:12:21,662 - #9 if
+INFO  03:12:21,662 - #41 (
+INFO  03:12:21,662 - #49 1
+INFO  03:12:21,662 - #32 &&
+INFO  03:12:21,662 - #49 2
+INFO  03:12:21,664 - #42 )
+INFO  03:12:21,664 - #45 {
+INFO  03:12:21,664 - #5 break
+INFO  03:12:21,664 - #37 ;
+INFO  03:12:21,664 - #46 }
+INFO  03:12:21,664 - #7 else
+INFO  03:12:21,664 - #45 {
+INFO  03:12:21,664 - #17 continue
+INFO  03:12:21,664 - #37 ;
+INFO  03:12:21,664 - #46 }
+INFO  03:12:21,664 - #10 while
+INFO  03:12:21,664 - #41 (
+INFO  03:12:21,664 - #49 1
+INFO  03:12:21,664 - #33 ||
+INFO  03:12:21,664 - #49 2
+INFO  03:12:21,664 - #29 >=
+INFO  03:12:21,665 - #49 3
+INFO  03:12:21,665 - #33 ||
+INFO  03:12:21,665 - #49 5
+INFO  03:12:21,666 - #27 !=
+INFO  03:12:21,666 - #49 6
+INFO  03:12:21,666 - #42 )
+INFO  03:12:21,666 - #45 {
+INFO  03:12:21,666 - #14 return
+INFO  03:12:21,666 - #22 -
+INFO  03:12:21,666 - #49 9
+INFO  03:12:21,666 - #24 /
+INFO  03:12:21,666 - #11 new
+INFO  03:12:21,667 - #48 int
+INFO  03:12:21,667 - #41 (
+INFO  03:12:21,667 - #49 9
+INFO  03:12:21,667 - #42 )
+INFO  03:12:21,667 - #37 ;
+INFO  03:12:21,668 - #46 }
+INFO  03:12:21,668 - #13 read
+INFO  03:12:21,668 - #41 (
+INFO  03:12:21,668 - #48 babo
+INFO  03:12:21,668 - #43 [
+INFO  03:12:21,668 - #22 -
+INFO  03:12:21,668 - #49 9
+INFO  03:12:21,668 - #44 ]
+INFO  03:12:21,668 - #42 )
+INFO  03:12:21,668 - #37 ;
+INFO  03:12:21,668 - #12 print
+INFO  03:12:21,668 - #41 (
+INFO  03:12:21,668 - #22 -
+INFO  03:12:21,668 - #49 9
+INFO  03:12:21,668 - #39 ,
+INFO  03:12:21,668 - #49 2
+INFO  03:12:21,668 - #42 )
+INFO  03:12:21,668 - #37 ;
+INFO  03:12:21,668 - #40 .
+INFO  03:12:21,668 - #18 foreach
+INFO  03:12:21,668 - #41 (
+INFO  03:12:21,668 - #48 in
+INFO  03:12:21,668 - #47 =>
+INFO  03:12:21,668 - #5 break
+INFO  03:12:21,668 - #37 ;
+INFO  03:12:21,668 - #42 )
+INFO  03:12:21,668 - #37 ;
+INFO  03:12:21,668 - #48 imeFunkcije
+INFO  03:12:21,668 - #41 (
+INFO  03:12:21,668 - #42 )
+INFO  03:12:21,668 - #37 ;
+INFO  03:12:21,670 - #14 return
+INFO  03:12:21,670 - #49 3
+INFO  03:12:21,670 - #37 ;
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,670 - #48 char
+INFO  03:12:21,670 - #48 bananaFunkcija
+INFO  03:12:21,670 - #41 (
+INFO  03:12:21,670 - #42 )
+INFO  03:12:21,670 - #45 {
+INFO  03:12:21,670 - #14 return
+INFO  03:12:21,670 - #19 'a'
+INFO  03:12:21,670 - #37 ;
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,670 - #45 {
+INFO  03:12:21,670 - #15 void
+INFO  03:12:21,670 - #48 main
+INFO  03:12:21,670 - #41 (
+INFO  03:12:21,670 - #42 )
+INFO  03:12:21,670 - #45 {
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,670 - #46 }
+INFO  03:12:21,675 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  AllDeclarationsList(
+    AllDeclarationsList(
+      AllDeclarationsList(
+        AllDeclarationsList(
+          AllDeclarationsList(
+            AllDeclarationsList(
+              NoAllDecl(
+              ) [NoAllDecl]
+              ConstDeclarations(
+                ConstDecl(
+                  ConstDeclTypeName(
+                    Type(
+                     bool
+                    ) [Type]
+                  ) [ConstDeclTypeName]
+                 nesto
+                  AllConstDerived1(
+                  ) [AllConstDerived1]
+                  AllConstDeclBodyList(
+                    NoConstDeclBodyList(
+                    ) [NoConstDeclBodyList]
+                    ConstDeclBody(
+                     drugo
+                      AllConstDerived1(
+                      ) [AllConstDerived1]
+                    ) [ConstDeclBody]
+                  ) [AllConstDeclBodyList]
+                ) [ConstDecl]
+              ) [ConstDeclarations]
+            ) [AllDeclarationsList]
+            ConstDeclarations(
+              ConstDecl(
+                ConstDeclTypeName(
+                  Type(
+                   int
+                  ) [Type]
+                ) [ConstDeclTypeName]
+               savo
+                AllConstDerived2(
+                 3
+                ) [AllConstDerived2]
+                AllConstDeclBodyList(
+                  NoConstDeclBodyList(
+                  ) [NoConstDeclBodyList]
+                  ConstDeclBody(
+                   pika
+                    AllConstDerived2(
+                     20
+                    ) [AllConstDerived2]
+                  ) [ConstDeclBody]
+                ) [AllConstDeclBodyList]
+              ) [ConstDecl]
+            ) [ConstDeclarations]
+          ) [AllDeclarationsList]
+          ConstDeclarations(
+            ConstDecl(
+              ConstDeclTypeName(
+                Type(
+                 char
+                ) [Type]
+              ) [ConstDeclTypeName]
+             kako
+              AllConst(
+              ) [AllConst]
+              AllConstDeclBodyList(
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+                ConstDeclBody(
+                 sika
+                  AllConst(
+                  ) [AllConst]
+                ) [ConstDeclBody]
+              ) [AllConstDeclBodyList]
+            ) [ConstDecl]
+          ) [ConstDeclarations]
+        ) [AllDeclarationsList]
+        VarDeclarations(
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclTypeName]
+           babo
+            SingleBrackets(
+            ) [SingleBrackets]
+            AllVarDeclBodyList(
+              AllVarDeclBodyList(
+                NoVarDeclBodyList(
+                ) [NoVarDeclBodyList]
+                VarDeclBody(
+                 papo
+                  SingleBrackets(
+                  ) [SingleBrackets]
+                ) [VarDeclBody]
+              ) [AllVarDeclBodyList]
+              VarDeclBody(
+               kapo
+                NoBrackets(
+                ) [NoBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+      ) [AllDeclarationsList]
+      ClassDeclarations(
+        ClassDecl(
+         nekaTamo
+          NoExtendsType(
+          ) [NoExtendsType]
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          NoClassDeclBody(
+          ) [NoClassDeclBody]
+        ) [ClassDecl]
+      ) [ClassDeclarations]
+    ) [AllDeclarationsList]
+    ClassDeclarations(
+      ClassDecl(
+       onaMoja
+        SingleExtendsType(
+          Type(
+           nekaTamo
+          ) [Type]
+        ) [SingleExtendsType]
+        AllVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclTypeName]
+           sabo
+            SingleBrackets(
+            ) [SingleBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        SingleClassDeclBody(
+          AllMethodDeclList(
+            AllMethodDeclList(
+              AllMethodDeclList(
+                NoMethodDeclListList(
+                ) [NoMethodDeclListList]
+                MethodDecl(
+                  MethodTypeName(
+                    VoidPart(
+                    ) [VoidPart]
+                   imeFunkcije
+                  ) [MethodTypeName]
+                  NoFormParsListB(
+                  ) [NoFormParsListB]
+                  NoVarDeclList(
+                  ) [NoVarDeclList]
+                  NoStatementList(
+                  ) [NoStatementList]
+                ) [MethodDecl]
+              ) [AllMethodDeclList]
+              MethodDecl(
+                MethodTypeName(
+                  TypePart(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [TypePart]
+                 imeMetode
+                ) [MethodTypeName]
+                SingleFormParsListB(
+                  AllFormPars(
+                    SingleFormPars(
+                      FormParsBody(
+                        FormParsBodyType(
+                          Type(
+                           int
+                          ) [Type]
+                        ) [FormParsBodyType]
+                       pera
+                        SingleBrackets(
+                        ) [SingleBrackets]
+                      ) [FormParsBody]
+                    ) [SingleFormPars]
+                    FormParsBody(
+                      FormParsBodyType(
+                        Type(
+                         char
+                        ) [Type]
+                      ) [FormParsBodyType]
+                     zika
+                      NoBrackets(
+                      ) [NoBrackets]
+                    ) [FormParsBody]
+                  ) [AllFormPars]
+                ) [SingleFormParsListB]
+                AllVarDeclList(
+                  NoVarDeclList(
+                  ) [NoVarDeclList]
+                  VarDecl(
+                    VarDeclTypeName(
+                      Type(
+                       char
+                      ) [Type]
+                    ) [VarDeclTypeName]
+                   popo
+                    NoBrackets(
+                    ) [NoBrackets]
+                    NoVarDeclBodyList(
+                    ) [NoVarDeclBodyList]
+                  ) [VarDecl]
+                ) [AllVarDeclList]
+                AllStatementList(
+                  AllStatementList(
+                    AllStatementList(
+                      AllStatementList(
+                        AllStatementList(
+                          AllStatementList(
+                            AllStatementList(
+                              AllStatementList(
+                                AllStatementList(
+                                  NoStatementList(
+                                  ) [NoStatementList]
+                                  StatementDesign(
+                                    DesignatorStatement(
+                                      Designator(
+                                       pera
+                                        AllDesignatorBodyList(
+                                          AllDesignatorBodyList(
+                                            AllDesignatorBodyList(
+                                              NoDesignatorBodyList(
+                                              ) [NoDesignatorBodyList]
+                                              DesignatorBodyTwo(
+                                                Expr(
+                                                  SingleMinusListB(
+                                                  ) [SingleMinusListB]
+                                                  Term(
+                                                    FactorNum(
+                                                     9
+                                                    ) [FactorNum]
+                                                    NoTermBodyList(
+                                                    ) [NoTermBodyList]
+                                                  ) [Term]
+                                                  AllExprBodyList(
+                                                    AllExprBodyList(
+                                                      NoExprBodyList(
+                                                      ) [NoExprBodyList]
+                                                      ExprBody(
+                                                        Addop(
+                                                        ) [Addop]
+                                                        Term(
+                                                          FactorNum(
+                                                           8
+                                                          ) [FactorNum]
+                                                          NoTermBodyList(
+                                                          ) [NoTermBodyList]
+                                                        ) [Term]
+                                                      ) [ExprBody]
+                                                    ) [AllExprBodyList]
+                                                    ExprBody(
+                                                      AddopDerived1(
+                                                      ) [AddopDerived1]
+                                                      Term(
+                                                        FactorNum(
+                                                         7
+                                                        ) [FactorNum]
+                                                        NoTermBodyList(
+                                                        ) [NoTermBodyList]
+                                                      ) [Term]
+                                                    ) [ExprBody]
+                                                  ) [AllExprBodyList]
+                                                ) [Expr]
+                                              ) [DesignatorBodyTwo]
+                                            ) [AllDesignatorBodyList]
+                                            DesignatorBodyOne(
+                                             papo
+                                            ) [DesignatorBodyOne]
+                                          ) [AllDesignatorBodyList]
+                                          DesignatorBodyTwo(
+                                            Expr(
+                                              SingleMinusListB(
+                                              ) [SingleMinusListB]
+                                              Term(
+                                                FactorNum(
+                                                 9
+                                                ) [FactorNum]
+                                                NoTermBodyList(
+                                                ) [NoTermBodyList]
+                                              ) [Term]
+                                              NoExprBodyList(
+                                              ) [NoExprBodyList]
+                                            ) [Expr]
+                                          ) [DesignatorBodyTwo]
+                                        ) [AllDesignatorBodyList]
+                                      ) [Designator]
+                                      DesignatorStatementBodyAssign(
+                                        Assignop(
+                                        ) [Assignop]
+                                        Expr(
+                                          SingleMinusListB(
+                                          ) [SingleMinusListB]
+                                          Term(
+                                            FactorNum(
+                                             9
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [Expr]
+                                      ) [DesignatorStatementBodyAssign]
+                                    ) [DesignatorStatement]
+                                  ) [StatementDesign]
+                                ) [AllStatementList]
+                                StatementIf(
+                                  ConditionSingle(
+                                    CondTermAll(
+                                      CondTermSingle(
+                                        CondFact(
+                                          Expr(
+                                            NoMinusListB(
+                                            ) [NoMinusListB]
+                                            Term(
+                                              FactorNum(
+                                               3
+                                              ) [FactorNum]
+                                              NoTermBodyList(
+                                              ) [NoTermBodyList]
+                                            ) [Term]
+                                            NoExprBodyList(
+                                            ) [NoExprBodyList]
+                                          ) [Expr]
+                                          NoCondFactBodyListB(
+                                          ) [NoCondFactBodyListB]
+                                        ) [CondFact]
+                                      ) [CondTermSingle]
+                                      CondFact(
+                                        Expr(
+                                          NoMinusListB(
+                                          ) [NoMinusListB]
+                                          Term(
+                                            FactorNum(
+                                             4
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [Expr]
+                                        NoCondFactBodyListB(
+                                        ) [NoCondFactBodyListB]
+                                      ) [CondFact]
+                                    ) [CondTermAll]
+                                  ) [ConditionSingle]
+                                  StatementStatementList(
+                                    AllStatementList(
+                                      NoStatementList(
+                                      ) [NoStatementList]
+                                      StatementBreak(
+                                      ) [StatementBreak]
+                                    ) [AllStatementList]
+                                  ) [StatementStatementList]
+                                ) [StatementIf]
+                              ) [AllStatementList]
+                              StatementElse(
+                                ConditionSingle(
+                                  CondTermAll(
+                                    CondTermSingle(
+                                      CondFact(
+                                        Expr(
+                                          NoMinusListB(
+                                          ) [NoMinusListB]
+                                          Term(
+                                            FactorNum(
+                                             1
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [Expr]
+                                        NoCondFactBodyListB(
+                                        ) [NoCondFactBodyListB]
+                                      ) [CondFact]
+                                    ) [CondTermSingle]
+                                    CondFact(
+                                      Expr(
+                                        NoMinusListB(
+                                        ) [NoMinusListB]
+                                        Term(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [Expr]
+                                      NoCondFactBodyListB(
+                                      ) [NoCondFactBodyListB]
+                                    ) [CondFact]
+                                  ) [CondTermAll]
+                                ) [ConditionSingle]
+                                StatementStatementList(
+                                  AllStatementList(
+                                    NoStatementList(
+                                    ) [NoStatementList]
+                                    StatementBreak(
+                                    ) [StatementBreak]
+                                  ) [AllStatementList]
+                                ) [StatementStatementList]
+                                StatementStatementList(
+                                  AllStatementList(
+                                    NoStatementList(
+                                    ) [NoStatementList]
+                                    StatementContinue(
+                                    ) [StatementContinue]
+                                  ) [AllStatementList]
+                                ) [StatementStatementList]
+                              ) [StatementElse]
+                            ) [AllStatementList]
+                            StatementWhile(
+                              ConditionAll(
+                                ConditionAll(
+                                  ConditionSingle(
+                                    CondTermSingle(
+                                      CondFact(
+                                        Expr(
+                                          NoMinusListB(
+                                          ) [NoMinusListB]
+                                          Term(
+                                            FactorNum(
+                                             1
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [Expr]
+                                        NoCondFactBodyListB(
+                                        ) [NoCondFactBodyListB]
+                                      ) [CondFact]
+                                    ) [CondTermSingle]
+                                  ) [ConditionSingle]
+                                  CondTermSingle(
+                                    CondFact(
+                                      Expr(
+                                        NoMinusListB(
+                                        ) [NoMinusListB]
+                                        Term(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [Expr]
+                                      SingleCondFactBodyListB(
+                                        RelopDerived3(
+                                        ) [RelopDerived3]
+                                        Expr(
+                                          NoMinusListB(
+                                          ) [NoMinusListB]
+                                          Term(
+                                            FactorNum(
+                                             3
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [Expr]
+                                      ) [SingleCondFactBodyListB]
+                                    ) [CondFact]
+                                  ) [CondTermSingle]
+                                ) [ConditionAll]
+                                CondTermSingle(
+                                  CondFact(
+                                    Expr(
+                                      NoMinusListB(
+                                      ) [NoMinusListB]
+                                      Term(
+                                        FactorNum(
+                                         5
+                                        ) [FactorNum]
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                      ) [Term]
+                                      NoExprBodyList(
+                                      ) [NoExprBodyList]
+                                    ) [Expr]
+                                    SingleCondFactBodyListB(
+                                      RelopDerived1(
+                                      ) [RelopDerived1]
+                                      Expr(
+                                        NoMinusListB(
+                                        ) [NoMinusListB]
+                                        Term(
+                                          FactorNum(
+                                           6
+                                          ) [FactorNum]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [Expr]
+                                    ) [SingleCondFactBodyListB]
+                                  ) [CondFact]
+                                ) [CondTermSingle]
+                              ) [ConditionAll]
+                              StatementStatementList(
+                                AllStatementList(
+                                  NoStatementList(
+                                  ) [NoStatementList]
+                                  StatementReturn(
+                                    SingleExprListB(
+                                      Expr(
+                                        SingleMinusListB(
+                                        ) [SingleMinusListB]
+                                        Term(
+                                          FactorNum(
+                                           9
+                                          ) [FactorNum]
+                                          AllTermBodyList(
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                            TermBody(
+                                              MulopDerived1(
+                                              ) [MulopDerived1]
+                                              FactorNew(
+                                                Type(
+                                                 int
+                                                ) [Type]
+                                                NewTypeBodyTwo(
+                                                  SingleActParsListB(
+                                                    SingleActPars(
+                                                      Expr(
+                                                        NoMinusListB(
+                                                        ) [NoMinusListB]
+                                                        Term(
+                                                          FactorNum(
+                                                           9
+                                                          ) [FactorNum]
+                                                          NoTermBodyList(
+                                                          ) [NoTermBodyList]
+                                                        ) [Term]
+                                                        NoExprBodyList(
+                                                        ) [NoExprBodyList]
+                                                      ) [Expr]
+                                                    ) [SingleActPars]
+                                                  ) [SingleActParsListB]
+                                                ) [NewTypeBodyTwo]
+                                              ) [FactorNew]
+                                            ) [TermBody]
+                                          ) [AllTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [Expr]
+                                    ) [SingleExprListB]
+                                  ) [StatementReturn]
+                                ) [AllStatementList]
+                              ) [StatementStatementList]
+                            ) [StatementWhile]
+                          ) [AllStatementList]
+                          StatementRead(
+                            Designator(
+                             babo
+                              AllDesignatorBodyList(
+                                NoDesignatorBodyList(
+                                ) [NoDesignatorBodyList]
+                                DesignatorBodyTwo(
+                                  Expr(
+                                    SingleMinusListB(
+                                    ) [SingleMinusListB]
+                                    Term(
+                                      FactorNum(
+                                       9
+                                      ) [FactorNum]
+                                      NoTermBodyList(
+                                      ) [NoTermBodyList]
+                                    ) [Term]
+                                    NoExprBodyList(
+                                    ) [NoExprBodyList]
+                                  ) [Expr]
+                                ) [DesignatorBodyTwo]
+                              ) [AllDesignatorBodyList]
+                            ) [Designator]
+                          ) [StatementRead]
+                        ) [AllStatementList]
+                        StatementPrint(
+                          Expr(
+                            SingleMinusListB(
+                            ) [SingleMinusListB]
+                            Term(
+                              FactorNum(
+                               9
+                              ) [FactorNum]
+                              NoTermBodyList(
+                              ) [NoTermBodyList]
+                            ) [Term]
+                            NoExprBodyList(
+                            ) [NoExprBodyList]
+                          ) [Expr]
+                          AllNumConstListB(
+                           2
+                          ) [AllNumConstListB]
+                        ) [StatementPrint]
+                      ) [AllStatementList]
+                      StatementForeach(
+                       in
+                        StatementBreak(
+                        ) [StatementBreak]
+                      ) [StatementForeach]
+                    ) [AllStatementList]
+                    StatementDesign(
+                      DesignatorStatement(
+                        Designator(
+                         imeFunkcije
+                          NoDesignatorBodyList(
+                          ) [NoDesignatorBodyList]
+                        ) [Designator]
+                        DesignatorStatementBodyActPars(
+                          NoActParsListB(
+                          ) [NoActParsListB]
+                        ) [DesignatorStatementBodyActPars]
+                      ) [DesignatorStatement]
+                    ) [StatementDesign]
+                  ) [AllStatementList]
+                  StatementReturn(
+                    SingleExprListB(
+                      Expr(
+                        NoMinusListB(
+                        ) [NoMinusListB]
+                        Term(
+                          FactorNum(
+                           3
+                          ) [FactorNum]
+                          NoTermBodyList(
+                          ) [NoTermBodyList]
+                        ) [Term]
+                        NoExprBodyList(
+                        ) [NoExprBodyList]
+                      ) [Expr]
+                    ) [SingleExprListB]
+                  ) [StatementReturn]
+                ) [AllStatementList]
+              ) [MethodDecl]
+            ) [AllMethodDeclList]
+            MethodDecl(
+              MethodTypeName(
+                TypePart(
+                  Type(
+                   char
+                  ) [Type]
+                ) [TypePart]
+               bananaFunkcija
+              ) [MethodTypeName]
+              NoFormParsListB(
+              ) [NoFormParsListB]
+              NoVarDeclList(
+              ) [NoVarDeclList]
+              AllStatementList(
+                NoStatementList(
+                ) [NoStatementList]
+                StatementReturn(
+                  SingleExprListB(
+                    Expr(
+                      NoMinusListB(
+                      ) [NoMinusListB]
+                      Term(
+                        FactorChar(
+                        ) [FactorChar]
+                        NoTermBodyList(
+                        ) [NoTermBodyList]
+                      ) [Term]
+                      NoExprBodyList(
+                      ) [NoExprBodyList]
+                    ) [Expr]
+                  ) [SingleExprListB]
+                ) [StatementReturn]
+              ) [AllStatementList]
+            ) [MethodDecl]
+          ) [AllMethodDeclList]
+        ) [SingleClassDeclBody]
+      ) [ClassDecl]
+    ) [ClassDeclarations]
+  ) [AllDeclarationsList]
+  AllMethodDeclList(
+    NoMethodDeclListList(
+    ) [NoMethodDeclListList]
+    MethodDecl(
+      MethodTypeName(
+        VoidPart(
+        ) [VoidPart]
+       main
+      ) [MethodTypeName]
+      NoFormParsListB(
+      ) [NoFormParsListB]
+      NoVarDeclList(
+      ) [NoVarDeclList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [AllMethodDeclList]
+) [Program]
+INFO  03:12:21,676 - ===================================
+ERROR 03:12:21,677 - Nije pronadjen tip bool u tabeli simbola! 
+INFO  03:12:21,678 - Deklarisana konstanta drugo na liniji 3
+INFO  03:12:21,678 - Deklarisana konstanta nesto na liniji 3
+INFO  03:12:21,678 - Deklarisana konstanta pika na liniji 4
+INFO  03:12:21,678 - Deklarisana konstanta savo na liniji 4
+INFO  03:12:21,678 - Deklarisana konstanta sika na liniji 5
+INFO  03:12:21,678 - Deklarisana konstanta kako na liniji 5
+INFO  03:12:21,678 - Deklarisana promenljiva papo na liniji 7
+INFO  03:12:21,678 - Deklarisana promenljiva kapo na liniji 7
+INFO  03:12:21,678 - Deklarisana promenljiva babo na liniji 7
+ERROR 03:12:21,678 - Nije pronadjen tip nekaTamo u tabeli simbola! 
+INFO  03:12:21,678 - Deklarisana promenljiva sabo na liniji 12
+INFO  03:12:21,678 - Obradjuje se funkcija imeFunkcije na liniji 16
+INFO  03:12:21,678 - Obradjuje se funkcija imeMetode na liniji 18
+INFO  03:12:21,678 - Deklarisan parametar funkcije pera na liniji 18
+INFO  03:12:21,678 - Deklarisan parametar funkcije zika na liniji 18
+INFO  03:12:21,678 - Deklarisana promenljiva popo na liniji 18
+ERROR 03:12:21,678 - Greska na liniji 23 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije imeFunkcije
+ERROR 03:12:21,678 - Greska na liniji 3 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije imeFunkcije
+INFO  03:12:21,678 - Obradjuje se funkcija bananaFunkcija na liniji 34
+ERROR 03:12:21,678 - Greska na liniji 3 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije imeMetode
+INFO  03:12:21,678 - Obradjuje se funkcija main na liniji 44
+INFO  03:12:21,678 -  Broj poziva print funkcije = 1
+INFO  03:12:21,678 -  Deklarisanih promenljivih ima = 7
+INFO  03:12:21,678 -  U programu ima konstanti = 6
+INFO  03:12:21,678 -  Deklarisanih metoda ima = 4
+INFO  03:12:21,679 - Parsiranje NIJE uspesno zavrseno!

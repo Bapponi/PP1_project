@@ -1,0 +1,243 @@
+INFO  15:52:53,148 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  15:52:53,163 - #2 program
+INFO  15:52:53,163 - #17 MJProgram
+INFO  15:52:53,163 - #6 const
+INFO  15:52:53,163 - #17 int
+INFO  15:52:53,163 - #17 Savo
+INFO  15:52:53,164 - #34 =
+INFO  15:52:53,164 - #20 true
+INFO  15:52:53,164 - #39 ,
+INFO  15:52:53,165 - #17 pika
+INFO  15:52:53,165 - #34 =
+INFO  15:52:53,165 - #18 20
+INFO  15:52:53,165 - #39 ,
+INFO  15:52:53,166 - #17 sika
+INFO  15:52:53,166 - #34 =
+INFO  15:52:53,166 - #19 's'
+INFO  15:52:53,166 - #37 ;
+INFO  15:52:53,166 - #17 int
+INFO  15:52:53,168 - #17 Babo
+INFO  15:52:53,168 - #43 [
+INFO  15:52:53,169 - #44 ]
+INFO  15:52:53,169 - #43 [
+INFO  15:52:53,169 - #44 ]
+INFO  15:52:53,169 - #43 [
+INFO  15:52:53,169 - #44 ]
+INFO  15:52:53,169 - #39 ,
+INFO  15:52:53,170 - #17 papo
+INFO  15:52:53,170 - #43 [
+INFO  15:52:53,170 - #44 ]
+INFO  15:52:53,170 - #43 [
+INFO  15:52:53,170 - #44 ]
+INFO  15:52:53,170 - #39 ,
+INFO  15:52:53,170 - #17 japo
+INFO  15:52:53,170 - #43 [
+INFO  15:52:53,171 - #44 ]
+INFO  15:52:53,171 - #37 ;
+INFO  15:52:53,171 - #4 class
+INFO  15:52:53,171 - #17 onaMoja
+INFO  15:52:53,171 - #14 extends
+INFO  15:52:53,171 - #17 azo
+INFO  15:52:53,171 - #39 ,
+INFO  15:52:53,171 - #17 spazo
+INFO  15:52:53,171 - #45 {
+INFO  15:52:53,171 - #17 int
+INFO  15:52:53,172 - #17 sabo
+INFO  15:52:53,172 - #43 [
+INFO  15:52:53,172 - #44 ]
+INFO  15:52:53,172 - #37 ;
+INFO  15:52:53,172 - #45 {
+INFO  15:52:53,172 - #13 void
+INFO  15:52:53,172 - #17 imeMetode
+INFO  15:52:53,172 - #41 (
+INFO  15:52:53,172 - #17 int
+INFO  15:52:53,172 - #17 pera
+INFO  15:52:53,172 - #43 [
+INFO  15:52:53,172 - #44 ]
+INFO  15:52:53,172 - #17 char
+INFO  15:52:53,173 - #17 zika
+INFO  15:52:53,173 - #42 )
+INFO  15:52:53,173 - #17 char
+INFO  15:52:53,173 - #17 popo
+INFO  15:52:53,173 - #37 ;
+INFO  15:52:53,173 - #45 {
+INFO  15:52:53,173 - #7 if
+INFO  15:52:53,173 - #41 (
+INFO  15:52:53,173 - #42 )
+INFO  15:52:53,173 - #21 +
+INFO  15:52:53,173 - #37 ;
+INFO  15:52:53,175 - #46 }
+INFO  15:52:53,175 - #46 }
+INFO  15:52:53,175 - #39 ,
+INFO  15:52:53,175 - #45 {
+INFO  15:52:53,175 - #17 int
+INFO  15:52:53,175 - #17 nestoDrugo
+INFO  15:52:53,175 - #41 (
+INFO  15:52:53,175 - #42 )
+INFO  15:52:53,176 - #45 {
+INFO  15:52:53,176 - #46 }
+INFO  15:52:53,176 - #46 }
+INFO  15:52:53,176 - #46 }
+INFO  15:52:53,176 - #45 {
+INFO  15:52:53,176 - #46 }
+INFO  15:52:53,177 - Program(
+  AllDeclarationsList(
+    AllDeclarationsList(
+      AllDeclarationsList(
+        NoAllDecl(
+        ) [NoAllDecl]
+        AllDeclarations(
+          ConstDecl(
+            Type(
+            ) [Type]
+            AllConstDerived1(
+            ) [AllConstDerived1]
+            AllConstDeclBodyList(
+              AllConstDeclBodyList(
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+                ConstDeclBody(
+                  AllConstDerived2(
+                  ) [AllConstDerived2]
+                ) [ConstDeclBody]
+              ) [AllConstDeclBodyList]
+              ConstDeclBody(
+                AllConst(
+                ) [AllConst]
+              ) [ConstDeclBody]
+            ) [AllConstDeclBodyList]
+          ) [ConstDecl]
+        ) [AllDeclarations]
+      ) [AllDeclarationsList]
+      AllDeclDerived1(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          AllVarDeclBodyList(
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+                AllBrackets(
+                  AllBrackets(
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllBrackets]
+                ) [AllBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+            VarDeclBody(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived1]
+    ) [AllDeclarationsList]
+    AllDeclDerived2(
+      ClassDecl(
+        AllExtendsType(
+          SingleExtendsType(
+            Type(
+            ) [Type]
+          ) [SingleExtendsType]
+          Type(
+          ) [Type]
+        ) [AllExtendsType]
+        AllVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          VarDecl(
+            Type(
+            ) [Type]
+            AllBrackets(
+              NoBrackets(
+              ) [NoBrackets]
+            ) [AllBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        AllClassDeclBody(
+          SingleClassDeclBody(
+            AllMethodDeclList(
+              NoMethodDeclListList(
+              ) [NoMethodDeclListList]
+              MethodDecl(
+                VoidOrType(
+                ) [VoidOrType]
+                SingleFormParsListB(
+                  AllFormParams(
+                    SingleFormPars(
+                      Type(
+                      ) [Type]
+                      AllBrackets(
+                        NoBrackets(
+                        ) [NoBrackets]
+                      ) [AllBrackets]
+                    ) [SingleFormPars]
+                    Type(
+                    ) [Type]
+                    NoBrackets(
+                    ) [NoBrackets]
+                  ) [AllFormParams]
+                ) [SingleFormParsListB]
+                AllVarDeclList(
+                  NoVarDeclList(
+                  ) [NoVarDeclList]
+                  VarDecl(
+                    Type(
+                    ) [Type]
+                    NoBrackets(
+                    ) [NoBrackets]
+                    NoVarDeclBodyList(
+                    ) [NoVarDeclBodyList]
+                  ) [VarDecl]
+                ) [AllVarDeclList]
+                AllStatementList(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  StatementIf(
+                    StatementDesign(
+                      DesignatorStatement(
+                      ) [DesignatorStatement]
+                    ) [StatementDesign]
+                  ) [StatementIf]
+                ) [AllStatementList]
+              ) [MethodDecl]
+            ) [AllMethodDeclList]
+          ) [SingleClassDeclBody]
+          AllMethodDeclList(
+            NoMethodDeclListList(
+            ) [NoMethodDeclListList]
+            MethodDecl(
+              VoidOrTypeDerived1(
+                Type(
+                ) [Type]
+              ) [VoidOrTypeDerived1]
+              NoFormParsListB(
+              ) [NoFormParsListB]
+              NoVarDeclList(
+              ) [NoVarDeclList]
+              NoStatementList(
+              ) [NoStatementList]
+            ) [MethodDecl]
+          ) [AllMethodDeclList]
+        ) [AllClassDeclBody]
+      ) [ClassDecl]
+    ) [AllDeclDerived2]
+  ) [AllDeclarationsList]
+) [Program]
+INFO  15:52:53,178 - ===================================
+INFO  15:52:53,178 -  Print count calls = 0
+INFO  15:52:53,178 -  Deklarisanih promenljivih ima = 0

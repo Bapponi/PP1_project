@@ -1,0 +1,64 @@
+program MJProgram
+
+const bool nesto = false, drugo = true;
+const int savo = 30, pika = 3;
+const char kako = 'c', sika = 'e';
+
+int babo[], papo[], kapo;
+char saso;
+
+//class NekaTamo extends Nema {
+//	char abo[];
+//}
+
+class NekaTamo {
+	char abo[];
+	int kako;
+}
+
+class OnaMoja extends NekaTamo {
+	int sabo[];
+	
+	{
+	
+		void imeFunkcije(){
+			return;
+		}
+		
+		int imeMetode(int pera[], char zika) char popo; {
+			
+			babo[3] = 8;
+			saso = 'f';
+			
+//			NekaTamo[- 9 + 8 - 7 * 5].papo[-9] = -9;
+			if (3 && 4) { kapo++; }
+//			if (1 && 2) { kapo--; } else { continue; }
+			if (1 && 2) { kapo--; } else { saso = 'v';}
+//			while (1 || babo == sabo || NekaTamo <= NekaTamo || 1 < 2) { return - 9 / new NekaTamo (9); }
+			while (1 || 1 < 2) { return - 9; }	
+					
+			read( babo[-9]);
+//			read(sasssis);
+			print(-9, 2);
+			.foreach(in => break;);
+			//greskaOvde = .findAny(1);
+			//greskaIOvde = .findAndReplace(1, ime => 1);
+			imeFunkcije();
+			//return -9 / sabo[1];
+			return 3;
+			print(imeFunkcije());
+		}
+		
+		char bananaFunkcija(bool sira){
+//			sira = true;
+			return 'a';
+		}
+	
+	}
+}
+
+{
+
+	void main(){}
+
+}

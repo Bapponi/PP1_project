@@ -1,0 +1,52 @@
+INFO  05:22:12,181 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  05:22:12,190 - #2 program
+INFO  05:22:12,190 - #17 int
+INFO  05:22:12,190 - #17 Babo
+INFO  05:22:12,191 - #43 [
+INFO  05:22:12,192 - #44 ]
+INFO  05:22:12,192 - #43 [
+INFO  05:22:12,192 - #44 ]
+INFO  05:22:12,192 - #43 [
+INFO  05:22:12,192 - #44 ]
+INFO  05:22:12,192 - #37 ;
+INFO  05:22:12,194 - #6 const
+INFO  05:22:12,194 - #17 string
+INFO  05:22:12,194 - #17 Savo
+INFO  05:22:12,194 - #34 =
+INFO  05:22:12,194 - #37 ;
+INFO  05:22:12,194 - #17 MJProgram
+INFO  05:22:12,195 - #45 {
+INFO  05:22:12,195 - #46 }
+INFO  05:22:12,196 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      NoAllDecl(
+      ) [NoAllDecl]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          NoVarDeclBodyList(
+          ) [NoVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived1(
+      ConstDecl(
+        Type(
+        ) [Type]
+      ) [ConstDecl]
+    ) [AllDeclDerived1]
+  ) [AllDeclaration]
+) [Program]
+INFO  05:22:12,196 - ===================================
+INFO  05:22:12,197 -  Print count calls = 0
+INFO  05:22:12,197 -  Deklarisanih promenljivih ima = 0

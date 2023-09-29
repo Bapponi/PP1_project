@@ -1,0 +1,66 @@
+INFO  05:16:26,599 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\BABABUJI_MJCompiler2\test\program.mj
+INFO  05:16:26,607 - #2 program
+INFO  05:16:26,607 - #17 int
+INFO  05:16:26,608 - #17 Babo
+INFO  05:16:26,608 - #43 [
+INFO  05:16:26,610 - #44 ]
+INFO  05:16:26,610 - #43 [
+INFO  05:16:26,610 - #44 ]
+INFO  05:16:26,610 - #43 [
+INFO  05:16:26,610 - #44 ]
+INFO  05:16:26,610 - #39 ,
+INFO  05:16:26,610 - #17 papo
+INFO  05:16:26,610 - #43 [
+INFO  05:16:26,610 - #44 ]
+INFO  05:16:26,610 - #43 [
+INFO  05:16:26,610 - #44 ]
+INFO  05:16:26,610 - #37 ;
+INFO  05:16:26,611 - #6 const
+INFO  05:16:26,612 - #17 string
+INFO  05:16:26,612 - #17 Savo
+INFO  05:16:26,612 - #34 =
+INFO  05:16:26,612 - #37 ;
+INFO  05:16:26,612 - #17 MJProgram
+INFO  05:16:26,613 - #45 {
+INFO  05:16:26,613 - #46 }
+INFO  05:16:26,613 - Program(
+  AllDeclaration(
+    AllDeclaration(
+      NoAllDecl(
+      ) [NoAllDecl]
+      AllDeclDerived2(
+        VarDecl(
+          Type(
+          ) [Type]
+          AllBrackets(
+            AllBrackets(
+              AllBrackets(
+                NoBrackets(
+                ) [NoBrackets]
+              ) [AllBrackets]
+            ) [AllBrackets]
+          ) [AllBrackets]
+          VarDeclBodyList(
+            VarDeclBody(
+              AllBrackets(
+                AllBrackets(
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [AllBrackets]
+              ) [AllBrackets]
+            ) [VarDeclBody]
+          ) [VarDeclBodyList]
+        ) [VarDecl]
+      ) [AllDeclDerived2]
+    ) [AllDeclaration]
+    AllDeclDerived1(
+      ConstDecl(
+        Type(
+        ) [Type]
+      ) [ConstDecl]
+    ) [AllDeclDerived1]
+  ) [AllDeclaration]
+) [Program]
+INFO  05:16:26,613 - ===================================
+INFO  05:16:26,614 -  Print count calls = 0
+INFO  05:16:26,614 -  Deklarisanih promenljivih ima = 0
