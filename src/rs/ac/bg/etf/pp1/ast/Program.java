@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 18:23:9
+// 2/0/2024 18:49:30
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,18 +13,15 @@ public class Program implements SyntaxNode {
 
     private ProgName ProgName;
     private NamespaceList NamespaceList;
-    private AllDeclList AllDeclList;
-    private MethodDeclList MethodDeclList;
+    private ProgramBody ProgramBody;
 
-    public Program (ProgName ProgName, NamespaceList NamespaceList, AllDeclList AllDeclList, MethodDeclList MethodDeclList) {
+    public Program (ProgName ProgName, NamespaceList NamespaceList, ProgramBody ProgramBody) {
         this.ProgName=ProgName;
         if(ProgName!=null) ProgName.setParent(this);
         this.NamespaceList=NamespaceList;
         if(NamespaceList!=null) NamespaceList.setParent(this);
-        this.AllDeclList=AllDeclList;
-        if(AllDeclList!=null) AllDeclList.setParent(this);
-        this.MethodDeclList=MethodDeclList;
-        if(MethodDeclList!=null) MethodDeclList.setParent(this);
+        this.ProgramBody=ProgramBody;
+        if(ProgramBody!=null) ProgramBody.setParent(this);
     }
 
     public ProgName getProgName() {
@@ -43,20 +40,12 @@ public class Program implements SyntaxNode {
         this.NamespaceList=NamespaceList;
     }
 
-    public AllDeclList getAllDeclList() {
-        return AllDeclList;
+    public ProgramBody getProgramBody() {
+        return ProgramBody;
     }
 
-    public void setAllDeclList(AllDeclList AllDeclList) {
-        this.AllDeclList=AllDeclList;
-    }
-
-    public MethodDeclList getMethodDeclList() {
-        return MethodDeclList;
-    }
-
-    public void setMethodDeclList(MethodDeclList MethodDeclList) {
-        this.MethodDeclList=MethodDeclList;
+    public void setProgramBody(ProgramBody ProgramBody) {
+        this.ProgramBody=ProgramBody;
     }
 
     public SyntaxNode getParent() {
@@ -82,23 +71,20 @@ public class Program implements SyntaxNode {
     public void childrenAccept(Visitor visitor) {
         if(ProgName!=null) ProgName.accept(visitor);
         if(NamespaceList!=null) NamespaceList.accept(visitor);
-        if(AllDeclList!=null) AllDeclList.accept(visitor);
-        if(MethodDeclList!=null) MethodDeclList.accept(visitor);
+        if(ProgramBody!=null) ProgramBody.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ProgName!=null) ProgName.traverseTopDown(visitor);
         if(NamespaceList!=null) NamespaceList.traverseTopDown(visitor);
-        if(AllDeclList!=null) AllDeclList.traverseTopDown(visitor);
-        if(MethodDeclList!=null) MethodDeclList.traverseTopDown(visitor);
+        if(ProgramBody!=null) ProgramBody.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ProgName!=null) ProgName.traverseBottomUp(visitor);
         if(NamespaceList!=null) NamespaceList.traverseBottomUp(visitor);
-        if(AllDeclList!=null) AllDeclList.traverseBottomUp(visitor);
-        if(MethodDeclList!=null) MethodDeclList.traverseBottomUp(visitor);
+        if(ProgramBody!=null) ProgramBody.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -119,14 +105,8 @@ public class Program implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(AllDeclList!=null)
-            buffer.append(AllDeclList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(MethodDeclList!=null)
-            buffer.append(MethodDeclList.toString("  "+tab));
+        if(ProgramBody!=null)
+            buffer.append(ProgramBody.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

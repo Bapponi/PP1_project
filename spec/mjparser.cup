@@ -76,7 +76,7 @@ nonterminal DesignatorBodyList, DesignatorBody, MinusListB, ExprBodyList;
 nonterminal TermBodyList, NewTypeBody, ActParsListB, FactorDesignatorBodyListB;
 nonterminal FactorDesignatorBody, ActParsBodyList, ActParsBody;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarDecl, ConstDecl, ClassDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, ProgramBody, VarDecl, ConstDecl, ClassDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDeclTypeName, ConstDeclTypeName, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodTypeName, VoidOrType, Designator, FormParsBody;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FormParsBodyType, AllConst, DesignatorStatement;
@@ -84,20 +84,22 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
 precedence left ELSE;
 
-Program ::= (Program) PROG ProgName:p NamespaceList AllDeclList LBRACE MethodDeclList RBRACE;
+Program ::= (Program) PROG ProgName:p NamespaceList ProgramBody;
+
+ProgramBody ::= (ProgramBody) AllDeclList LBRACE MethodDeclList RBRACE;
 
 NamespaceList ::= (AllNamespaceList) NamespaceList Namespace
 			  |
 			  (NoNamespaceList) /* epsilon */
 			  ;
 			  
-Namespace ::= (Namespace) NAMESPACE NamespaceName:n LBRACE AllDeclList LBRACE MethodDeclList RBRACE RBRACE;
+Namespace ::= (Namespace) NAMESPACE NamespaceName:n LBRACE ProgramBody RBRACE;
 
 NamespaceName ::= (NamespaceName) IDENT:namespaceName;
 
@@ -120,6 +122,8 @@ ConstDecl ::= (ConstDecl) CONST ConstDeclTypeName:c IDENT:constName EQUAL AllCon
 ConstDeclTypeName ::= (ConstDeclTypeName) Type:constType;
 
 Type ::= (Type) IDENT:typeName;
+
+NamespaceDots ::= (NamespaceDots) IDENT:nsName TWODOTS TWODOTS;
 
 AllConst ::= (AllConstChar) Char 
 			| 

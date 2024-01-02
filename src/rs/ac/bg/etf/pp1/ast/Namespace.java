@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 18:23:9
+// 2/0/2024 18:49:30
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -12,16 +12,13 @@ public class Namespace implements SyntaxNode {
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     private NamespaceName NamespaceName;
-    private AllDeclList AllDeclList;
-    private MethodDeclList MethodDeclList;
+    private ProgramBody ProgramBody;
 
-    public Namespace (NamespaceName NamespaceName, AllDeclList AllDeclList, MethodDeclList MethodDeclList) {
+    public Namespace (NamespaceName NamespaceName, ProgramBody ProgramBody) {
         this.NamespaceName=NamespaceName;
         if(NamespaceName!=null) NamespaceName.setParent(this);
-        this.AllDeclList=AllDeclList;
-        if(AllDeclList!=null) AllDeclList.setParent(this);
-        this.MethodDeclList=MethodDeclList;
-        if(MethodDeclList!=null) MethodDeclList.setParent(this);
+        this.ProgramBody=ProgramBody;
+        if(ProgramBody!=null) ProgramBody.setParent(this);
     }
 
     public NamespaceName getNamespaceName() {
@@ -32,20 +29,12 @@ public class Namespace implements SyntaxNode {
         this.NamespaceName=NamespaceName;
     }
 
-    public AllDeclList getAllDeclList() {
-        return AllDeclList;
+    public ProgramBody getProgramBody() {
+        return ProgramBody;
     }
 
-    public void setAllDeclList(AllDeclList AllDeclList) {
-        this.AllDeclList=AllDeclList;
-    }
-
-    public MethodDeclList getMethodDeclList() {
-        return MethodDeclList;
-    }
-
-    public void setMethodDeclList(MethodDeclList MethodDeclList) {
-        this.MethodDeclList=MethodDeclList;
+    public void setProgramBody(ProgramBody ProgramBody) {
+        this.ProgramBody=ProgramBody;
     }
 
     public SyntaxNode getParent() {
@@ -70,21 +59,18 @@ public class Namespace implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(NamespaceName!=null) NamespaceName.accept(visitor);
-        if(AllDeclList!=null) AllDeclList.accept(visitor);
-        if(MethodDeclList!=null) MethodDeclList.accept(visitor);
+        if(ProgramBody!=null) ProgramBody.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(NamespaceName!=null) NamespaceName.traverseTopDown(visitor);
-        if(AllDeclList!=null) AllDeclList.traverseTopDown(visitor);
-        if(MethodDeclList!=null) MethodDeclList.traverseTopDown(visitor);
+        if(ProgramBody!=null) ProgramBody.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(NamespaceName!=null) NamespaceName.traverseBottomUp(visitor);
-        if(AllDeclList!=null) AllDeclList.traverseBottomUp(visitor);
-        if(MethodDeclList!=null) MethodDeclList.traverseBottomUp(visitor);
+        if(ProgramBody!=null) ProgramBody.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -99,14 +85,8 @@ public class Namespace implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(AllDeclList!=null)
-            buffer.append(AllDeclList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(MethodDeclList!=null)
-            buffer.append(MethodDeclList.toString("  "+tab));
+        if(ProgramBody!=null)
+            buffer.append(ProgramBody.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
