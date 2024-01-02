@@ -16,12 +16,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	int varDeclCount = 0;
 	int constDeclCount = 0;
 	int classDeclCount = 0;
+	int namespaceDeclCount = 0;
+	List<String> namespaceNames = new ArrayList<String>();
 	List<String> classNames = new ArrayList<String>();
 	List<String> varNames = new ArrayList<String>();
 	boolean brackets = false;
 	int methodCount = 0;
 	Obj currentMethod = null;
 	Obj currentClass = null;
+	Obj currentNamespace = null;
 	String currentDesName = "nemaDesName";
 	boolean returnFound = false;
 	boolean errorDetected = false;
@@ -67,6 +70,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	}
 	
+	public String getTypeNameFun(Type t) {
+		if (t.getClass()==TypeOne.class)
+			return ((TypeOne)t).getTypeName().getTypeNameStr();
+		return ((TypeTwo)t).getTypeName().getTypeNameStr();
+	}
+	
+	public String getDesNameFun(Designator d) {
+		if (d.getClass()==DesignatorOne.class)
+			return ((DesignatorOne)d).getDesignatorName().getDesName();
+		return ((DesignatorTwo)d).getDesignatorName().getDesName();
+	}
+	
 	public void visit(VarDecl varDecl){
 		varDeclCount++;
 		varNames.add(varDecl.getVarName());
@@ -78,7 +93,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			array.setElementType(currentType.struct);
 			Tab.insert(Obj.Var, varDecl.getVarName(), array);
 		}else {
-			Obj typeNode = Tab.find(currentType.getTypeName());
+			Obj typeNode = Tab.find(getTypeNameFun(currentType));
 			if (typeNode!=Tab.noObj)
 				Tab.insert(Obj.Var, varDecl.getVarName(), typeNode.getType());
 		}
@@ -100,7 +115,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), array);
 		}else {
 			System.out.println("Promenljiva: " + varDeclBody.getVarBodyName());
-			Obj typeNode = Tab.find(currentType.getTypeName());
+			Obj typeNode = Tab.find(getTypeNameFun(currentType));
 			if (typeNode!=Tab.noObj)
 				Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), typeNode.getType());
 		}
@@ -128,7 +143,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	} 
 	
 	public void visit(ConstDecl constDecl){
-		if(currentType.getTypeName().equalsIgnoreCase(currentConst)) {
+		if(getTypeNameFun(currentType).equalsIgnoreCase(currentConst)) {
 			constDeclCount++;
 			
 			report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
@@ -161,7 +176,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ConstDeclBody constDeclBody){
-		if(currentType.getTypeName().equalsIgnoreCase(currentConst)) {
+		if(getTypeNameFun(currentType).equalsIgnoreCase(currentConst)) {
 			constDeclCount++;
 			report_info("Deklarisana konstanta "+ constDeclBody.getConstBodyName(), constDeclBody);
 			Obj constNode = Tab.insert(Obj.Con, constDeclBody.getConstBodyName(), currentType.struct);
@@ -204,14 +219,30 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Tab.openScope();
 	}
 	
+	public void visit(Namespace nmsp){
+		Tab.chainLocalSymbols(currentNamespace);
+		Tab.closeScope();
+		
+		currentNamespace = null;
+	}
+	
+	public void visit(NamespaceName nmspName) {
+		namespaceNames.add(nmspName.getNamespaceName());
+		namespaceDeclCount++;
+		
+		report_info("Deklarisan namespace "+ nmspName.getNamespaceName(), nmspName);
+		currentNamespace = Tab.insert(Struct.Class, nmspName.getNamespaceName(), Tab.noType);
+		Tab.openScope();
+	}
+	
 	public void visit(SingleExtendsType set) {
 		
 		for(int i = 0; i < classNames.size(); i++) {
-    		if(classNames.get(i).equals(set.getType().getTypeName())) {
+    		if(classNames.get(i).equals(getTypeNameFun(set.getType()))) {
     			return;
     		}
     	}
-		report_error("Semanticka greska na liniji " + set.getLine() + ": unutrašnja klasa " + set.getType().getTypeName() + " ne postoji!", null);
+		report_error("Semanticka greska na liniji " + set.getLine() + ": unutrašnja klasa " + getTypeNameFun(set.getType()) + " ne postoji!", null);
 
 	}
 	
@@ -241,28 +272,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(Type type) {
     	
     	for(int i = 0; i < classNames.size(); i++) {
-    		if(classNames.get(i).equals(type.getTypeName())) {
+    		if(classNames.get(i).equals(getTypeNameFun(type))) {
     			return;
     		}
     	}
     	    	
-    	if(!type.getTypeName().equals("bool") 
-    		&& !type.getTypeName().equals("char") 
-    		&& !type.getTypeName().equals("int"))
-				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + type.getTypeName() + " ne postoji!", null);
+    	if(!getTypeNameFun(type).equals("bool") 
+    		&& !getTypeNameFun(type).equals("char") 
+    		&& !getTypeNameFun(type).equals("int"))
+				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + getTypeNameFun(type) + " ne postoji!", null);
     	
-    	Obj typeNode = Tab.find(type.getTypeName());
+    	Obj typeNode = Tab.find(getTypeNameFun(type));
     	if(typeNode == Tab.noObj) {
     		
-    		if(!type.getTypeName().equalsIgnoreCase("bool"))
-    			report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", null);
+    		if(!getTypeNameFun(type).equalsIgnoreCase("bool"))
+    			report_error("Nije pronadjen tip " + getTypeNameFun(type) + " u tabeli simbola! ", null);
     		
     		type.struct = Tab.noType;
     	}else {
     		if(Obj.Type == typeNode.getKind()){
     			type.struct = typeNode.getType();
     		}else{
-    			report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip!", type);
+    			report_error("Greska: Ime " + getTypeNameFun(type) + " ne predstavlja tip!", type);
     			type.struct = Tab.noType;
     		}
     	}
@@ -302,7 +333,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(DesignatorStatementAssign dsa) {
     	
-    	String desName = dsa.getDesignator().getDesignatorName().getDesName();
+    	String desName = getDesNameFun(dsa.getDesignator());
     	boolean isClass = false;
     	for(int i = 0; i < classNames.size(); i++) {
     		if(classNames.get(i).equals(desName)) {
@@ -336,7 +367,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorStatementInc dsi) {
-    	String desName = dsi.getDesignator().getDesignatorName().getDesName();
+    	String desName = getDesNameFun(dsi.getDesignator());
     	Obj obj = Tab.find(desName);
     	if(obj.getType() == Tab.intType){
     		report_info("Obradjuje se inkrement nad integer-om: " + desName, dsi);
@@ -346,7 +377,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorStatementDec dsd) {
-    	String desName = dsd.getDesignator().getDesignatorName().getDesName();
+    	String desName = getDesNameFun(dsd.getDesignator());
     	Obj obj = Tab.find(desName);
     	if(obj.getType() == Tab.intType){
     		report_info("Obradjuje se dekrement nad integer-om: " + desName, dsd);
@@ -356,7 +387,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorStatementAct dsa) {
-    	String desName = dsa.getDesignator().getDesignatorName().getDesName();
+    	String desName = getDesNameFun(dsa.getDesignator());
     	Obj obj = Tab.find(desName);
     	if(obj.getKind() == Obj.Meth){
     		report_info("Obradjuje se funkcija: " + desName, dsa);
@@ -396,7 +427,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(StatementRead sre) {
-    	String desName = sre.getDesignator().getDesignatorName().getDesName();
+    	String desName = getDesNameFun(sre.getDesignator());
     	Obj obj = Tab.find(desName);
     	if(obj.getKind() == Obj.Var && obj != Tab.noObj) {
     		report_info("Čita se promenljiva: " + desName, sre);
@@ -446,8 +477,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(StatementFindAny sfa) {
-    	String des1 = sfa.getDesignator().getDesignatorName().getDesName();
-    	String des2 = sfa.getDesignator1().getDesignatorName().getDesName();
+    	String des1 = getDesNameFun(sfa.getDesignator());
+    	String des2 = getDesNameFun(sfa.getDesignator1());
     	Obj desObj1 = Tab.find(des1);
     	Obj desObj2 = Tab.find(des2);
     	
@@ -524,9 +555,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(Designator designator) {
-    	Obj obj = Tab.find(designator.getDesignatorName().getDesName());
+    	Obj obj = Tab.find(getDesNameFun(designator));
     	if(obj == Tab.noObj){
-			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getDesignatorName()+" nije deklarisano! ", null);
+			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
     	}
     	designator.obj = obj;
     }
@@ -576,19 +607,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         			report_error("Greska na liniji " + fda.getLine()+" : ime " + fdaObj.getName() + " ne moze se koristiti jer nema povratnu vrednost!", null);
         		}
     			report_info("Pronadjen poziv funkcije " + fdaObj.getName() + " na liniji " + fda.getLine(), null);
-    			fda.obj = new Obj(Obj.Meth, fda.getDesignator().getDesignatorName().getDesName(), Tab.intType, 0, 1);
+    			fda.obj = new Obj(Obj.Meth, getDesNameFun(fda.getDesignator()), Tab.intType, 0, 1);
         	}else{
     			report_error("Greska na liniji " + fda.getLine()+" : ime " + fdaObj.getName() + " nije funkcija!", null);
-    			fda.obj = new Obj(Obj.Meth, fda.getDesignator().getDesignatorName().getDesName(), Tab.noType, 0, 1);
+    			fda.obj = new Obj(Obj.Meth, getDesNameFun(fda.getDesignator()), Tab.noType, 0, 1);
 
         	}
     	}else {
     		if(Obj.Var == fdaObj.getKind()) {
-        		fda.obj = new Obj(fdaObj.getKind(), fda.getDesignator().getDesignatorName().getDesName(), fdaObj.getType(), fdaObj.getAdr(), fdaObj.getLevel());
+        		fda.obj = new Obj(fdaObj.getKind(), getDesNameFun(fda.getDesignator()), fdaObj.getType(), fdaObj.getAdr(), fdaObj.getLevel());
     		} else if(Struct.Class == fdaObj.getKind()) {
-    			fda.obj = new Obj(Struct.Class, fda.getDesignator().getDesignatorName().getDesName(), Tab.noType, 0, 1);
+    			fda.obj = new Obj(Struct.Class, getDesNameFun(fda.getDesignator()), Tab.noType, 0, 1);
 	    	} else if(0 == fdaObj.getKind())
-				fda.obj = new Obj(0, fda.getDesignator().getDesignatorName().getDesName(), fdaObj.getType(), fdaObj.getAdr(), fdaObj.getLevel());
+				fda.obj = new Obj(0, getDesNameFun(fda.getDesignator()), fdaObj.getType(), fdaObj.getAdr(), fdaObj.getLevel());
 	    	}
     	isActPars = false;
     }
@@ -599,7 +630,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(FactorNew fn) {
     	
-    	String name = fn.getType().getTypeName();
+    	String name = getTypeNameFun(fn.getType());
     	
     	if(!(name.equals("int") || name.equals("char") || name.equals("bool")))
     		report_error("Sledeće ime nije tip: " + name, null);

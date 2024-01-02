@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 18:49:30
+// 2/0/2024 21:45:0
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -38,6 +38,7 @@ public interface Visitor {
     public void visit(Addop Addop);
     public void visit(StatementList StatementList);
     public void visit(ExprMP ExprMP);
+    public void visit(Type Type);
     public void visit(ClassDeclBody ClassDeclBody);
     public void visit(DesignatorBodyList DesignatorBodyList);
     public void visit(ExprBodyList ExprBodyList);
@@ -48,6 +49,7 @@ public interface Visitor {
     public void visit(ExtendsTypeListB ExtendsTypeListB);
     public void visit(ActPars ActPars);
     public void visit(ActParsBody ActParsBody);
+    public void visit(Designator Designator);
     public void visit(VarDeclList VarDeclList);
     public void visit(CondFact CondFact);
     public void visit(ActParsListB ActParsListB);
@@ -107,7 +109,8 @@ public interface Visitor {
     public void visit(NoDesignatorBodyList NoDesignatorBodyList);
     public void visit(AllDesignatorBodyList AllDesignatorBodyList);
     public void visit(DesignatorName DesignatorName);
-    public void visit(Designator Designator);
+    public void visit(DesignatorOne DesignatorOne);
+    public void visit(DesignatorTwo DesignatorTwo);
     public void visit(SingleExprListB2 SingleExprListB2);
     public void visit(AllExprListB2 AllExprListB2);
     public void visit(SingleDesignatorListB SingleDesignatorListB);
@@ -173,7 +176,9 @@ public interface Visitor {
     public void visit(AllConstBool AllConstBool);
     public void visit(AllConstChar AllConstChar);
     public void visit(NamespaceDots NamespaceDots);
-    public void visit(Type Type);
+    public void visit(TypeName TypeName);
+    public void visit(TypeOne TypeOne);
+    public void visit(TypeTwo TypeTwo);
     public void visit(ConstDeclTypeName ConstDeclTypeName);
     public void visit(ConstDecl ConstDecl);
     public void visit(ClassDeclarations ClassDeclarations);

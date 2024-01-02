@@ -112,7 +112,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots, TypeName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -149,7 +149,12 @@ ConstDecl ::= (ConstDecl) CONST ConstDeclTypeName:c IDENT:constName EQUAL AllCon
 
 ConstDeclTypeName ::= (ConstDeclTypeName) Type:constType {: RESULT=new ConstDeclTypeName(constType); RESULT.setLine(constTypeleft); :};
 
-Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
+Type ::= (TypeTwo) NamespaceDots:N1 TypeName:t {: RESULT=new TypeTwo(N1, t); RESULT.setLine(N1left); :} 
+		|
+		(TypeOne) TypeName:t {: RESULT=new TypeOne(t); RESULT.setLine(tleft); :}
+		;
+		
+TypeName ::= (TypeName) IDENT:typeNameStr {: RESULT=new TypeName(typeNameStr); RESULT.setLine(typeNameStrleft); :};
 
 NamespaceDots ::= (NamespaceDots) IDENT:nsName TWODOTS TWODOTS {: RESULT=new NamespaceDots(nsName); RESULT.setLine(nsNameleft); :};
 
@@ -296,8 +301,11 @@ ExprListB2 ::= (AllExprListB2) ExprListB2:E1 COMMA Expr:E2 {: RESULT=new AllExpr
 		     (SingleExprListB2) Expr:E1 {: RESULT=new SingleExprListB2(E1); RESULT.setLine(E1left); :}
 			 ;
 
-Designator ::= (Designator) DesignatorName:designatorName DesignatorBodyList:D1 {: RESULT=new Designator(designatorName, D1); RESULT.setLine(designatorNameleft); :};
-
+Designator ::= (DesignatorTwo) NamespaceDots:N1 DesignatorName:designatorName DesignatorBodyList:D2 {: RESULT=new DesignatorTwo(N1, designatorName, D2); RESULT.setLine(N1left); :}
+			|
+			(DesignatorOne) DesignatorName:designatorName DesignatorBodyList:D1 {: RESULT=new DesignatorOne(designatorName, D1); RESULT.setLine(designatorNameleft); :}
+			;
+			
 DesignatorName ::= (DesignatorName) IDENT:desName {: RESULT=new DesignatorName(desName); RESULT.setLine(desNameleft); :};
 
 DesignatorBodyList ::= (AllDesignatorBodyList) DesignatorBodyList:D1 DesignatorBody:D2 {: RESULT=new AllDesignatorBodyList(D1, D2); RESULT.setLine(D1left); :}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 18:49:30
+// 2/0/2024 21:45:0
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -38,6 +38,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Addop Addop) { }
     public void visit(StatementList StatementList) { }
     public void visit(ExprMP ExprMP) { }
+    public void visit(Type Type) { }
     public void visit(ClassDeclBody ClassDeclBody) { }
     public void visit(DesignatorBodyList DesignatorBodyList) { }
     public void visit(ExprBodyList ExprBodyList) { }
@@ -48,6 +49,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ExtendsTypeListB ExtendsTypeListB) { }
     public void visit(ActPars ActPars) { }
     public void visit(ActParsBody ActParsBody) { }
+    public void visit(Designator Designator) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(CondFact CondFact) { }
     public void visit(ActParsListB ActParsListB) { }
@@ -107,7 +109,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoDesignatorBodyList NoDesignatorBodyList) { visit(); }
     public void visit(AllDesignatorBodyList AllDesignatorBodyList) { visit(); }
     public void visit(DesignatorName DesignatorName) { visit(); }
-    public void visit(Designator Designator) { visit(); }
+    public void visit(DesignatorOne DesignatorOne) { visit(); }
+    public void visit(DesignatorTwo DesignatorTwo) { visit(); }
     public void visit(SingleExprListB2 SingleExprListB2) { visit(); }
     public void visit(AllExprListB2 AllExprListB2) { visit(); }
     public void visit(SingleDesignatorListB SingleDesignatorListB) { visit(); }
@@ -173,7 +176,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AllConstBool AllConstBool) { visit(); }
     public void visit(AllConstChar AllConstChar) { visit(); }
     public void visit(NamespaceDots NamespaceDots) { visit(); }
-    public void visit(Type Type) { visit(); }
+    public void visit(TypeName TypeName) { visit(); }
+    public void visit(TypeOne TypeOne) { visit(); }
+    public void visit(TypeTwo TypeTwo) { visit(); }
     public void visit(ConstDeclTypeName ConstDeclTypeName) { visit(); }
     public void visit(ConstDecl ConstDecl) { visit(); }
     public void visit(ClassDeclarations ClassDeclarations) { visit(); }

@@ -84,7 +84,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots, TypeName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -121,7 +121,12 @@ ConstDecl ::= (ConstDecl) CONST ConstDeclTypeName:c IDENT:constName EQUAL AllCon
 
 ConstDeclTypeName ::= (ConstDeclTypeName) Type:constType;
 
-Type ::= (Type) IDENT:typeName;
+Type ::= (TypeTwo) NamespaceDots TypeName:t 
+		|
+		(TypeOne) TypeName:t
+		;
+		
+TypeName ::= (TypeName) IDENT:typeNameStr;
 
 NamespaceDots ::= (NamespaceDots) IDENT:nsName TWODOTS TWODOTS;
 
@@ -268,8 +273,11 @@ ExprListB2 ::= (AllExprListB2) ExprListB2 COMMA Expr
 		     (SingleExprListB2) Expr
 			 ;
 
-Designator ::= (Designator) DesignatorName:designatorName DesignatorBodyList;
-
+Designator ::= (DesignatorTwo) NamespaceDots DesignatorName:designatorName DesignatorBodyList
+			|
+			(DesignatorOne) DesignatorName:designatorName DesignatorBodyList
+			;
+			
 DesignatorName ::= (DesignatorName) IDENT:desName;
 
 DesignatorBodyList ::= (AllDesignatorBodyList) DesignatorBodyList DesignatorBody
