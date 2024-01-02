@@ -1,5 +1,7 @@
 program MJProgram
 
+namespace
+
 const bool nesto = false, drugo = true;
 const int savo = 30, pika = 3;
 const char kako = 'c', sika = 'e';
@@ -43,10 +45,10 @@ class OnaMoja extends NekaTamo {
 			.foreach(in => break;);
 			//greskaOvde = .findAny(1);
 			//greskaIOvde = .findAndReplace(1, ime => 1);
-			imeFunkcije();
+			//imeFunkcije();
 			//return -9 / sabo[1];
 			return 3;
-			print(imeFunkcije());
+			//print(imeFunkcije());
 		}
 		
 		char bananaFunkcija(bool sira){

@@ -57,6 +57,7 @@ terminal PLUS, MINUS, MUL, DIV, MOD, EQV;
 terminal NOEQV, MORE, MOREEQV, LESS, LESSEQV, AND, OR, EQUAL; 
 terminal INC, DEC, SEMI, TWODOTS, COMMA, DOT, LPAREN, RPAREN;
 terminal LBRACKET, RBRACKET, LBRACE, RBRACE, IMPLEOF;
+terminal STATIC, NAMESPACE, FOR, IMPL;
 
 
 terminal String IDENT;
@@ -83,12 +84,15 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
 precedence left ELSE;
 
-Program ::= (Program) PROG ProgName:p AllDeclList LBRACE MethodDeclList RBRACE;
+Program ::= (Program) PROG ProgName:p NamespaceList AllDeclList LBRACE MethodDeclList RBRACE;
+
+NamespaceList ::= (NamespaceList) NAMESPACE;
 
 ProgName ::= (ProgName) IDENT:progName;
 

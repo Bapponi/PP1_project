@@ -38,12 +38,14 @@ import java_cup.runtime.Symbol;
 "\f" 	{ }
 
 "findAndReplace" 	{ return new_symbol(sym.FINDANDREPLACE, yytext()); }
+"namespace"			{ return new_symbol(sym.NAMESPACE, yytext()); }
 "continue" 			{ return new_symbol(sym.CONTINUE, yytext()); }
 "findAny" 			{ return new_symbol(sym.FINDANY, yytext()); }
 "foreach" 			{ return new_symbol(sym.FOREACH, yytext()); }
-"program"   		{ return new_symbol(sym.PROG, yytext());}
+"program"   		{ return new_symbol(sym.PROG, yytext()); }
 "extends" 			{ return new_symbol(sym.EXTENDS, yytext()); }
 "return" 			{ return new_symbol(sym.RETURN, yytext()); }
+"static" 			{ return new_symbol(sym.STATIC, yytext()); }
 "print" 			{ return new_symbol(sym.PRINT, yytext()); }
 "break" 			{ return new_symbol(sym.BREAK, yytext()); }
 "class" 			{ return new_symbol(sym.CLASS, yytext()); }
@@ -52,6 +54,7 @@ import java_cup.runtime.Symbol;
 "else" 				{ return new_symbol(sym.ELSE, yytext()); }
 "read" 				{ return new_symbol(sym.READ, yytext()); }
 "void" 				{ return new_symbol(sym.VOID, yytext()); }
+"for" 				{ return new_symbol(sym.FOR, yytext()); }
 "new" 				{ return new_symbol(sym.NEW, yytext()); }
 "if" 				{ return new_symbol(sym.IF, yytext()); }
 
