@@ -1,18 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 17:16:14
+// 2/0/2024 18:23:9
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NamespaceList implements SyntaxNode {
+public abstract class NamespaceList implements SyntaxNode {
 
     private SyntaxNode parent;
-    private int line;
-    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
-    public NamespaceList () {
-    }
+    private int line;
+
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     public SyntaxNode getParent() {
         return parent;
@@ -30,28 +29,11 @@ public class NamespaceList implements SyntaxNode {
         this.line=line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void childrenAccept(Visitor visitor) {
-    }
-
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("NamespaceList(\n");
-
-        buffer.append(tab);
-        buffer.append(") [NamespaceList]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }

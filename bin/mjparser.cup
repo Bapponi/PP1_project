@@ -84,7 +84,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -92,7 +92,14 @@ precedence left ELSE;
 
 Program ::= (Program) PROG ProgName:p NamespaceList AllDeclList LBRACE MethodDeclList RBRACE;
 
-NamespaceList ::= (NamespaceList) NAMESPACE;
+NamespaceList ::= (AllNamespaceList) NamespaceList Namespace
+			  |
+			  (NoNamespaceList) /* epsilon */
+			  ;
+			  
+Namespace ::= (Namespace) NAMESPACE NamespaceName:n LBRACE AllDeclList LBRACE MethodDeclList RBRACE RBRACE;
+
+NamespaceName ::= (NamespaceName) IDENT:namespaceName;
 
 ProgName ::= (ProgName) IDENT:progName;
 

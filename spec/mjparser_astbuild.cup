@@ -112,7 +112,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, While, Foreach, Char,
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName, CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -120,7 +120,14 @@ precedence left ELSE;
 
 Program ::= (Program) PROG ProgName:p NamespaceList:N1 AllDeclList:A2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(p, N1, A2, M3); RESULT.setLine(pleft); :};
 
-NamespaceList ::= (NamespaceList) NAMESPACE {: RESULT=new NamespaceList(); :};
+NamespaceList ::= (AllNamespaceList) NamespaceList:N1 Namespace:N2 {: RESULT=new AllNamespaceList(N1, N2); RESULT.setLine(N1left); :}
+			  |
+			  (NoNamespaceList) {: RESULT=new NoNamespaceList(); :} /* epsilon */
+			  ;
+			  
+Namespace ::= (Namespace) NAMESPACE NamespaceName:n LBRACE AllDeclList:A1 LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new Namespace(n, A1, M2); RESULT.setLine(nleft); :};
+
+NamespaceName ::= (NamespaceName) IDENT:namespaceName {: RESULT=new NamespaceName(namespaceName); RESULT.setLine(namespaceNameleft); :};
 
 ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
 

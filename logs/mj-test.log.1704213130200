@@ -1,0 +1,314 @@
+INFO  17:29:52,272 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\MJCompilerProject\test\test301.mj
+INFO  17:29:52,304 - #5 program
+INFO  17:29:52,304 - #51 test301
+INFO  17:29:52,304 - #48 namespace
+INFO  17:29:52,305 - #51 Konstante
+INFO  17:29:52,305 - #51 int
+INFO  17:29:52,306 - #51 a
+INFO  17:29:52,307 - #36 ;
+INFO  17:29:52,308 - #44 {
+INFO  17:29:52,309 - #16 void
+INFO  17:29:52,309 - #51 main
+INFO  17:29:52,309 - #40 (
+INFO  17:29:52,310 - #41 )
+INFO  17:29:52,310 - #51 int
+INFO  17:29:52,311 - #51 bodovi
+INFO  17:29:52,311 - #36 ;
+INFO  17:29:52,311 - #51 bool
+INFO  17:29:52,311 - #51 bt
+INFO  17:29:52,311 - #36 ;
+INFO  17:29:52,311 - #44 {
+INFO  17:29:52,317 - #51 bodovi
+INFO  17:29:52,317 - #33 =
+INFO  17:29:52,318 - #52 0
+INFO  17:29:52,318 - #36 ;
+INFO  17:29:52,319 - #51 bodovi
+INFO  17:29:52,320 - #34 ++
+INFO  17:29:52,320 - #36 ;
+INFO  17:29:52,320 - #51 bodovi
+INFO  17:29:52,320 - #35 --
+INFO  17:29:52,320 - #36 ;
+INFO  17:29:52,320 - #13 print
+INFO  17:29:52,320 - #40 (
+INFO  17:29:52,320 - #51 bodovi
+INFO  17:29:52,320 - #41 )
+INFO  17:29:52,321 - #36 ;
+INFO  17:29:52,321 - #13 print
+INFO  17:29:52,321 - #40 (
+INFO  17:29:52,321 - #51 bodovi
+INFO  17:29:52,321 - #41 )
+INFO  17:29:52,321 - #36 ;
+INFO  17:29:52,321 - #51 a
+INFO  17:29:52,321 - #33 =
+INFO  17:29:52,321 - #52 1
+INFO  17:29:52,321 - #36 ;
+INFO  17:29:52,321 - #14 read
+INFO  17:29:52,321 - #40 (
+INFO  17:29:52,321 - #51 bodovi
+INFO  17:29:52,321 - #41 )
+INFO  17:29:52,321 - #36 ;
+INFO  17:29:52,321 - #13 print
+INFO  17:29:52,321 - #40 (
+INFO  17:29:52,321 - #51 bodovi
+INFO  17:29:52,322 - #41 )
+INFO  17:29:52,322 - #36 ;
+INFO  17:29:52,322 - #45 }
+INFO  17:29:52,322 - #45 }
+INFO  17:29:52,325 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  AllNamespaceList(
+    NoNamespaceList(
+    ) [NoNamespaceList]
+    Namespace(
+      NamespaceName(
+       Konstante
+      ) [NamespaceName]
+    ) [Namespace]
+  ) [AllNamespaceList]
+  AllDeclarationsList(
+    NoAllDecl(
+    ) [NoAllDecl]
+    VarDeclarations(
+      VarDecl(
+        VarDeclTypeName(
+          Type(
+           int
+          ) [Type]
+        ) [VarDeclTypeName]
+       a
+        NoBrackets(
+        ) [NoBrackets]
+        NoVarDeclBodyList(
+        ) [NoVarDeclBodyList]
+      ) [VarDecl]
+    ) [VarDeclarations]
+  ) [AllDeclarationsList]
+  AllMethodDeclList(
+    NoMethodDeclListList(
+    ) [NoMethodDeclListList]
+    MethodDecl(
+      MethodTypeName(
+        VoidPart(
+        ) [VoidPart]
+       main
+      ) [MethodTypeName]
+      NoFormParsListB(
+      ) [NoFormParsListB]
+      AllVarDeclList(
+        AllVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclTypeName]
+           bodovi
+            NoBrackets(
+            ) [NoBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        VarDecl(
+          VarDeclTypeName(
+            Type(
+             bool
+            ) [Type]
+          ) [VarDeclTypeName]
+         bt
+          NoBrackets(
+          ) [NoBrackets]
+          NoVarDeclBodyList(
+          ) [NoVarDeclBodyList]
+        ) [VarDecl]
+      ) [AllVarDeclList]
+      AllStatementList(
+        AllStatementList(
+          AllStatementList(
+            AllStatementList(
+              AllStatementList(
+                AllStatementList(
+                  AllStatementList(
+                    AllStatementList(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      StatementDesign(
+                        DesignatorStatementAssign(
+                          Designator(
+                            DesignatorName(
+                             bodovi
+                            ) [DesignatorName]
+                            NoDesignatorBodyList(
+                            ) [NoDesignatorBodyList]
+                          ) [Designator]
+                          ExprPlus(
+                            Term(
+                              FactorNum(
+                               0
+                              ) [FactorNum]
+                              NoTermBodyList(
+                              ) [NoTermBodyList]
+                            ) [Term]
+                            NoExprBodyList(
+                            ) [NoExprBodyList]
+                          ) [ExprPlus]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesign]
+                    ) [AllStatementList]
+                    StatementDesign(
+                      DesignatorStatementInc(
+                        Designator(
+                          DesignatorName(
+                           bodovi
+                          ) [DesignatorName]
+                          NoDesignatorBodyList(
+                          ) [NoDesignatorBodyList]
+                        ) [Designator]
+                      ) [DesignatorStatementInc]
+                    ) [StatementDesign]
+                  ) [AllStatementList]
+                  StatementDesign(
+                    DesignatorStatementDec(
+                      Designator(
+                        DesignatorName(
+                         bodovi
+                        ) [DesignatorName]
+                        NoDesignatorBodyList(
+                        ) [NoDesignatorBodyList]
+                      ) [Designator]
+                    ) [DesignatorStatementDec]
+                  ) [StatementDesign]
+                ) [AllStatementList]
+                StatementPrint(
+                  ExprPlus(
+                    Term(
+                      FactorDesignatorAll(
+                        Designator(
+                          DesignatorName(
+                           bodovi
+                          ) [DesignatorName]
+                          NoDesignatorBodyList(
+                          ) [NoDesignatorBodyList]
+                        ) [Designator]
+                        NoFactorDesignatorBodyListB(
+                        ) [NoFactorDesignatorBodyListB]
+                      ) [FactorDesignatorAll]
+                      NoTermBodyList(
+                      ) [NoTermBodyList]
+                    ) [Term]
+                    NoExprBodyList(
+                    ) [NoExprBodyList]
+                  ) [ExprPlus]
+                  NoNumConstListB(
+                  ) [NoNumConstListB]
+                ) [StatementPrint]
+              ) [AllStatementList]
+              StatementPrint(
+                ExprPlus(
+                  Term(
+                    FactorDesignatorAll(
+                      Designator(
+                        DesignatorName(
+                         bodovi
+                        ) [DesignatorName]
+                        NoDesignatorBodyList(
+                        ) [NoDesignatorBodyList]
+                      ) [Designator]
+                      NoFactorDesignatorBodyListB(
+                      ) [NoFactorDesignatorBodyListB]
+                    ) [FactorDesignatorAll]
+                    NoTermBodyList(
+                    ) [NoTermBodyList]
+                  ) [Term]
+                  NoExprBodyList(
+                  ) [NoExprBodyList]
+                ) [ExprPlus]
+                NoNumConstListB(
+                ) [NoNumConstListB]
+              ) [StatementPrint]
+            ) [AllStatementList]
+            StatementDesign(
+              DesignatorStatementAssign(
+                Designator(
+                  DesignatorName(
+                   a
+                  ) [DesignatorName]
+                  NoDesignatorBodyList(
+                  ) [NoDesignatorBodyList]
+                ) [Designator]
+                ExprPlus(
+                  Term(
+                    FactorNum(
+                     1
+                    ) [FactorNum]
+                    NoTermBodyList(
+                    ) [NoTermBodyList]
+                  ) [Term]
+                  NoExprBodyList(
+                  ) [NoExprBodyList]
+                ) [ExprPlus]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesign]
+          ) [AllStatementList]
+          StatementRead(
+            Designator(
+              DesignatorName(
+               bodovi
+              ) [DesignatorName]
+              NoDesignatorBodyList(
+              ) [NoDesignatorBodyList]
+            ) [Designator]
+          ) [StatementRead]
+        ) [AllStatementList]
+        StatementPrint(
+          ExprPlus(
+            Term(
+              FactorDesignatorAll(
+                Designator(
+                  DesignatorName(
+                   bodovi
+                  ) [DesignatorName]
+                  NoDesignatorBodyList(
+                  ) [NoDesignatorBodyList]
+                ) [Designator]
+                NoFactorDesignatorBodyListB(
+                ) [NoFactorDesignatorBodyListB]
+              ) [FactorDesignatorAll]
+              NoTermBodyList(
+              ) [NoTermBodyList]
+            ) [Term]
+            NoExprBodyList(
+            ) [NoExprBodyList]
+          ) [ExprPlus]
+          NoNumConstListB(
+          ) [NoNumConstListB]
+        ) [StatementPrint]
+      ) [AllStatementList]
+    ) [MethodDecl]
+  ) [AllMethodDeclList]
+) [Program]
+INFO  17:29:52,325 - ===================================
+INFO  17:29:52,329 - Deklarisana promenljiva a na liniji 21
+INFO  17:29:52,329 - Obradjuje se funkcija main na liniji 24
+INFO  17:29:52,329 - Deklarisana promenljiva bodovi na liniji 25
+INFO  17:29:52,329 - Deklarisana promenljiva bt na liniji 26
+INFO  17:29:52,329 - Designator je promenljiva ili klasa: bodovi na liniji 28
+INFO  17:29:52,329 - Expr je istog tipa kao i designator.  na liniji 28
+INFO  17:29:52,329 - Obradjuje se inkrement nad integer-om: bodovi na liniji 29
+INFO  17:29:52,329 - Obradjuje se dekrement nad integer-om: bodovi na liniji 32
+INFO  17:29:52,330 - Expr je tipa int, char ili bool.  na liniji 33
+INFO  17:29:52,330 - Expr je tipa int, char ili bool.  na liniji 40
+INFO  17:29:52,330 - Designator je promenljiva ili klasa: a na liniji 51
+INFO  17:29:52,330 - Expr je istog tipa kao i designator.  na liniji 51
+INFO  17:29:52,330 - Čita se promenljiva: bodovi na liniji 52
+INFO  17:29:52,330 - Expr je tipa int, char ili bool.  na liniji 54
+INFO  17:29:52,330 -  Broj poziva print funkcije = 3
+INFO  17:29:52,330 -  Deklarisanih promenljivih ima = 3
+INFO  17:29:52,330 -  U programu ima 0 konstanti
+INFO  17:29:52,330 -  U programu ima 0 klasa
+INFO  17:29:52,330 -  Deklarisanih metoda ima = 1
+INFO  17:29:52,334 - Parsiranje uspesno zavrseno!
