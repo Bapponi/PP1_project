@@ -26,6 +26,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Obj currentClass = null;
 	Obj currentNamespace = null;
 	String currentNamespaceName = "";
+	String currentNamespaceDots = "";
 	String currentDesName = "nemaDesName";
 	boolean returnFound = false;
 	boolean errorDetected = false;
@@ -254,9 +255,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(Namespace nmsp){
-//		Tab.chainLocalSymbols(currentNamespace);
-//		Tab.closeScope();
-		
 		currentNamespace = null;
 		currentNamespaceName = "";
 	}
@@ -268,8 +266,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		currentNamespaceName = nmspName.getNamespaceName();
 		
 		report_info("Deklarisan namespace "+ nmspName.getNamespaceName(), nmspName);
-//		currentNamespace = Tab.insert(Struct.Class, nmspName.getNamespaceName(), Tab.noType);
-//		Tab.openScope();
+	}
+	
+	public void visit(NamespaceDots nmspd) {
+		currentNamespaceDots = nmspd.getNsName() + "::";
 	}
 	
 	public void visit(SingleExtendsType set) {
@@ -305,37 +305,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	Tab.chainLocalSymbols(program.getProgName().obj);
     	Tab.closeScope();
     }
-    
-    public void visit(Type type) {
-    	
-    	for(int i = 0; i < classNames.size(); i++) {
-    		if(classNames.get(i).equals(getTypeNameFun(type))) {
-    			return;
-    		}
-    	}
-    	    	
-    	if(!getTypeNameFun(type).equals("bool") 
-    		&& !getTypeNameFun(type).equals("char") 
-    		&& !getTypeNameFun(type).equals("int"))
-				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + getTypeNameFun(type) + " ne postoji!", null);
-    	
-    	Obj typeNode = Tab.find(getTypeNameFun(type));
-    	if(typeNode == Tab.noObj) {
-    		
-    		if(!getTypeNameFun(type).equalsIgnoreCase("bool"))
-    			report_error("Nije pronadjen tip " + getTypeNameFun(type) + " u tabeli simbola! ", null);
-    		
-    		type.struct = Tab.noType;
-    	}else {
-    		if(Obj.Type == typeNode.getKind()){
-    			type.struct = typeNode.getType();
-    		}else{
-    			report_error("Greska: Ime " + getTypeNameFun(type) + " ne predstavlja tip!", type);
-    			type.struct = Tab.noType;
-    		}
-    	}
-    }
-    
+        
     public void visit(TypeOne type) {
     	
     	for(int i = 0; i < classNames.size(); i++) {
@@ -365,7 +335,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		}
     	}
     }
-
+    
     public void visit(TypeTwo type) {
 	
 		for(int i = 0; i < classNames.size(); i++) {
@@ -373,27 +343,30 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				return;
 			}
 		}
-		    	
-		if(!getTypeNameFun(type).equals("bool") 
-			&& !getTypeNameFun(type).equals("char") 
-			&& !getTypeNameFun(type).equals("int"))
-				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + getTypeNameFun(type) + " ne postoji!", null);
 		
-		Obj typeNode = Tab.find(getTypeNameFun(type));
+		String typeName = currentNamespaceDots + getTypeNameFun(type);
+		    	
+		if(!typeName.equals("bool") 
+			&& !typeName.equals("char") 
+			&& !typeName.equals("int"))
+				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + typeName + " ne postoji!", null);
+		
+		Obj typeNode = Tab.find(typeName);
 		if(typeNode == Tab.noObj) {
 			
-			if(!getTypeNameFun(type).equalsIgnoreCase("bool"))
-				report_error("Nije pronadjen tip " + getTypeNameFun(type) + " u tabeli simbola! ", null);
+			if(!typeName.equalsIgnoreCase("bool"))
+				report_error("Nije pronadjen tip " + typeName + " u tabeli simbola! ", null);
 			
 			type.struct = Tab.noType;
 		}else {
 			if(Obj.Type == typeNode.getKind()){
 				type.struct = typeNode.getType();
 			}else{
-				report_error("Greska: Ime " + getTypeNameFun(type) + " ne predstavlja tip!", type);
+				report_error("Greska: Ime " + typeName + " ne predstavlja tip!", type);
 				type.struct = Tab.noType;
 			}
 		}
+//		currentNamespaceDots = "";
 	}
     
     public void visit(MethodTypeName methodTypeName){
@@ -430,7 +403,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(DesignatorStatementAssign dsa) {
     	
-    	String desName = getDesNameFun(dsa.getDesignator());
+    	System.out.println("Current NamespaceDots: " + currentNamespaceDots);
+    	String desName = currentNamespaceDots + getDesNameFun(dsa.getDesignator());
+    	System.out.println("Des name: " + desName);
     	boolean isClass = false;
     	for(int i = 0; i < classNames.size(); i++) {
     		if(classNames.get(i).equals(desName)) {
@@ -650,15 +625,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}else
     		report_error("Greska na liniji " + eb.getLine() + ": " + "term: " + eb.getTerm().getFactor().obj.getName() + " nije int tipa prilikom addop-a!", null);
     }
-    
-    public void visit(Designator designator) {
-    	Obj obj = Tab.find(getDesNameFun(designator));
-    	if(obj == Tab.noObj){
-			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
-    	}
-    	designator.obj = obj;
-    }
-    
+        
     public void visit(DesignatorOne designator) {
     	Obj obj = Tab.find(getDesNameFun(designator));
     	if(obj == Tab.noObj){
@@ -666,18 +633,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     	designator.obj = obj;
     }
-    
+        
     public void visit(DesignatorTwo designator) {
-    	Obj obj = Tab.find(getDesNameFun(designator));
+    	String desName = currentNamespaceDots + getDesNameFun(designator);
+    	Obj obj = Tab.find(desName);
     	if(obj == Tab.noObj){
-			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
+			report_error("Greska na liniji " + designator.getLine()+ " : ime " + desName + " nije deklarisano! ", null);
     	}
     	designator.obj = obj;
+//    	currentNamespaceDots = "";
     }
     
-    public void visit(DesignatorName dn) {
-    	currentDesName = dn.getDesName();
-    	
+    public void visit(DesignatorName dn) { //ovde moze potencijalno da bude problem
+    	currentDesName = currentNamespaceDots + dn.getDesName();	
     }
     
     public void visit(DesignatorBody dbt) {
