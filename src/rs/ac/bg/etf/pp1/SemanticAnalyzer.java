@@ -25,6 +25,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Obj currentMethod = null;
 	Obj currentClass = null;
 	Obj currentNamespace = null;
+	String currentNamespaceName = "";
 	String currentDesName = "nemaDesName";
 	boolean returnFound = false;
 	boolean errorDetected = false;
@@ -91,11 +92,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(brackets) {
 			Struct array = new Struct(Struct.Array);
 			array.setElementType(currentType.struct);
-			Tab.insert(Obj.Var, varDecl.getVarName(), array);
+			if(currentNamespaceName.equals("")) {
+				Tab.insert(Obj.Var, varDecl.getVarName(), array);
+			}else {
+				String name = currentNamespaceName + "::" + varDecl.getVarName();
+				Tab.insert(Obj.Var, name, array);
+			}
 		}else {
 			Obj typeNode = Tab.find(getTypeNameFun(currentType));
 			if (typeNode!=Tab.noObj)
-				Tab.insert(Obj.Var, varDecl.getVarName(), typeNode.getType());
+				if(currentNamespaceName.equals("")) {
+					Tab.insert(Obj.Var, varDecl.getVarName(), typeNode.getType());
+				}else {
+					String name = currentNamespaceName + "::" + varDecl.getVarName();
+					Tab.insert(Obj.Var, name, typeNode.getType());
+				}
 		}
 	}
 	
@@ -112,12 +123,23 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			System.out.println("Niz: " + varDeclBody.getVarBodyName());
 			Struct array = new Struct(Struct.Array);
 			array.setElementType(currentType.struct);
-			Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), array);
+			if(currentNamespaceName.equals("")) {
+				Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), array);
+			}else {
+				String name = currentNamespaceName + "::" + varDeclBody.getVarBodyName();
+				Tab.insert(Obj.Var, name, array);
+			}
 		}else {
 			System.out.println("Promenljiva: " + varDeclBody.getVarBodyName());
 			Obj typeNode = Tab.find(getTypeNameFun(currentType));
-			if (typeNode!=Tab.noObj)
-				Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), typeNode.getType());
+			if (typeNode!=Tab.noObj) {
+				if(currentNamespaceName.equals("")) {
+					Tab.insert(Obj.Var, varDeclBody.getVarBodyName(), typeNode.getType());
+				}else {
+					String name = currentNamespaceName + "::" + varDeclBody.getVarBodyName();
+					Tab.insert(Obj.Var, name, typeNode.getType());
+				}
+			}
 		}
 		
 	}
@@ -147,7 +169,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			constDeclCount++;
 			
 			report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-			Obj constNode = Tab.insert(Obj.Con, constDecl.getConstName(), currentType.struct);
+			Obj constNode = null;
+			if(currentNamespaceName.equals("")) {
+				constNode = Tab.insert(Obj.Var, constDecl.getConstName(), currentType.struct);
+			}else {
+				String name = currentNamespaceName + "::" + constDecl.getConstName();
+				constNode = Tab.insert(Obj.Var, name, currentType.struct);
+			}
 			
 			if(currentConst == "int") {
 				int intN = ((AllConstNum)constDecl.getAllConst()).getNum().getN1();
@@ -179,7 +207,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(getTypeNameFun(currentType).equalsIgnoreCase(currentConst)) {
 			constDeclCount++;
 			report_info("Deklarisana konstanta "+ constDeclBody.getConstBodyName(), constDeclBody);
-			Obj constNode = Tab.insert(Obj.Con, constDeclBody.getConstBodyName(), currentType.struct);
+			Obj constNode = null;
+			if(currentNamespaceName.equals("")) {
+				constNode = Tab.insert(Obj.Var, constDeclBody.getConstBodyName(), currentType.struct);
+			}else {
+				String name = currentNamespaceName + "::" + constDeclBody.getConstBodyName();
+				constNode = Tab.insert(Obj.Var, name, currentType.struct);
+			}
 			
 			if(currentConst == "int") {
 				int intN = ((AllConstNum)constDeclBody.getAllConst()).getNum().getN1();
@@ -220,19 +254,22 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(Namespace nmsp){
-		Tab.chainLocalSymbols(currentNamespace);
-		Tab.closeScope();
+//		Tab.chainLocalSymbols(currentNamespace);
+//		Tab.closeScope();
 		
 		currentNamespace = null;
+		currentNamespaceName = "";
 	}
 	
 	public void visit(NamespaceName nmspName) {
 		namespaceNames.add(nmspName.getNamespaceName());
 		namespaceDeclCount++;
 		
+		currentNamespaceName = nmspName.getNamespaceName();
+		
 		report_info("Deklarisan namespace "+ nmspName.getNamespaceName(), nmspName);
-		currentNamespace = Tab.insert(Struct.Class, nmspName.getNamespaceName(), Tab.noType);
-		Tab.openScope();
+//		currentNamespace = Tab.insert(Struct.Class, nmspName.getNamespaceName(), Tab.noType);
+//		Tab.openScope();
 	}
 	
 	public void visit(SingleExtendsType set) {
