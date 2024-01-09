@@ -299,6 +299,66 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     }
     
+    public void visit(TypeOne type) {
+    	
+    	for(int i = 0; i < classNames.size(); i++) {
+    		if(classNames.get(i).equals(getTypeNameFun(type))) {
+    			return;
+    		}
+    	}
+    	    	
+    	if(!getTypeNameFun(type).equals("bool") 
+    		&& !getTypeNameFun(type).equals("char") 
+    		&& !getTypeNameFun(type).equals("int"))
+				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + getTypeNameFun(type) + " ne postoji!", null);
+    	
+    	Obj typeNode = Tab.find(getTypeNameFun(type));
+    	if(typeNode == Tab.noObj) {
+    		
+    		if(!getTypeNameFun(type).equalsIgnoreCase("bool"))
+    			report_error("Nije pronadjen tip " + getTypeNameFun(type) + " u tabeli simbola! ", null);
+    		
+    		type.struct = Tab.noType;
+    	}else {
+    		if(Obj.Type == typeNode.getKind()){
+    			type.struct = typeNode.getType();
+    		}else{
+    			report_error("Greska: Ime " + getTypeNameFun(type) + " ne predstavlja tip!", type);
+    			type.struct = Tab.noType;
+    		}
+    	}
+    }
+
+    public void visit(TypeTwo type) {
+	
+		for(int i = 0; i < classNames.size(); i++) {
+			if(classNames.get(i).equals(getTypeNameFun(type))) {
+				return;
+			}
+		}
+		    	
+		if(!getTypeNameFun(type).equals("bool") 
+			&& !getTypeNameFun(type).equals("char") 
+			&& !getTypeNameFun(type).equals("int"))
+				report_error("Semanticka greska na liniji " + type.getLine() + ": tip " + getTypeNameFun(type) + " ne postoji!", null);
+		
+		Obj typeNode = Tab.find(getTypeNameFun(type));
+		if(typeNode == Tab.noObj) {
+			
+			if(!getTypeNameFun(type).equalsIgnoreCase("bool"))
+				report_error("Nije pronadjen tip " + getTypeNameFun(type) + " u tabeli simbola! ", null);
+			
+			type.struct = Tab.noType;
+		}else {
+			if(Obj.Type == typeNode.getKind()){
+				type.struct = typeNode.getType();
+			}else{
+				report_error("Greska: Ime " + getTypeNameFun(type) + " ne predstavlja tip!", type);
+				type.struct = Tab.noType;
+			}
+		}
+	}
+    
     public void visit(MethodTypeName methodTypeName){
     	methodCount++;
     	
@@ -555,6 +615,22 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(Designator designator) {
+    	Obj obj = Tab.find(getDesNameFun(designator));
+    	if(obj == Tab.noObj){
+			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
+    	}
+    	designator.obj = obj;
+    }
+    
+    public void visit(DesignatorOne designator) {
+    	Obj obj = Tab.find(getDesNameFun(designator));
+    	if(obj == Tab.noObj){
+			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
+    	}
+    	designator.obj = obj;
+    }
+    
+    public void visit(DesignatorTwo designator) {
     	Obj obj = Tab.find(getDesNameFun(designator));
     	if(obj == Tab.noObj){
 			report_error("Greska na liniji " + designator.getLine()+ " : ime " + getDesNameFun(designator) + " nije deklarisano! ", null);
