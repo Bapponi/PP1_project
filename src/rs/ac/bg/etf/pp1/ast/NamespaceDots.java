@@ -1,29 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2024 18:49:30
+// 9/0/2024 17:41:17
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NamespaceDots implements SyntaxNode {
+public abstract class NamespaceDots implements SyntaxNode {
 
     private SyntaxNode parent;
+
     private int line;
+
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
-
-    private String nsName;
-
-    public NamespaceDots (String nsName) {
-        this.nsName=nsName;
-    }
-
-    public String getNsName() {
-        return nsName;
-    }
-
-    public void setNsName(String nsName) {
-        this.nsName=nsName;
-    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -41,31 +29,11 @@ public class NamespaceDots implements SyntaxNode {
         this.line=line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void childrenAccept(Visitor visitor) {
-    }
-
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("NamespaceDots(\n");
-
-        buffer.append(" "+tab+nsName);
-        buffer.append("\n");
-
-        buffer.append(tab);
-        buffer.append(") [NamespaceDots]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }

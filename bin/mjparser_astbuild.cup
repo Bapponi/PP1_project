@@ -55,7 +55,7 @@ terminal PROG, BREAK, CLASS, ELSE, CONST, IF, WHILE, NEW, PRINT;
 terminal READ, RETURN, VOID, EXTENDS, CONTINUE, FOREACH;
 terminal PLUS, MINUS, MUL, DIV, MOD, EQV;
 terminal NOEQV, MORE, MOREEQV, LESS, LESSEQV, AND, OR, EQUAL; 
-terminal INC, DEC, SEMI, TWODOTS, COMMA, DOT, LPAREN, RPAREN;
+terminal INC, DEC, SEMI, COMMA, DOT, LPAREN, RPAREN;
 terminal LBRACKET, RBRACKET, LBRACE, RBRACE, IMPLEOF;
 terminal STATIC, NAMESPACE, FOR, IMPL;
 
@@ -150,8 +150,6 @@ ConstDecl ::= (ConstDecl) CONST ConstDeclTypeName:c IDENT:constName EQUAL AllCon
 ConstDeclTypeName ::= (ConstDeclTypeName) Type:constType {: RESULT=new ConstDeclTypeName(constType); RESULT.setLine(constTypeleft); :};
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
-
-NamespaceDots ::= (NamespaceDots) IDENT:nsName TWODOTS TWODOTS {: RESULT=new NamespaceDots(nsName); RESULT.setLine(nsNameleft); :};
 
 AllConst ::= (AllConstChar) Char:C1 {: RESULT=new AllConstChar(C1); RESULT.setLine(C1left); :} 
 			| 
