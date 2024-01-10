@@ -159,10 +159,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
 			Obj constNode = null;
 			if(currentNamespaceName.equals("")) {
-				constNode = Tab.insert(Obj.Var, constDecl.getConstName(), currentType.struct);
+				constNode = Tab.insert(Obj.Con, constDecl.getConstName(), currentType.struct);
 			}else {
 				String name = currentNamespaceName + "::" + constDecl.getConstName();
-				constNode = Tab.insert(Obj.Var, name, currentType.struct);
+				constNode = Tab.insert(Obj.Con, name, currentType.struct);
 			}
 			
 			if(currentConst == "int") {
