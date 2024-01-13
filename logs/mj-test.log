@@ -1,248 +1,266 @@
-INFO  13:49:56,828 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\MJCompilerProject\test\test301.mj
-INFO  13:49:56,860 - #5 program
-INFO  13:49:56,860 - #50 test301
-INFO  13:49:56,860 - #47 namespace
-INFO  13:49:56,861 - #50 Konstante
-INFO  13:49:56,861 - #43 {
-INFO  13:49:56,861 - #9 const
-INFO  13:49:56,862 - #50 int
-INFO  13:49:56,862 - #50 nula
-INFO  13:49:56,863 - #33 =
-INFO  13:49:56,863 - #51 0
-INFO  13:49:56,863 - #36 ;
-INFO  13:49:56,864 - #9 const
-INFO  13:49:56,865 - #50 int
-INFO  13:49:56,865 - #50 jedan
-INFO  13:49:56,865 - #33 =
-INFO  13:49:56,865 - #51 1
-INFO  13:49:56,865 - #36 ;
-INFO  13:49:56,865 - #9 const
-INFO  13:49:56,865 - #50 int
-INFO  13:49:56,865 - #50 pet
-INFO  13:49:56,865 - #33 =
-INFO  13:49:56,865 - #51 5
-INFO  13:49:56,865 - #36 ;
-INFO  13:49:56,865 - #43 {
-INFO  13:49:56,866 - #44 }
-INFO  13:49:56,866 - #44 }
-INFO  13:49:56,866 - #47 namespace
-INFO  13:49:56,867 - #50 Nizovi
-INFO  13:49:56,867 - #43 {
-INFO  13:49:56,867 - #50 int
-INFO  13:49:56,867 - #50 niz
-INFO  13:49:56,867 - #41 [
-INFO  13:49:56,867 - #42 ]
-INFO  13:49:56,867 - #36 ;
-INFO  13:49:56,868 - #50 char
-INFO  13:49:56,869 - #50 nizch
-INFO  13:49:56,869 - #41 [
-INFO  13:49:56,869 - #42 ]
-INFO  13:49:56,869 - #36 ;
-INFO  13:49:56,869 - #43 {
-INFO  13:49:56,869 - #44 }
-INFO  13:49:56,869 - #44 }
-INFO  13:49:56,869 - #50 int
-INFO  13:49:56,869 - #50 a
-INFO  13:49:56,869 - #36 ;
-INFO  13:49:56,870 - #43 {
-INFO  13:49:56,870 - #16 void
-INFO  13:49:56,870 - #50 main
-INFO  13:49:56,870 - #39 (
-INFO  13:49:56,870 - #40 )
-INFO  13:49:56,870 - #50 int
-INFO  13:49:56,872 - #50 bodovi
-INFO  13:49:56,872 - #36 ;
-INFO  13:49:56,872 - #50 bool
-INFO  13:49:56,872 - #50 bt
-INFO  13:49:56,872 - #36 ;
-INFO  13:49:56,872 - #43 {
-INFO  13:49:56,872 - #50 bodovi
-INFO  13:49:56,872 - #33 =
-INFO  13:49:56,873 - #51 0
-INFO  13:49:56,873 - #36 ;
-INFO  13:49:56,874 - #50 bodovi
-INFO  13:49:56,874 - #34 ++
-INFO  13:49:56,874 - #36 ;
-INFO  13:49:56,875 - #50 bodovi
-INFO  13:49:56,875 - #33 =
-INFO  13:49:56,875 - #50 bodovi
-INFO  13:49:56,875 - #20 +
-INFO  13:49:56,875 - #50 Konstante::jedan
-INFO  13:49:56,876 - #36 ;
-INFO  13:49:56,876 - #50 bodovi
-INFO  13:49:56,876 - #33 =
-INFO  13:49:56,876 - #50 bodovi
-INFO  13:49:56,876 - #22 *
-INFO  13:49:56,876 - #50 Konstante::pet
-INFO  13:49:56,877 - #36 ;
-INFO  13:49:56,877 - #50 bodovi
-INFO  13:49:56,877 - #35 --
-INFO  13:49:56,878 - #36 ;
-INFO  13:49:56,878 - #13 print
-INFO  13:49:56,878 - #39 (
-INFO  13:49:56,878 - #50 bodovi
-INFO  13:49:56,878 - #40 )
-INFO  13:49:56,878 - #36 ;
-INFO  13:49:56,878 - #50 Nizovi::niz
-INFO  13:49:56,878 - #33 =
-INFO  13:49:56,878 - #12 new
-INFO  13:49:56,878 - #50 int
-INFO  13:49:56,878 - #41 [
-INFO  13:49:56,878 - #51 3
-INFO  13:49:56,878 - #42 ]
-INFO  13:49:56,878 - #36 ;
-INFO  13:49:56,879 - #50 Nizovi::niz
-INFO  13:49:56,879 - #41 [
-INFO  13:49:56,879 - #50 Konstante::nula
-INFO  13:49:56,879 - #42 ]
-INFO  13:49:56,879 - #33 =
-INFO  13:49:56,880 - #50 Konstante::jedan
-INFO  13:49:56,880 - #36 ;
-INFO  13:49:56,880 - #50 Nizovi::niz
-INFO  13:49:56,880 - #41 [
-INFO  13:49:56,880 - #51 1
-INFO  13:49:56,880 - #42 ]
-INFO  13:49:56,880 - #33 =
-INFO  13:49:56,880 - #51 2
-INFO  13:49:56,880 - #36 ;
-INFO  13:49:56,880 - #50 Nizovi::niz
-INFO  13:49:56,880 - #41 [
-INFO  13:49:56,880 - #50 Nizovi::niz
-INFO  13:49:56,880 - #41 [
-INFO  13:49:56,880 - #50 Konstante::jedan
-INFO  13:49:56,880 - #42 ]
-INFO  13:49:56,880 - #42 ]
-INFO  13:49:56,881 - #33 =
-INFO  13:49:56,881 - #50 Nizovi::niz
-INFO  13:49:56,881 - #41 [
-INFO  13:49:56,881 - #50 Nizovi::niz
-INFO  13:49:56,881 - #41 [
-INFO  13:49:56,881 - #51 0
-INFO  13:49:56,881 - #42 ]
-INFO  13:49:56,881 - #42 ]
-INFO  13:49:56,881 - #22 *
-INFO  13:49:56,881 - #51 3
-INFO  13:49:56,881 - #36 ;
-INFO  13:49:56,881 - #50 bodovi
-INFO  13:49:56,881 - #33 =
-INFO  13:49:56,881 - #50 Nizovi::niz
-INFO  13:49:56,881 - #41 [
-INFO  13:49:56,881 - #51 2
-INFO  13:49:56,881 - #42 ]
-INFO  13:49:56,881 - #23 /
-INFO  13:49:56,881 - #50 Nizovi::niz
-INFO  13:49:56,882 - #41 [
-INFO  13:49:56,882 - #51 0
-INFO  13:49:56,882 - #42 ]
-INFO  13:49:56,882 - #36 ;
-INFO  13:49:56,882 - #13 print
-INFO  13:49:56,882 - #39 (
-INFO  13:49:56,882 - #50 bodovi
-INFO  13:49:56,882 - #40 )
-INFO  13:49:56,882 - #36 ;
-INFO  13:49:56,882 - #13 print
-INFO  13:49:56,882 - #39 (
-INFO  13:49:56,882 - #50 Nizovi::niz
-INFO  13:49:56,882 - #41 [
-INFO  13:49:56,882 - #51 2
-INFO  13:49:56,882 - #42 ]
-INFO  13:49:56,882 - #40 )
-INFO  13:49:56,882 - #36 ;
-INFO  13:49:56,882 - #50 Nizovi::nizch
-INFO  13:49:56,882 - #33 =
-INFO  13:49:56,882 - #12 new
-INFO  13:49:56,882 - #50 char
-INFO  13:49:56,882 - #41 [
-INFO  13:49:56,882 - #51 3
-INFO  13:49:56,882 - #42 ]
-INFO  13:49:56,883 - #36 ;
-INFO  13:49:56,883 - #50 Nizovi::nizch
-INFO  13:49:56,883 - #41 [
-INFO  13:49:56,883 - #51 0
-INFO  13:49:56,883 - #42 ]
-INFO  13:49:56,883 - #33 =
-INFO  13:49:56,883 - #52 'a'
-INFO  13:49:56,883 - #36 ;
-INFO  13:49:56,883 - #50 Nizovi::nizch
-INFO  13:49:56,883 - #41 [
-INFO  13:49:56,883 - #50 Konstante::jedan
-INFO  13:49:56,883 - #42 ]
-INFO  13:49:56,883 - #33 =
-INFO  13:49:56,883 - #52 'b'
-INFO  13:49:56,883 - #36 ;
-INFO  13:49:56,883 - #50 Nizovi::nizch
-INFO  13:49:56,883 - #41 [
-INFO  13:49:56,883 - #50 Konstante::pet
-INFO  13:49:56,883 - #21 -
-INFO  13:49:56,883 - #51 3
-INFO  13:49:56,884 - #42 ]
-INFO  13:49:56,884 - #33 =
-INFO  13:49:56,884 - #52 'c'
-INFO  13:49:56,884 - #36 ;
-INFO  13:49:56,884 - #13 print
-INFO  13:49:56,884 - #39 (
-INFO  13:49:56,884 - #50 Nizovi::nizch
-INFO  13:49:56,884 - #41 [
-INFO  13:49:56,884 - #51 1
-INFO  13:49:56,884 - #42 ]
-INFO  13:49:56,884 - #40 )
-INFO  13:49:56,884 - #36 ;
-INFO  13:49:56,884 - #13 print
-INFO  13:49:56,884 - #39 (
-INFO  13:49:56,884 - #50 Nizovi::nizch
-INFO  13:49:56,884 - #41 [
-INFO  13:49:56,884 - #50 Konstante::jedan
-INFO  13:49:56,884 - #22 *
-INFO  13:49:56,884 - #51 2
-INFO  13:49:56,884 - #42 ]
-INFO  13:49:56,884 - #40 )
-INFO  13:49:56,884 - #36 ;
-INFO  13:49:56,884 - #50 a
-INFO  13:49:56,884 - #33 =
-INFO  13:49:56,884 - #51 1
-INFO  13:49:56,884 - #36 ;
-INFO  13:49:56,884 - #14 read
-INFO  13:49:56,884 - #39 (
-INFO  13:49:56,884 - #50 bodovi
-INFO  13:49:56,884 - #40 )
-INFO  13:49:56,884 - #36 ;
-INFO  13:49:56,885 - #50 bodovi
-INFO  13:49:56,885 - #33 =
-INFO  13:49:56,885 - #21 -
-INFO  13:49:56,885 - #50 bodovi
-INFO  13:49:56,885 - #20 +
-INFO  13:49:56,885 - #39 (
-INFO  13:49:56,885 - #50 Konstante::pet
-INFO  13:49:56,885 - #22 *
-INFO  13:49:56,885 - #50 a
-INFO  13:49:56,885 - #23 /
-INFO  13:49:56,885 - #51 2
-INFO  13:49:56,885 - #21 -
-INFO  13:49:56,885 - #50 Konstante::jedan
-INFO  13:49:56,886 - #40 )
-INFO  13:49:56,886 - #22 *
-INFO  13:49:56,886 - #50 bodovi
-INFO  13:49:56,886 - #21 -
-INFO  13:49:56,886 - #39 (
-INFO  13:49:56,886 - #51 3
-INFO  13:49:56,886 - #24 %
-INFO  13:49:56,886 - #51 2
-INFO  13:49:56,887 - #20 +
-INFO  13:49:56,887 - #51 3
-INFO  13:49:56,887 - #22 *
-INFO  13:49:56,887 - #51 2
-INFO  13:49:56,887 - #21 -
-INFO  13:49:56,887 - #51 3
-INFO  13:49:56,887 - #40 )
-INFO  13:49:56,887 - #36 ;
-INFO  13:49:56,887 - #13 print
-INFO  13:49:56,887 - #39 (
-INFO  13:49:56,887 - #50 bodovi
-INFO  13:49:56,887 - #40 )
-INFO  13:49:56,887 - #36 ;
-INFO  13:49:56,887 - #44 }
-INFO  13:49:56,887 - #44 }
-INFO  13:49:56,893 - Program(
+INFO  19:15:16,451 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\MJCompilerProject\test\test301.mj
+INFO  19:15:16,484 - #5 program
+INFO  19:15:16,484 - #50 test301
+INFO  19:15:16,484 - #47 namespace
+INFO  19:15:16,485 - #50 Konstante
+INFO  19:15:16,485 - #43 {
+INFO  19:15:16,485 - #9 const
+INFO  19:15:16,486 - #50 int
+INFO  19:15:16,486 - #50 nula
+INFO  19:15:16,487 - #33 =
+INFO  19:15:16,487 - #51 0
+INFO  19:15:16,487 - #36 ;
+INFO  19:15:16,487 - #9 const
+INFO  19:15:16,488 - #50 int
+INFO  19:15:16,488 - #50 jedan
+INFO  19:15:16,488 - #33 =
+INFO  19:15:16,488 - #51 1
+INFO  19:15:16,488 - #36 ;
+INFO  19:15:16,488 - #9 const
+INFO  19:15:16,488 - #50 int
+INFO  19:15:16,488 - #50 pet
+INFO  19:15:16,488 - #33 =
+INFO  19:15:16,488 - #51 5
+INFO  19:15:16,488 - #36 ;
+INFO  19:15:16,488 - #43 {
+INFO  19:15:16,488 - #44 }
+INFO  19:15:16,489 - #44 }
+INFO  19:15:16,489 - #47 namespace
+INFO  19:15:16,490 - #50 Nizovi
+INFO  19:15:16,490 - #43 {
+INFO  19:15:16,490 - #50 int
+INFO  19:15:16,490 - #50 niz
+INFO  19:15:16,490 - #41 [
+INFO  19:15:16,490 - #42 ]
+INFO  19:15:16,490 - #36 ;
+INFO  19:15:16,491 - #50 char
+INFO  19:15:16,491 - #50 nizch
+INFO  19:15:16,491 - #41 [
+INFO  19:15:16,492 - #42 ]
+INFO  19:15:16,492 - #36 ;
+INFO  19:15:16,492 - #43 {
+INFO  19:15:16,492 - #44 }
+INFO  19:15:16,492 - #44 }
+INFO  19:15:16,492 - #50 int
+INFO  19:15:16,492 - #50 a
+INFO  19:15:16,492 - #37 ,
+INFO  19:15:16,492 - #50 i
+INFO  19:15:16,492 - #36 ;
+INFO  19:15:16,494 - #43 {
+INFO  19:15:16,494 - #16 void
+INFO  19:15:16,494 - #50 main
+INFO  19:15:16,494 - #39 (
+INFO  19:15:16,495 - #40 )
+INFO  19:15:16,495 - #50 int
+INFO  19:15:16,495 - #50 bodovi
+INFO  19:15:16,495 - #36 ;
+INFO  19:15:16,496 - #50 bool
+INFO  19:15:16,496 - #50 bt
+INFO  19:15:16,496 - #36 ;
+INFO  19:15:16,496 - #43 {
+INFO  19:15:16,496 - #50 bodovi
+INFO  19:15:16,496 - #33 =
+INFO  19:15:16,497 - #51 0
+INFO  19:15:16,497 - #36 ;
+INFO  19:15:16,498 - #50 bodovi
+INFO  19:15:16,498 - #34 ++
+INFO  19:15:16,498 - #36 ;
+INFO  19:15:16,499 - #50 bodovi
+INFO  19:15:16,499 - #33 =
+INFO  19:15:16,499 - #50 bodovi
+INFO  19:15:16,499 - #20 +
+INFO  19:15:16,499 - #50 Konstante::jedan
+INFO  19:15:16,500 - #36 ;
+INFO  19:15:16,500 - #50 bodovi
+INFO  19:15:16,500 - #33 =
+INFO  19:15:16,500 - #50 bodovi
+INFO  19:15:16,500 - #22 *
+INFO  19:15:16,500 - #50 Konstante::pet
+INFO  19:15:16,501 - #36 ;
+INFO  19:15:16,501 - #50 bodovi
+INFO  19:15:16,501 - #35 --
+INFO  19:15:16,501 - #36 ;
+INFO  19:15:16,501 - #13 print
+INFO  19:15:16,501 - #39 (
+INFO  19:15:16,501 - #50 bodovi
+INFO  19:15:16,501 - #40 )
+INFO  19:15:16,502 - #36 ;
+INFO  19:15:16,502 - #48 for
+INFO  19:15:16,502 - #39 (
+INFO  19:15:16,502 - #50 i
+INFO  19:15:16,502 - #33 =
+INFO  19:15:16,502 - #51 0
+INFO  19:15:16,502 - #36 ;
+INFO  19:15:16,503 - #50 i
+INFO  19:15:16,503 - #29 <
+INFO  19:15:16,503 - #51 3
+INFO  19:15:16,503 - #36 ;
+INFO  19:15:16,503 - #50 i
+INFO  19:15:16,503 - #34 ++
+INFO  19:15:16,503 - #40 )
+INFO  19:15:16,505 - #50 bodovi
+INFO  19:15:16,505 - #34 ++
+INFO  19:15:16,505 - #36 ;
+INFO  19:15:16,505 - #50 Nizovi::niz
+INFO  19:15:16,505 - #33 =
+INFO  19:15:16,505 - #12 new
+INFO  19:15:16,505 - #50 int
+INFO  19:15:16,505 - #41 [
+INFO  19:15:16,505 - #51 3
+INFO  19:15:16,505 - #42 ]
+INFO  19:15:16,505 - #36 ;
+INFO  19:15:16,505 - #50 Nizovi::niz
+INFO  19:15:16,505 - #41 [
+INFO  19:15:16,505 - #50 Konstante::nula
+INFO  19:15:16,505 - #42 ]
+INFO  19:15:16,505 - #33 =
+INFO  19:15:16,505 - #50 Konstante::jedan
+INFO  19:15:16,506 - #36 ;
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #51 1
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #33 =
+INFO  19:15:16,506 - #51 2
+INFO  19:15:16,506 - #36 ;
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #50 Konstante::jedan
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #33 =
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #51 0
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #22 *
+INFO  19:15:16,506 - #51 3
+INFO  19:15:16,506 - #36 ;
+INFO  19:15:16,506 - #50 bodovi
+INFO  19:15:16,506 - #33 =
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,506 - #41 [
+INFO  19:15:16,506 - #51 2
+INFO  19:15:16,506 - #42 ]
+INFO  19:15:16,506 - #23 /
+INFO  19:15:16,506 - #50 Nizovi::niz
+INFO  19:15:16,507 - #41 [
+INFO  19:15:16,507 - #51 0
+INFO  19:15:16,507 - #42 ]
+INFO  19:15:16,507 - #36 ;
+INFO  19:15:16,507 - #13 print
+INFO  19:15:16,507 - #39 (
+INFO  19:15:16,507 - #50 bodovi
+INFO  19:15:16,507 - #40 )
+INFO  19:15:16,507 - #36 ;
+INFO  19:15:16,507 - #13 print
+INFO  19:15:16,507 - #39 (
+INFO  19:15:16,507 - #50 Nizovi::niz
+INFO  19:15:16,507 - #41 [
+INFO  19:15:16,507 - #51 2
+INFO  19:15:16,507 - #42 ]
+INFO  19:15:16,507 - #40 )
+INFO  19:15:16,507 - #36 ;
+INFO  19:15:16,507 - #50 Nizovi::nizch
+INFO  19:15:16,507 - #33 =
+INFO  19:15:16,507 - #12 new
+INFO  19:15:16,507 - #50 char
+INFO  19:15:16,507 - #41 [
+INFO  19:15:16,507 - #51 3
+INFO  19:15:16,507 - #42 ]
+INFO  19:15:16,507 - #36 ;
+INFO  19:15:16,507 - #50 Nizovi::nizch
+INFO  19:15:16,507 - #41 [
+INFO  19:15:16,507 - #51 0
+INFO  19:15:16,507 - #42 ]
+INFO  19:15:16,507 - #33 =
+INFO  19:15:16,507 - #52 'a'
+INFO  19:15:16,507 - #36 ;
+INFO  19:15:16,508 - #50 Nizovi::nizch
+INFO  19:15:16,508 - #41 [
+INFO  19:15:16,508 - #50 Konstante::jedan
+INFO  19:15:16,508 - #42 ]
+INFO  19:15:16,508 - #33 =
+INFO  19:15:16,508 - #52 'b'
+INFO  19:15:16,508 - #36 ;
+INFO  19:15:16,508 - #50 Nizovi::nizch
+INFO  19:15:16,508 - #41 [
+INFO  19:15:16,508 - #50 Konstante::pet
+INFO  19:15:16,508 - #21 -
+INFO  19:15:16,508 - #51 3
+INFO  19:15:16,509 - #42 ]
+INFO  19:15:16,509 - #33 =
+INFO  19:15:16,509 - #52 'c'
+INFO  19:15:16,509 - #36 ;
+INFO  19:15:16,509 - #13 print
+INFO  19:15:16,509 - #39 (
+INFO  19:15:16,509 - #50 Nizovi::nizch
+INFO  19:15:16,509 - #41 [
+INFO  19:15:16,509 - #51 1
+INFO  19:15:16,509 - #42 ]
+INFO  19:15:16,509 - #40 )
+INFO  19:15:16,509 - #36 ;
+INFO  19:15:16,509 - #13 print
+INFO  19:15:16,509 - #39 (
+INFO  19:15:16,509 - #50 Nizovi::nizch
+INFO  19:15:16,509 - #41 [
+INFO  19:15:16,509 - #50 Konstante::jedan
+INFO  19:15:16,509 - #22 *
+INFO  19:15:16,509 - #51 2
+INFO  19:15:16,509 - #42 ]
+INFO  19:15:16,509 - #40 )
+INFO  19:15:16,509 - #36 ;
+INFO  19:15:16,509 - #50 a
+INFO  19:15:16,509 - #33 =
+INFO  19:15:16,509 - #51 1
+INFO  19:15:16,509 - #36 ;
+INFO  19:15:16,509 - #14 read
+INFO  19:15:16,509 - #39 (
+INFO  19:15:16,509 - #50 bodovi
+INFO  19:15:16,509 - #40 )
+INFO  19:15:16,509 - #36 ;
+INFO  19:15:16,509 - #50 bodovi
+INFO  19:15:16,509 - #33 =
+INFO  19:15:16,510 - #21 -
+INFO  19:15:16,510 - #50 bodovi
+INFO  19:15:16,510 - #20 +
+INFO  19:15:16,510 - #39 (
+INFO  19:15:16,510 - #50 Konstante::pet
+INFO  19:15:16,510 - #22 *
+INFO  19:15:16,510 - #50 a
+INFO  19:15:16,510 - #23 /
+INFO  19:15:16,510 - #51 2
+INFO  19:15:16,510 - #21 -
+INFO  19:15:16,511 - #50 Konstante::jedan
+INFO  19:15:16,511 - #40 )
+INFO  19:15:16,511 - #22 *
+INFO  19:15:16,511 - #50 bodovi
+INFO  19:15:16,511 - #21 -
+INFO  19:15:16,511 - #39 (
+INFO  19:15:16,511 - #51 3
+INFO  19:15:16,511 - #24 %
+INFO  19:15:16,511 - #51 2
+INFO  19:15:16,511 - #20 +
+INFO  19:15:16,511 - #51 3
+INFO  19:15:16,511 - #22 *
+INFO  19:15:16,511 - #51 2
+INFO  19:15:16,511 - #21 -
+INFO  19:15:16,511 - #51 3
+INFO  19:15:16,511 - #40 )
+INFO  19:15:16,512 - #36 ;
+INFO  19:15:16,512 - #13 print
+INFO  19:15:16,512 - #39 (
+INFO  19:15:16,512 - #50 bodovi
+INFO  19:15:16,512 - #40 )
+INFO  19:15:16,512 - #36 ;
+INFO  19:15:16,512 - #44 }
+INFO  19:15:16,512 - #44 }
+INFO  19:15:16,518 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -377,8 +395,15 @@ INFO  13:49:56,893 - Program(
          a
           NoBrackets(
           ) [NoBrackets]
-          NoVarDeclBodyList(
-          ) [NoVarDeclBodyList]
+          AllVarDeclBodyList(
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+            VarDeclBody(
+             i
+              NoBrackets(
+              ) [NoBrackets]
+            ) [VarDeclBody]
+          ) [AllVarDeclBodyList]
         ) [VarDecl]
       ) [VarDeclarations]
     ) [AllDeclarationsList]
@@ -446,10 +471,34 @@ INFO  13:49:56,893 - Program(
                                                 AllStatementList(
                                                   AllStatementList(
                                                     AllStatementList(
-                                                      NoStatementList(
-                                                      ) [NoStatementList]
+                                                      AllStatementList(
+                                                        NoStatementList(
+                                                        ) [NoStatementList]
+                                                        StatementDesign(
+                                                          DesignatorStatementAssign(
+                                                            Designator(
+                                                              DesignatorName(
+                                                               bodovi
+                                                              ) [DesignatorName]
+                                                              NoDesignatorBodyList(
+                                                              ) [NoDesignatorBodyList]
+                                                            ) [Designator]
+                                                            ExprPlus(
+                                                              Term(
+                                                                FactorNum(
+                                                                 0
+                                                                ) [FactorNum]
+                                                                NoTermBodyList(
+                                                                ) [NoTermBodyList]
+                                                              ) [Term]
+                                                              NoExprBodyList(
+                                                              ) [NoExprBodyList]
+                                                            ) [ExprPlus]
+                                                          ) [DesignatorStatementAssign]
+                                                        ) [StatementDesign]
+                                                      ) [AllStatementList]
                                                       StatementDesign(
-                                                        DesignatorStatementAssign(
+                                                        DesignatorStatementInc(
                                                           Designator(
                                                             DesignatorName(
                                                              bodovi
@@ -457,22 +506,11 @@ INFO  13:49:56,893 - Program(
                                                             NoDesignatorBodyList(
                                                             ) [NoDesignatorBodyList]
                                                           ) [Designator]
-                                                          ExprPlus(
-                                                            Term(
-                                                              FactorNum(
-                                                               0
-                                                              ) [FactorNum]
-                                                              NoTermBodyList(
-                                                              ) [NoTermBodyList]
-                                                            ) [Term]
-                                                            NoExprBodyList(
-                                                            ) [NoExprBodyList]
-                                                          ) [ExprPlus]
-                                                        ) [DesignatorStatementAssign]
+                                                        ) [DesignatorStatementInc]
                                                       ) [StatementDesign]
                                                     ) [AllStatementList]
                                                     StatementDesign(
-                                                      DesignatorStatementInc(
+                                                      DesignatorStatementAssign(
                                                         Designator(
                                                           DesignatorName(
                                                            bodovi
@@ -480,7 +518,47 @@ INFO  13:49:56,893 - Program(
                                                           NoDesignatorBodyList(
                                                           ) [NoDesignatorBodyList]
                                                         ) [Designator]
-                                                      ) [DesignatorStatementInc]
+                                                        ExprPlus(
+                                                          Term(
+                                                            FactorDesignatorAll(
+                                                              Designator(
+                                                                DesignatorName(
+                                                                 bodovi
+                                                                ) [DesignatorName]
+                                                                NoDesignatorBodyList(
+                                                                ) [NoDesignatorBodyList]
+                                                              ) [Designator]
+                                                              NoFactorDesignatorBodyListB(
+                                                              ) [NoFactorDesignatorBodyListB]
+                                                            ) [FactorDesignatorAll]
+                                                            NoTermBodyList(
+                                                            ) [NoTermBodyList]
+                                                          ) [Term]
+                                                          AllExprBodyList(
+                                                            NoExprBodyList(
+                                                            ) [NoExprBodyList]
+                                                            ExprBody(
+                                                              AddopPlus(
+                                                              ) [AddopPlus]
+                                                              Term(
+                                                                FactorDesignatorAll(
+                                                                  Designator(
+                                                                    DesignatorName(
+                                                                     Konstante::jedan
+                                                                    ) [DesignatorName]
+                                                                    NoDesignatorBodyList(
+                                                                    ) [NoDesignatorBodyList]
+                                                                  ) [Designator]
+                                                                  NoFactorDesignatorBodyListB(
+                                                                  ) [NoFactorDesignatorBodyListB]
+                                                                ) [FactorDesignatorAll]
+                                                                NoTermBodyList(
+                                                                ) [NoTermBodyList]
+                                                              ) [Term]
+                                                            ) [ExprBody]
+                                                          ) [AllExprBodyList]
+                                                        ) [ExprPlus]
+                                                      ) [DesignatorStatementAssign]
                                                     ) [StatementDesign]
                                                   ) [AllStatementList]
                                                   StatementDesign(
@@ -505,20 +583,16 @@ INFO  13:49:56,893 - Program(
                                                             NoFactorDesignatorBodyListB(
                                                             ) [NoFactorDesignatorBodyListB]
                                                           ) [FactorDesignatorAll]
-                                                          NoTermBodyList(
-                                                          ) [NoTermBodyList]
-                                                        ) [Term]
-                                                        AllExprBodyList(
-                                                          NoExprBodyList(
-                                                          ) [NoExprBodyList]
-                                                          ExprBody(
-                                                            AddopPlus(
-                                                            ) [AddopPlus]
-                                                            Term(
+                                                          AllTermBodyList(
+                                                            NoTermBodyList(
+                                                            ) [NoTermBodyList]
+                                                            TermBody(
+                                                              MulopMul(
+                                                              ) [MulopMul]
                                                               FactorDesignatorAll(
                                                                 Designator(
                                                                   DesignatorName(
-                                                                   Konstante::jedan
+                                                                   Konstante::pet
                                                                   ) [DesignatorName]
                                                                   NoDesignatorBodyList(
                                                                   ) [NoDesignatorBodyList]
@@ -526,17 +600,17 @@ INFO  13:49:56,893 - Program(
                                                                 NoFactorDesignatorBodyListB(
                                                                 ) [NoFactorDesignatorBodyListB]
                                                               ) [FactorDesignatorAll]
-                                                              NoTermBodyList(
-                                                              ) [NoTermBodyList]
-                                                            ) [Term]
-                                                          ) [ExprBody]
-                                                        ) [AllExprBodyList]
+                                                            ) [TermBody]
+                                                          ) [AllTermBodyList]
+                                                        ) [Term]
+                                                        NoExprBodyList(
+                                                        ) [NoExprBodyList]
                                                       ) [ExprPlus]
                                                     ) [DesignatorStatementAssign]
                                                   ) [StatementDesign]
                                                 ) [AllStatementList]
                                                 StatementDesign(
-                                                  DesignatorStatementAssign(
+                                                  DesignatorStatementDec(
                                                     Designator(
                                                       DesignatorName(
                                                        bodovi
@@ -544,12 +618,67 @@ INFO  13:49:56,893 - Program(
                                                       NoDesignatorBodyList(
                                                       ) [NoDesignatorBodyList]
                                                     ) [Designator]
+                                                  ) [DesignatorStatementDec]
+                                                ) [StatementDesign]
+                                              ) [AllStatementList]
+                                              StatementPrint(
+                                                ExprPlus(
+                                                  Term(
+                                                    FactorDesignatorAll(
+                                                      Designator(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                        NoDesignatorBodyList(
+                                                        ) [NoDesignatorBodyList]
+                                                      ) [Designator]
+                                                      NoFactorDesignatorBodyListB(
+                                                      ) [NoFactorDesignatorBodyListB]
+                                                    ) [FactorDesignatorAll]
+                                                    NoTermBodyList(
+                                                    ) [NoTermBodyList]
+                                                  ) [Term]
+                                                  NoExprBodyList(
+                                                  ) [NoExprBodyList]
+                                                ) [ExprPlus]
+                                                NoNumConstListB(
+                                                ) [NoNumConstListB]
+                                              ) [StatementPrint]
+                                            ) [AllStatementList]
+                                            StatementFor(
+                                              For(
+                                              ) [For]
+                                              ForBody(
+                                                SingleDesignatorStmListB(
+                                                  DesignatorStatementAssign(
+                                                    Designator(
+                                                      DesignatorName(
+                                                       i
+                                                      ) [DesignatorName]
+                                                      NoDesignatorBodyList(
+                                                      ) [NoDesignatorBodyList]
+                                                    ) [Designator]
+                                                    ExprPlus(
+                                                      Term(
+                                                        FactorNum(
+                                                         0
+                                                        ) [FactorNum]
+                                                        NoTermBodyList(
+                                                        ) [NoTermBodyList]
+                                                      ) [Term]
+                                                      NoExprBodyList(
+                                                      ) [NoExprBodyList]
+                                                    ) [ExprPlus]
+                                                  ) [DesignatorStatementAssign]
+                                                ) [SingleDesignatorStmListB]
+                                                YesCondfact(
+                                                  DoubleCondFact(
                                                     ExprPlus(
                                                       Term(
                                                         FactorDesignatorAll(
                                                           Designator(
                                                             DesignatorName(
-                                                             bodovi
+                                                             i
                                                             ) [DesignatorName]
                                                             NoDesignatorBodyList(
                                                             ) [NoDesignatorBodyList]
@@ -557,34 +686,41 @@ INFO  13:49:56,893 - Program(
                                                           NoFactorDesignatorBodyListB(
                                                           ) [NoFactorDesignatorBodyListB]
                                                         ) [FactorDesignatorAll]
-                                                        AllTermBodyList(
-                                                          NoTermBodyList(
-                                                          ) [NoTermBodyList]
-                                                          TermBody(
-                                                            MulopMul(
-                                                            ) [MulopMul]
-                                                            FactorDesignatorAll(
-                                                              Designator(
-                                                                DesignatorName(
-                                                                 Konstante::pet
-                                                                ) [DesignatorName]
-                                                                NoDesignatorBodyList(
-                                                                ) [NoDesignatorBodyList]
-                                                              ) [Designator]
-                                                              NoFactorDesignatorBodyListB(
-                                                              ) [NoFactorDesignatorBodyListB]
-                                                            ) [FactorDesignatorAll]
-                                                          ) [TermBody]
-                                                        ) [AllTermBodyList]
+                                                        NoTermBodyList(
+                                                        ) [NoTermBodyList]
                                                       ) [Term]
                                                       NoExprBodyList(
                                                       ) [NoExprBodyList]
                                                     ) [ExprPlus]
-                                                  ) [DesignatorStatementAssign]
-                                                ) [StatementDesign]
-                                              ) [AllStatementList]
+                                                    RelopLess(
+                                                    ) [RelopLess]
+                                                    ExprPlus(
+                                                      Term(
+                                                        FactorNum(
+                                                         3
+                                                        ) [FactorNum]
+                                                        NoTermBodyList(
+                                                        ) [NoTermBodyList]
+                                                      ) [Term]
+                                                      NoExprBodyList(
+                                                      ) [NoExprBodyList]
+                                                    ) [ExprPlus]
+                                                  ) [DoubleCondFact]
+                                                ) [YesCondfact]
+                                                SingleDesignatorStmListB(
+                                                  DesignatorStatementInc(
+                                                    Designator(
+                                                      DesignatorName(
+                                                       i
+                                                      ) [DesignatorName]
+                                                      NoDesignatorBodyList(
+                                                      ) [NoDesignatorBodyList]
+                                                    ) [Designator]
+                                                  ) [DesignatorStatementInc]
+                                                ) [SingleDesignatorStmListB]
+                                              ) [ForBody]
                                               StatementDesign(
-                                                DesignatorStatementDec(
+                                                DesignatorStatementInc(
                                                   Designator(
                                                     DesignatorName(
                                                      bodovi
@@ -592,32 +728,9 @@ INFO  13:49:56,893 - Program(
                                                     NoDesignatorBodyList(
                                                     ) [NoDesignatorBodyList]
                                                   ) [Designator]
-                                                ) [DesignatorStatementDec]
+                                                ) [DesignatorStatementInc]
                                               ) [StatementDesign]
-                                            ) [AllStatementList]
-                                            StatementPrint(
-                                              ExprPlus(
-                                                Term(
-                                                  FactorDesignatorAll(
-                                                    Designator(
-                                                      DesignatorName(
-                                                       bodovi
-                                                      ) [DesignatorName]
-                                                      NoDesignatorBodyList(
-                                                      ) [NoDesignatorBodyList]
-                                                    ) [Designator]
-                                                    NoFactorDesignatorBodyListB(
-                                                    ) [NoFactorDesignatorBodyListB]
-                                                  ) [FactorDesignatorAll]
-                                                  NoTermBodyList(
-                                                  ) [NoTermBodyList]
-                                                ) [Term]
-                                                NoExprBodyList(
-                                                ) [NoExprBodyList]
-                                              ) [ExprPlus]
-                                              NoNumConstListB(
-                                              ) [NoNumConstListB]
-                                            ) [StatementPrint]
+                                            ) [StatementFor]
                                           ) [AllStatementList]
                                           StatementDesign(
                                             DesignatorStatementAssign(
@@ -1552,90 +1665,96 @@ INFO  13:49:56,893 - Program(
     ) [AllMethodDeclList]
   ) [ProgramBody]
 ) [Program]
-INFO  13:49:56,894 - ===================================
-INFO  13:49:56,898 - Deklarisan namespace Konstante na liniji 5
-INFO  13:49:56,898 - Deklarisana konstanta nula na liniji 6
-INFO  13:49:56,898 - Deklarisana konstanta jedan na liniji 7
-INFO  13:49:56,898 - Deklarisana konstanta pet na liniji 8
-INFO  13:49:56,898 - Deklarisan namespace Nizovi na liniji 13
-INFO  13:49:56,898 - Deklarisana promenljiva niz na liniji 14
-INFO  13:49:56,898 - Deklarisana promenljiva nizch na liniji 15
-INFO  13:49:56,898 - Deklarisana promenljiva a na liniji 20
-INFO  13:49:56,898 - Obradjuje se funkcija main na liniji 23
-INFO  13:49:56,898 - Deklarisana promenljiva bodovi na liniji 24
-INFO  13:49:56,898 - Deklarisana promenljiva bt na liniji 25
-INFO  13:49:56,898 - Designator je promenljiva ili klasa: bodovi na liniji 27
-INFO  13:49:56,898 - Expr je istog tipa kao i designator.  na liniji 27
-INFO  13:49:56,898 - Obradjuje se inkrement nad integer-om: bodovi na liniji 28
-INFO  13:49:56,898 - Addop-uju se int-ovi sto je ok na liniji 29
-INFO  13:49:56,898 - Designator je promenljiva ili klasa: bodovi na liniji 29
-INFO  13:49:56,898 - Expr je istog tipa kao i designator.  na liniji 29
-INFO  13:49:56,898 - Mulop-uju se int-ovi sto je ok na liniji 30
-INFO  13:49:56,898 - Designator je promenljiva ili klasa: bodovi na liniji 30
-INFO  13:49:56,898 - Expr je istog tipa kao i designator.  na liniji 30
-INFO  13:49:56,898 - Obradjuje se dekrement nad integer-om: bodovi na liniji 31
-INFO  13:49:56,898 - Expr je tipa int, char ili bool.  na liniji 32
-INFO  13:49:56,898 - Expr je tipa int za new sekciju na liniji 34
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 34
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 34
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 35
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 35
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 35
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 36
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 36
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 36
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 37
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 37
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 37
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 37
-INFO  13:49:56,899 - Mulop-uju se int-ovi sto je ok na liniji 37
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 37
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 37
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 38
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 38
-INFO  13:49:56,899 - Mulop-uju se int-ovi sto je ok na liniji 38
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: bodovi na liniji 38
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 38
-INFO  13:49:56,899 - Expr je tipa int, char ili bool.  na liniji 39
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 40
-INFO  13:49:56,899 - Expr je tipa int, char ili bool.  na liniji 40
-INFO  13:49:56,899 - Expr je tipa int za new sekciju na liniji 43
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 43
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 43
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 44
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 44
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 44
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 45
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 45
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 45
-INFO  13:49:56,899 - Addop-uju se int-ovi sto je ok na liniji 46
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 46
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 46
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 46
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 47
-INFO  13:49:56,899 - Expr je tipa int, char ili bool.  na liniji 47
-INFO  13:49:56,899 - Mulop-uju se int-ovi sto je ok na liniji 48
-INFO  13:49:56,899 - Expr je int tipa u nizu na liniji 48
-INFO  13:49:56,899 - Expr je tipa int, char ili bool.  na liniji 48
-INFO  13:49:56,899 - Designator je promenljiva ili klasa: a na liniji 50
-INFO  13:49:56,899 - Expr je istog tipa kao i designator.  na liniji 50
-INFO  13:49:56,899 - Čita se promenljiva: bodovi na liniji 51
-INFO  13:49:56,900 - Mulop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Addop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Mulop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Addop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Mulop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Mulop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Addop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Addop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Addop-uju se int-ovi sto je ok na liniji 52
-INFO  13:49:56,900 - Minus je ispred int-a sto je ok na liniji 52
-INFO  13:49:56,900 - Designator je promenljiva ili klasa: bodovi na liniji 52
-INFO  13:49:56,900 - Expr je istog tipa kao i designator.  na liniji 52
-INFO  13:49:56,900 - Expr je tipa int, char ili bool.  na liniji 53
-INFO  13:49:56,900 -  Broj poziva print funkcije = 6
-INFO  13:49:56,900 -  Deklarisanih promenljivih ima = 5
-INFO  13:49:56,900 -  U programu ima 3 konstanti
-INFO  13:49:56,900 -  U programu ima 0 klasa
-INFO  13:49:56,900 -  Deklarisanih metoda ima = 1
-INFO  13:49:56,904 - Parsiranje uspesno zavrseno!
+INFO  19:15:16,520 - ===================================
+INFO  19:15:16,523 - Deklarisan namespace Konstante na liniji 5
+INFO  19:15:16,523 - Deklarisana konstanta nula na liniji 6
+INFO  19:15:16,523 - Deklarisana konstanta jedan na liniji 7
+INFO  19:15:16,523 - Deklarisana konstanta pet na liniji 8
+INFO  19:15:16,523 - Deklarisan namespace Nizovi na liniji 13
+INFO  19:15:16,523 - Deklarisana promenljiva niz na liniji 14
+INFO  19:15:16,523 - Deklarisana promenljiva nizch na liniji 15
+INFO  19:15:16,523 - Deklarisana promenljiva i na liniji 20
+INFO  19:15:16,523 - Deklarisana promenljiva a na liniji 20
+INFO  19:15:16,523 - Obradjuje se funkcija main na liniji 23
+INFO  19:15:16,523 - Deklarisana promenljiva bodovi na liniji 24
+INFO  19:15:16,523 - Deklarisana promenljiva bt na liniji 25
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: bodovi na liniji 27
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 27
+INFO  19:15:16,524 - Obradjuje se inkrement nad integer-om: bodovi na liniji 28
+INFO  19:15:16,524 - Addop-uju se int-ovi sto je ok na liniji 29
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: bodovi na liniji 29
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 29
+INFO  19:15:16,524 - Mulop-uju se int-ovi sto je ok na liniji 30
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: bodovi na liniji 30
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 30
+INFO  19:15:16,524 - Obradjuje se dekrement nad integer-om: bodovi na liniji 31
+INFO  19:15:16,524 - Expr je tipa int, char ili bool.  na liniji 32
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: i na liniji 34
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 34
+INFO  19:15:16,524 - Expr-i su istog tipa u relacionom izrazu na liniji 34
+INFO  19:15:16,524 - Obradjuje se inkrement nad integer-om: i na liniji 34
+INFO  19:15:16,524 - Obradjuje se inkrement nad integer-om: bodovi na liniji 34
+INFO  19:15:16,524 - Expr je tipa int za new sekciju na liniji 36
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 36
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 36
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 37
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 37
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 37
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 38
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 38
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 38
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 39
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 39
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 39
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 39
+INFO  19:15:16,524 - Mulop-uju se int-ovi sto je ok na liniji 39
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 39
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 39
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 40
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 40
+INFO  19:15:16,524 - Mulop-uju se int-ovi sto je ok na liniji 40
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: bodovi na liniji 40
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 40
+INFO  19:15:16,524 - Expr je tipa int, char ili bool.  na liniji 41
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 42
+INFO  19:15:16,524 - Expr je tipa int, char ili bool.  na liniji 42
+INFO  19:15:16,524 - Expr je tipa int za new sekciju na liniji 45
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 45
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 45
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 46
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 46
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 46
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 47
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 47
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 47
+INFO  19:15:16,524 - Addop-uju se int-ovi sto je ok na liniji 48
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 48
+INFO  19:15:16,524 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 48
+INFO  19:15:16,524 - Expr je istog tipa kao i designator.  na liniji 48
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 49
+INFO  19:15:16,524 - Expr je tipa int, char ili bool.  na liniji 49
+INFO  19:15:16,524 - Mulop-uju se int-ovi sto je ok na liniji 50
+INFO  19:15:16,524 - Expr je int tipa u nizu na liniji 50
+INFO  19:15:16,525 - Expr je tipa int, char ili bool.  na liniji 50
+INFO  19:15:16,525 - Designator je promenljiva ili klasa: a na liniji 52
+INFO  19:15:16,525 - Expr je istog tipa kao i designator.  na liniji 52
+INFO  19:15:16,525 - Čita se promenljiva: bodovi na liniji 53
+INFO  19:15:16,525 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  19:15:16,525 - Minus je ispred int-a sto je ok na liniji 54
+INFO  19:15:16,525 - Designator je promenljiva ili klasa: bodovi na liniji 54
+INFO  19:15:16,525 - Expr je istog tipa kao i designator.  na liniji 54
+INFO  19:15:16,525 - Expr je tipa int, char ili bool.  na liniji 55
+INFO  19:15:16,525 -  Broj poziva print funkcije = 6
+INFO  19:15:16,525 -  Deklarisanih promenljivih ima = 6
+INFO  19:15:16,525 -  U programu ima 3 konstanti
+INFO  19:15:16,525 -  U programu ima 0 klasa
+INFO  19:15:16,525 -  Deklarisanih metoda ima = 1
+INFO  19:15:16,529 - Parsiranje uspesno zavrseno!

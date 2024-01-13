@@ -17,7 +17,7 @@ namespace Nizovi{
 	{}
 }
 
-	int a;
+	int a, i;
 	
 {
 	void main()	
@@ -30,6 +30,8 @@ namespace Nizovi{
 		bodovi = bodovi * Konstante::pet;
 		bodovi--;
 		print(bodovi);
+		
+		for(i = 0; i < 3; i++) bodovi++;
 		
 		Nizovi::niz = new int[3];
 		Nizovi::niz[Konstante::nula] = Konstante::jedan;

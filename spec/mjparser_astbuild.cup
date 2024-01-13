@@ -113,6 +113,8 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStarBody, DesignatorStarList, MaybeDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ForBody, DesignatorStatementListB, MaybeCondFact, For;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -263,7 +265,9 @@ Statement ::= (StatementDesign) DesignatorStatement:D1 SEMI {: RESULT=new Statem
 			 |
 			 (StatementFindAny) Designator:d1 EQUAL Designator:d2 DOT FINDANY LPAREN Expr:E1 RPAREN SEMI {: RESULT=new StatementFindAny(d1, d2, E1); RESULT.setLine(d1left); :}
 			 |
-			 (StatementFindAndReplace) Designator:D1 EQUAL Designator:D2 DOT FINDANDREPLACE LPAREN Expr:E3 COMMA IDENT:farName IMPLEOF Expr:E4 RPAREN SEMI {: RESULT=new StatementFindAndReplace(D1, D2, E3, farName, E4); RESULT.setLine(D1left); :}
+			 (StatementFindAndReplace) Designator:D1 EQUAL Designator:D2 DOT FINDANDREPLACE LPAREN Expr:E3 COMMA IDENT:farName IMPL Expr:E4 RPAREN SEMI {: RESULT=new StatementFindAndReplace(D1, D2, E3, farName, E4); RESULT.setLine(D1left); :}
+			 |
+			 (StatementFor) For:F1 LPAREN ForBody:F2 RPAREN Statement:S3 {: RESULT=new StatementFor(F1, F2, S3); RESULT.setLine(F1left); :}
 			 |
 			 (ErrorStmt) error SEMI:l
 		   	 {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new ErrorStmt(); :}
@@ -271,7 +275,23 @@ Statement ::= (StatementDesign) DesignatorStatement:D1 SEMI {: RESULT=new Statem
 			 
 While ::= (While) WHILE {: RESULT=new While(); :};
 
-Foreach ::= (Foreach) FOREACH {: RESULT=new Foreach(); :};			 
+Foreach ::= (Foreach) FOREACH {: RESULT=new Foreach(); :};
+
+For ::= (For) FOR {: RESULT=new For(); :};
+
+ForBody ::= (ForBody) DesignatorStatementListB:D1 SEMI MaybeCondFact:M2 SEMI DesignatorStatementListB:D3 {: RESULT=new ForBody(D1, M2, D3); RESULT.setLine(D1left); :};
+
+MaybeCondFact ::= (YesCondfact) CondFact:C1 {: RESULT=new YesCondfact(C1); RESULT.setLine(C1left); :}
+				|
+				(NoCondFact) {: RESULT=new NoCondFact(); :} /* epsilon */
+				;
+
+DesignatorStatementListB ::= (AllDesignatorStmListB) DesignatorStatementListB:D1 COMMA DesignatorStatement:D2 {: RESULT=new AllDesignatorStmListB(D1, D2); RESULT.setLine(D1left); :}
+				   		|
+				   		(SingleDesignatorStmListB) DesignatorStatement:D1 {: RESULT=new SingleDesignatorStmListB(D1); RESULT.setLine(D1left); :}
+				   		|
+				   		(NoDesignatorStmListB) {: RESULT=new NoDesignatorStmListB(); :} /* epsilon */
+				   		;			 
 			 
 DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr:E1 {: RESULT=new DesignatorStatementAssign(das, E1); RESULT.setLine(dasleft); :}
 					  |
@@ -280,7 +300,21 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr:E1
 					  (DesignatorStatementInc) Designator:din INC {: RESULT=new DesignatorStatementInc(din); RESULT.setLine(dinleft); :}
 					  |
 					  (DesignatorStatementDec) Designator:dde DEC {: RESULT=new DesignatorStatementDec(dde); RESULT.setLine(ddeleft); :}
+					  |
+					  (DesignatorStatementStar) LBRACKET DesignatorStarBody:D1 RBRACKET EQUAL Designator:D2 {: RESULT=new DesignatorStatementStar(D1, D2); RESULT.setLine(D1left); :}
 					  ;
+					  
+DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList:D1 MUL Designator:D2 {: RESULT=new DesignatorStarBody(D1, D2); RESULT.setLine(D1left); :};
+
+DesignatorStarList ::= (AllDesignatorStarList) DesignatorStarList:D1 MaybeDesignator:M2 COMMA {: RESULT=new AllDesignatorStarList(D1, M2); RESULT.setLine(D1left); :}
+					|
+					(NoDesignatorStarList) COMMA {: RESULT=new NoDesignatorStarList(); :}
+					;
+					
+MaybeDesignator ::= (YesDesignator) Designator:D1 {: RESULT=new YesDesignator(D1); RESULT.setLine(D1left); :}
+				|
+				(NoDesignator) {: RESULT=new NoDesignator(); :} /* epsilon */
+				;
 					  
 DesignatorStatementMultiple ::= (DesignatorStatementMultiple) LBRACKET DesignatorListB:D1 RBRACKET EQUAL ExprListB2:E2 {: RESULT=new DesignatorStatementMultiple(D1, E2); RESULT.setLine(D1left); :};
 

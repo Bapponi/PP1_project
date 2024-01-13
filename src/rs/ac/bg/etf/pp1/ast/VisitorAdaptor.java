@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 9/0/2024 17:41:17
+// 13/0/2024 18:53:15
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -25,6 +25,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Expr Expr) { }
     public void visit(NumConstListB NumConstListB) { }
     public void visit(NewTypeBody NewTypeBody) { }
+    public void visit(MaybeDesignator MaybeDesignator) { }
     public void visit(FormBody FormBody) { }
     public void visit(TypeList TypeList) { }
     public void visit(AllConst AllConst) { }
@@ -36,6 +37,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(NamespaceList NamespaceList) { }
     public void visit(AllDeclList AllDeclList) { }
+    public void visit(DesignatorStarList DesignatorStarList) { }
     public void visit(Addop Addop) { }
     public void visit(StatementList StatementList) { }
     public void visit(ExprMP ExprMP) { }
@@ -49,6 +51,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ExtendsTypeListB ExtendsTypeListB) { }
     public void visit(ActPars ActPars) { }
     public void visit(ActParsBody ActParsBody) { }
+    public void visit(MaybeCondFact MaybeCondFact) { }
+    public void visit(DesignatorStatementListB DesignatorStatementListB) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(CondFact CondFact) { }
     public void visit(ActParsListB ActParsListB) { }
@@ -114,13 +118,27 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(SingleDesignatorListB SingleDesignatorListB) { visit(); }
     public void visit(AllDesignatorListB AllDesignatorListB) { visit(); }
     public void visit(DesignatorStatementMultiple DesignatorStatementMultiple) { visit(); }
+    public void visit(NoDesignator NoDesignator) { visit(); }
+    public void visit(YesDesignator YesDesignator) { visit(); }
+    public void visit(NoDesignatorStarList NoDesignatorStarList) { visit(); }
+    public void visit(AllDesignatorStarList AllDesignatorStarList) { visit(); }
+    public void visit(DesignatorStarBody DesignatorStarBody) { visit(); }
+    public void visit(DesignatorStatementStar DesignatorStatementStar) { visit(); }
     public void visit(DesignatorStatementDec DesignatorStatementDec) { visit(); }
     public void visit(DesignatorStatementInc DesignatorStatementInc) { visit(); }
     public void visit(DesignatorStatementAct DesignatorStatementAct) { visit(); }
     public void visit(DesignatorStatementAssign DesignatorStatementAssign) { visit(); }
+    public void visit(NoDesignatorStmListB NoDesignatorStmListB) { visit(); }
+    public void visit(SingleDesignatorStmListB SingleDesignatorStmListB) { visit(); }
+    public void visit(AllDesignatorStmListB AllDesignatorStmListB) { visit(); }
+    public void visit(NoCondFact NoCondFact) { visit(); }
+    public void visit(YesCondfact YesCondfact) { visit(); }
+    public void visit(ForBody ForBody) { visit(); }
+    public void visit(For For) { visit(); }
     public void visit(Foreach Foreach) { visit(); }
     public void visit(While While) { visit(); }
     public void visit(ErrorStmt ErrorStmt) { visit(); }
+    public void visit(StatementFor StatementFor) { visit(); }
     public void visit(StatementFindAndReplace StatementFindAndReplace) { visit(); }
     public void visit(StatementFindAny StatementFindAny) { visit(); }
     public void visit(StatementStatementList StatementStatementList) { visit(); }

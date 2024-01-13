@@ -85,6 +85,8 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj ExprMP, TermBody, DesignatorName
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ActPars, ClassName, DesignatorStatementMultiple;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorListB, ExprListB2, Lparen, Rparen;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceList, Namespace, NamespaceName, NamespaceDots;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStarBody, DesignatorStarList, MaybeDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ForBody, DesignatorStatementListB, MaybeCondFact, For;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ExprBody;
 
@@ -235,7 +237,9 @@ Statement ::= (StatementDesign) DesignatorStatement SEMI
 			 |
 			 (StatementFindAny) Designator:d1 EQUAL Designator:d2 DOT FINDANY LPAREN Expr RPAREN SEMI
 			 |
-			 (StatementFindAndReplace) Designator EQUAL Designator DOT FINDANDREPLACE LPAREN Expr COMMA IDENT:farName IMPLEOF Expr RPAREN SEMI
+			 (StatementFindAndReplace) Designator EQUAL Designator DOT FINDANDREPLACE LPAREN Expr COMMA IDENT:farName IMPL Expr RPAREN SEMI
+			 |
+			 (StatementFor) For LPAREN ForBody RPAREN Statement
 			 |
 			 (ErrorStmt) error SEMI:l
 		   	 {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
@@ -243,7 +247,23 @@ Statement ::= (StatementDesign) DesignatorStatement SEMI
 			 
 While ::= (While) WHILE;
 
-Foreach ::= (Foreach) FOREACH;			 
+Foreach ::= (Foreach) FOREACH;
+
+For ::= (For) FOR;
+
+ForBody ::= (ForBody) DesignatorStatementListB SEMI MaybeCondFact SEMI DesignatorStatementListB;
+
+MaybeCondFact ::= (YesCondfact) CondFact
+				|
+				(NoCondFact) /* epsilon */
+				;
+
+DesignatorStatementListB ::= (AllDesignatorStmListB) DesignatorStatementListB COMMA DesignatorStatement
+				   		|
+				   		(SingleDesignatorStmListB) DesignatorStatement
+				   		|
+				   		(NoDesignatorStmListB) /* epsilon */
+				   		;			 
 			 
 DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr
 					  |
@@ -252,7 +272,21 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr
 					  (DesignatorStatementInc) Designator:din INC
 					  |
 					  (DesignatorStatementDec) Designator:dde DEC
+					  |
+					  (DesignatorStatementStar) LBRACKET DesignatorStarBody RBRACKET EQUAL Designator
 					  ;
+					  
+DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList MUL Designator;
+
+DesignatorStarList ::= (AllDesignatorStarList) DesignatorStarList MaybeDesignator COMMA
+					|
+					(NoDesignatorStarList) COMMA
+					;
+					
+MaybeDesignator ::= (YesDesignator) Designator
+				|
+				(NoDesignator) /* epsilon */
+				;
 					  
 DesignatorStatementMultiple ::= (DesignatorStatementMultiple) LBRACKET DesignatorListB RBRACKET EQUAL ExprListB2;
 

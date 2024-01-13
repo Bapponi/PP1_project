@@ -268,9 +268,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(FormParsBody formParsBody) {
 		varDeclCount++;
+		String name;
+		if(currentNamespaceName.equals("")) {
+			name = formParsBody.getParName();
+		}else {
+			name = currentNamespaceName + "::" + formParsBody.getParName();
+			
+		}
+		Tab.insert(Obj.Var, name, currentType.struct);
 		varNames.add(formParsBody.getParName());
 		report_info("Deklarisan parametar funkcije "+ formParsBody.getParName(), formParsBody);
-		Tab.insert(Obj.Var, formParsBody.getParName(), currentType.struct);
 	}
 	
 	public void visit(FormParsBodyType formParsBodyType) {
@@ -321,11 +328,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(MethodTypeName methodTypeName){
     	methodCount++;
-    	
-    	currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), currentMethodStruct);
+    	String methodName;
+    	if(!currentNamespaceName.equals("")) {
+        	methodName = currentNamespaceName + "::" + methodTypeName.getMethodName();
+    	}else {
+    		methodName = methodTypeName.getMethodName();
+    	}
+       	
+    	currentMethod = Tab.insert(Obj.Meth, methodName, currentMethodStruct);
     	methodTypeName.obj = currentMethod;
     	Tab.openScope();
-		report_info("Obradjuje se funkcija " + methodTypeName.getMethodName(), methodTypeName);
+		report_info("Obradjuje se funkcija " + methodName, methodTypeName);
     
 		if(currentMethod.getName().equals("main") && currentMethodStruct == Tab.noType) {
 			main = true;
@@ -424,11 +437,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	whileForeach = true;
     }
     
+    public void visit(For f) {
+    	whileForeach = true;
+    }
+    
     public void visit(StatementWhile sw) {
     	whileForeach = false;
     }
     
     public void visit(StatementForeach sf) {
+    	whileForeach = false;
+    }
+    
+    public void visit(StatementFor sf) {
     	whileForeach = false;
     }
     
@@ -575,7 +596,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(Designator designator) {
-    	Obj obj = Tab.find(designator.getDesignatorName().getDesName());
+    	String name;
+    	if(currentNamespaceName.equals("")) {
+    		name = designator.getDesignatorName().getDesName();
+    	}else {
+    		name = currentNamespaceName + "::" + designator.getDesignatorName().getDesName();
+    	}
+    	Obj obj = Tab.find(name);
     	if(obj == Tab.noObj){
 			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getDesignatorName()+" nije deklarisano! ", null);
     	}
