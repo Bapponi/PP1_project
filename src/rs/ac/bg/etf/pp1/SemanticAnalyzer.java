@@ -108,7 +108,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		report_info("Deklarisana promenljiva "+ varDeclBody.getVarBodyName(), varDeclBody);
 
 		if(brackets) {
-			System.out.println("Niz: " + varDeclBody.getVarBodyName());
 			Struct array = new Struct(Struct.Array);
 			array.setElementType(currentType.struct);
 			if(currentNamespaceName.equals("")) {
@@ -118,7 +117,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				Tab.insert(Obj.Var, name, array);
 			}
 		}else {
-			System.out.println("Promenljiva: " + varDeclBody.getVarBodyName());
 			Obj typeNode = Tab.find(currentType.getTypeName());
 			if (typeNode!=Tab.noObj) {
 				if(currentNamespaceName.equals("")) {
@@ -366,7 +364,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(DesignatorStatementAssign dsa) {
     	
-    	String desName = dsa.getDesignator().getDesignatorName().getDesName();
+    	//trenutno resenje, treba promeniti    	
+    	String desName;
+    	if(currentNamespaceName.equals("")) {
+    		desName = dsa.getDesignator().getDesignatorName().getDesName();
+    	}else {
+    		desName = currentNamespaceName + "::" + dsa.getDesignator().getDesignatorName().getDesName();
+    	}
+    	
     	boolean isClass = false;
     	for(int i = 0; i < classNames.size(); i++) {
     		if(classNames.get(i).equals(desName)) {
@@ -589,7 +594,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
     
     public void visit(ExprBody eb) {
-    	if(eb.getTerm().getFactor().obj.getType().getKind() == Struct.Int) {
+    	Struct type = eb.getTerm().getFactor().obj.getType();
+    	if(type.getKind() == Struct.Int || 
+    	  (type.getKind() == Struct.Array && type.getElemType().getKind() == Struct.Int)) {
     		report_info("Addop-uju se int-ovi sto je ok", eb);
     	}else
     		report_error("Greska na liniji " + eb.getLine() + ": " + "term: " + eb.getTerm().getFactor().obj.getName() + " nije int tipa prilikom addop-a!", null);
@@ -604,7 +611,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     	Obj obj = Tab.find(name);
     	if(obj == Tab.noObj){
-			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getDesignatorName()+" nije deklarisano! ", null);
+			report_error("Greska na liniji " + designator.getLine()+ " : ime " + designator.getDesignatorName() + " nije deklarisano! ", null);
     	}
     	designator.obj = obj;
     }

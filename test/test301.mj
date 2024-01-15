@@ -18,6 +18,7 @@ namespace Nizovi{
 }
 
 	int a, i;
+	int niz[];
 	
 {
 	void main()	
@@ -31,7 +32,7 @@ namespace Nizovi{
 		bodovi--;
 		print(bodovi);
 		
-		for(i = 0; i < 3; i++) bodovi++;
+		//for(i = 0; i < 3; i++) bodovi++;
 		
 		Nizovi::niz = new int[3];
 		Nizovi::niz[Konstante::nula] = Konstante::jedan;
@@ -53,6 +54,10 @@ namespace Nizovi{
 		read(bodovi);
 		bodovi = -bodovi + (Konstante::pet * a / 2 - Konstante::jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
 		print(bodovi);
+		
+		bt = Nizovi::niz.findAny(10);
+		print(bt);
+		
 			
 	}
 }
