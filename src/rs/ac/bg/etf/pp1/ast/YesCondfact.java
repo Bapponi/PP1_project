@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/0/2024 18:32:14
+// 16/0/2024 16:43:44
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class YesCondfact extends MaybeCondFact {
+public class YesCondFact extends MaybeCondFact {
 
     private CondFact CondFact;
 
-    public YesCondfact (CondFact CondFact) {
+    public YesCondFact (CondFact CondFact) {
         this.CondFact=CondFact;
         if(CondFact!=null) CondFact.setParent(this);
     }
@@ -43,7 +43,7 @@ public class YesCondfact extends MaybeCondFact {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("YesCondfact(\n");
+        buffer.append("YesCondFact(\n");
 
         if(CondFact!=null)
             buffer.append(CondFact.toString("  "+tab));
@@ -52,7 +52,7 @@ public class YesCondfact extends MaybeCondFact {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [YesCondfact]");
+        buffer.append(") [YesCondFact]");
         return buffer.toString();
     }
 }

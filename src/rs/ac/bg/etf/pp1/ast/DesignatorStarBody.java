@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/0/2024 18:32:14
+// 16/0/2024 16:43:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -12,11 +12,14 @@ public class DesignatorStarBody implements SyntaxNode {
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     private DesignatorStarList DesignatorStarList;
+    private Mulop Mulop;
     private Designator Designator;
 
-    public DesignatorStarBody (DesignatorStarList DesignatorStarList, Designator Designator) {
+    public DesignatorStarBody (DesignatorStarList DesignatorStarList, Mulop Mulop, Designator Designator) {
         this.DesignatorStarList=DesignatorStarList;
         if(DesignatorStarList!=null) DesignatorStarList.setParent(this);
+        this.Mulop=Mulop;
+        if(Mulop!=null) Mulop.setParent(this);
         this.Designator=Designator;
         if(Designator!=null) Designator.setParent(this);
     }
@@ -27,6 +30,14 @@ public class DesignatorStarBody implements SyntaxNode {
 
     public void setDesignatorStarList(DesignatorStarList DesignatorStarList) {
         this.DesignatorStarList=DesignatorStarList;
+    }
+
+    public Mulop getMulop() {
+        return Mulop;
+    }
+
+    public void setMulop(Mulop Mulop) {
+        this.Mulop=Mulop;
     }
 
     public Designator getDesignator() {
@@ -59,17 +70,20 @@ public class DesignatorStarBody implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(DesignatorStarList!=null) DesignatorStarList.accept(visitor);
+        if(Mulop!=null) Mulop.accept(visitor);
         if(Designator!=null) Designator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(DesignatorStarList!=null) DesignatorStarList.traverseTopDown(visitor);
+        if(Mulop!=null) Mulop.traverseTopDown(visitor);
         if(Designator!=null) Designator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(DesignatorStarList!=null) DesignatorStarList.traverseBottomUp(visitor);
+        if(Mulop!=null) Mulop.traverseBottomUp(visitor);
         if(Designator!=null) Designator.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -81,6 +95,12 @@ public class DesignatorStarBody implements SyntaxNode {
 
         if(DesignatorStarList!=null)
             buffer.append(DesignatorStarList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(Mulop!=null)
+            buffer.append(Mulop.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

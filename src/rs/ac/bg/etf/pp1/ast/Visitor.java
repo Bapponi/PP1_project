@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/0/2024 18:32:14
+// 16/0/2024 16:43:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -132,12 +132,18 @@ public interface Visitor {
     public void visit(SingleDesignatorStmListB SingleDesignatorStmListB);
     public void visit(AllDesignatorStmListB AllDesignatorStmListB);
     public void visit(NoCondFact NoCondFact);
-    public void visit(YesCondfact YesCondfact);
+    public void visit(YesCondFact YesCondFact);
     public void visit(ForBody ForBody);
     public void visit(For For);
     public void visit(Foreach Foreach);
     public void visit(While While);
+    public void visit(EndFor EndFor);
+    public void visit(EndElse EndElse);
+    public void visit(Else Else);
+    public void visit(EndIf EndIf);
     public void visit(ErrorStmt ErrorStmt);
+    public void visit(StatementArray2 StatementArray2);
+    public void visit(StatementArray StatementArray);
     public void visit(StatementFor StatementFor);
     public void visit(StatementFindAndReplace StatementFindAndReplace);
     public void visit(StatementFindAny StatementFindAny);

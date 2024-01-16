@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/0/2024 18:32:14
+// 16/0/2024 16:43:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,12 +9,15 @@ public class StatementIf extends Statement {
 
     private Condition Condition;
     private Statement Statement;
+    private EndIf EndIf;
 
-    public StatementIf (Condition Condition, Statement Statement) {
+    public StatementIf (Condition Condition, Statement Statement, EndIf EndIf) {
         this.Condition=Condition;
         if(Condition!=null) Condition.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.EndIf=EndIf;
+        if(EndIf!=null) EndIf.setParent(this);
     }
 
     public Condition getCondition() {
@@ -33,6 +36,14 @@ public class StatementIf extends Statement {
         this.Statement=Statement;
     }
 
+    public EndIf getEndIf() {
+        return EndIf;
+    }
+
+    public void setEndIf(EndIf EndIf) {
+        this.EndIf=EndIf;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
@@ -40,17 +51,20 @@ public class StatementIf extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(Condition!=null) Condition.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(EndIf!=null) EndIf.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Condition!=null) Condition.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(EndIf!=null) EndIf.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Condition!=null) Condition.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(EndIf!=null) EndIf.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -67,6 +81,12 @@ public class StatementIf extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(EndIf!=null)
+            buffer.append(EndIf.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

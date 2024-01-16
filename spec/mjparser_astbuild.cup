@@ -20,7 +20,8 @@ parser code {:
     }
   
     public void syntax_error(Symbol cur_token) {
-        report_error("\nSintaksna greska", cur_token);
+    	if(!cur_token.value.equals("*") && !cur_token.value.equals(","))
+      		report_error("\nSintaksna greska", cur_token);
     }
   
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
@@ -32,7 +33,8 @@ parser code {:
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
-            msg.append (", gde je vrednost simbola: ").append(((Symbol)info).value);
+            if(info != null)
+            	msg.append (", gde je vrednost simbola: ").append(((Symbol)info).value);
         log.error(msg.toString());
     }
 
@@ -71,6 +73,10 @@ nonterminal Assignop Assignop;
 nonterminal Relop Relop;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
+nonterminal EndIf EndIf;
+nonterminal Else Else;
+nonterminal EndElse EndElse;
+nonterminal EndFor EndFor;
 
 nonterminal AllDeclList AllDeclList;
 nonterminal AllDecl AllDecl;
@@ -243,9 +249,9 @@ Statement ::= (StatementDesign) DesignatorStatement:D1 SEMI {: RESULT=new Statem
 			 |
 			 (StatementDesignMultiple) DesignatorStatementMultiple:D1 SEMI {: RESULT=new StatementDesignMultiple(D1); RESULT.setLine(D1left); :}
 			 |
-			 (StatementIf) IF LPAREN Condition:ci RPAREN Statement:S1 {: RESULT=new StatementIf(ci, S1); RESULT.setLine(cileft); :}
+			 (StatementIf) IF LPAREN Condition:ci RPAREN Statement:stm EndIf:E1 {: RESULT=new StatementIf(ci, stm, E1); RESULT.setLine(cileft); :}
 			 |
-			 (StatementElse) IF LPAREN Condition:ce RPAREN Statement:S1 ELSE Statement:S2 {: RESULT=new StatementElse(ce, S1, S2); RESULT.setLine(celeft); :} 
+			 (StatementElse) IF LPAREN Condition:ce RPAREN Statement:stm1 Else:E1 Statement:stm2 EndElse:E2 {: RESULT=new StatementElse(ce, stm1, E1, stm2, E2); RESULT.setLine(celeft); :}
 			 |
 			 (StatementWhile) While:W1 LPAREN Condition:cw RPAREN Statement:S2 {: RESULT=new StatementWhile(W1, cw, S2); RESULT.setLine(W1left); :}
 			 |
@@ -267,11 +273,20 @@ Statement ::= (StatementDesign) DesignatorStatement:D1 SEMI {: RESULT=new Statem
 			 |
 			 (StatementFindAndReplace) Designator:D1 EQUAL Designator:D2 DOT FINDANDREPLACE LPAREN Expr:E3 COMMA IDENT:farName IMPL Expr:E4 RPAREN SEMI {: RESULT=new StatementFindAndReplace(D1, D2, E3, farName, E4); RESULT.setLine(D1left); :}
 			 |
-			 (StatementFor) For:F1 LPAREN ForBody:F2 RPAREN Statement:S3 {: RESULT=new StatementFor(F1, F2, S3); RESULT.setLine(F1left); :}
+			 (StatementFor) For:F1 LPAREN ForBody:forBody RPAREN Statement:stm EndFor:E2 {: RESULT=new StatementFor(F1, forBody, stm, E2); RESULT.setLine(F1left); :}
+			 |
+			 (StatementArray) MOD MOD Designator:D1 SEMI {: RESULT=new StatementArray(D1); RESULT.setLine(D1left); :}
+			 |
+			 (StatementArray2) MUL MUL Designator:D1 SEMI {: RESULT=new StatementArray2(D1); RESULT.setLine(D1left); :}
 			 |
 			 (ErrorStmt) error SEMI:l
-		   	 {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new ErrorStmt(); :}
+		   	 {: //parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new ErrorStmt(); :}
 			 ;
+			 
+EndIf ::= (EndIf) {: RESULT=new EndIf(); :};
+Else ::= (Else) ELSE {: RESULT=new Else(); :};
+EndElse ::= (EndElse) {: RESULT=new EndElse(); :};
+EndFor ::= (EndFor) {: RESULT=new EndFor(); :};
 			 
 While ::= (While) WHILE {: RESULT=new While(); :};
 
@@ -279,9 +294,9 @@ Foreach ::= (Foreach) FOREACH {: RESULT=new Foreach(); :};
 
 For ::= (For) FOR {: RESULT=new For(); :};
 
-ForBody ::= (ForBody) DesignatorStatementListB:D1 SEMI MaybeCondFact:M2 SEMI DesignatorStatementListB:D3 {: RESULT=new ForBody(D1, M2, D3); RESULT.setLine(D1left); :};
+ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2 {: RESULT=new ForBody(desStmListB1, mcf, desStmListB2); RESULT.setLine(desStmListB1left); :};
 
-MaybeCondFact ::= (YesCondfact) CondFact:C1 {: RESULT=new YesCondfact(C1); RESULT.setLine(C1left); :}
+MaybeCondFact ::= (YesCondFact) CondFact:condFact {: RESULT=new YesCondFact(condFact); RESULT.setLine(condFactleft); :}
 				|
 				(NoCondFact) {: RESULT=new NoCondFact(); :} /* epsilon */
 				;
@@ -304,7 +319,7 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr:E1
 					  (DesignatorStatementStar) LBRACKET DesignatorStarBody:D1 RBRACKET EQUAL Designator:D2 {: RESULT=new DesignatorStatementStar(D1, D2); RESULT.setLine(D1left); :}
 					  ;
 					  
-DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList:D1 MUL Designator:D2 {: RESULT=new DesignatorStarBody(D1, D2); RESULT.setLine(D1left); :};
+DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList:D1 Mulop:M2 Designator:D3 {: RESULT=new DesignatorStarBody(D1, M2, D3); RESULT.setLine(D1left); :};
 
 DesignatorStarList ::= (AllDesignatorStarList) DesignatorStarList:D1 MaybeDesignator:M2 COMMA {: RESULT=new AllDesignatorStarList(D1, M2); RESULT.setLine(D1left); :}
 					|

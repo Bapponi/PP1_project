@@ -20,7 +20,8 @@ parser code {:
     }
   
     public void syntax_error(Symbol cur_token) {
-        report_error("\nSintaksna greska", cur_token);
+    	if(!cur_token.value.equals("*") && !cur_token.value.equals(","))
+      		report_error("\nSintaksna greska", cur_token);
     }
   
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
@@ -32,7 +33,8 @@ parser code {:
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
-            msg.append (", gde je vrednost simbola: ").append(((Symbol)info).value);
+            if(info != null)
+            	msg.append (", gde je vrednost simbola: ").append(((Symbol)info).value);
         log.error(msg.toString());
     }
 
@@ -65,7 +67,7 @@ terminal Integer NUMBER;
 terminal String CHAR;
 terminal String BOOL;
 
-nonterminal FormPars, Label, Assignop, Relop, Addop, Mulop;
+nonterminal FormPars, Label, Assignop, Relop, Addop, Mulop, EndIf, Else, EndElse, EndFor;
 
 nonterminal AllDeclList, AllDecl, MethodDeclList, ConstDeclBodyList;
 nonterminal ConstDeclBody, Brackets, BracketsList, VarDeclBodyList, VarDeclBody;
@@ -215,9 +217,9 @@ Statement ::= (StatementDesign) DesignatorStatement SEMI
 			 |
 			 (StatementDesignMultiple) DesignatorStatementMultiple SEMI
 			 |
-			 (StatementIf) IF LPAREN Condition:ci RPAREN Statement
+			 (StatementIf) IF LPAREN Condition:ci RPAREN Statement:stm EndIf
 			 |
-			 (StatementElse) IF LPAREN Condition:ce RPAREN Statement ELSE Statement 
+			 (StatementElse) IF LPAREN Condition:ce RPAREN Statement:stm1 Else Statement:stm2 EndElse
 			 |
 			 (StatementWhile) While LPAREN Condition:cw RPAREN Statement
 			 |
@@ -239,11 +241,20 @@ Statement ::= (StatementDesign) DesignatorStatement SEMI
 			 |
 			 (StatementFindAndReplace) Designator EQUAL Designator DOT FINDANDREPLACE LPAREN Expr COMMA IDENT:farName IMPL Expr RPAREN SEMI
 			 |
-			 (StatementFor) For LPAREN ForBody RPAREN Statement
+			 (StatementFor) For LPAREN ForBody:forBody RPAREN Statement:stm EndFor
+			 |
+			 (StatementArray) MOD MOD Designator SEMI
+			 |
+			 (StatementArray2) MUL MUL Designator SEMI
 			 |
 			 (ErrorStmt) error SEMI:l
-		   	 {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		   	 {: //parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
 			 ;
+			 
+EndIf ::= (EndIf);
+Else ::= (Else) ELSE;
+EndElse ::= (EndElse);
+EndFor ::= (EndFor);
 			 
 While ::= (While) WHILE;
 
@@ -251,9 +262,9 @@ Foreach ::= (Foreach) FOREACH;
 
 For ::= (For) FOR;
 
-ForBody ::= (ForBody) DesignatorStatementListB SEMI MaybeCondFact SEMI DesignatorStatementListB;
+ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2;
 
-MaybeCondFact ::= (YesCondfact) CondFact
+MaybeCondFact ::= (YesCondFact) CondFact:condFact
 				|
 				(NoCondFact) /* epsilon */
 				;
@@ -276,7 +287,7 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:das EQUAL Expr
 					  (DesignatorStatementStar) LBRACKET DesignatorStarBody RBRACKET EQUAL Designator
 					  ;
 					  
-DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList MUL Designator;
+DesignatorStarBody ::= (DesignatorStarBody) DesignatorStarList Mulop Designator;
 
 DesignatorStarList ::= (AllDesignatorStarList) DesignatorStarList MaybeDesignator COMMA
 					|

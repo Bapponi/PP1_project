@@ -25,15 +25,14 @@ namespace Nizovi{
 		int bodovi;
 		bool bt;
 	{
+	
 		bodovi = 0;
 		bodovi++;
 		bodovi = bodovi + Konstante::jedan;
 		bodovi = bodovi * Konstante::pet;
 		bodovi--;
 		print(bodovi);
-		
-		//for(i = 0; i < 3; i++) bodovi++;
-		
+				
 		Nizovi::niz = new int[3];
 		Nizovi::niz[Konstante::nula] = Konstante::jedan;
 		Nizovi::niz[1] = 2;
@@ -55,11 +54,35 @@ namespace Nizovi{
 		bodovi = -bodovi + (Konstante::pet * a / 2 - Konstante::jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
 		print(bodovi);
 		
-		bt = Nizovi::niz.findAny(10);
-		print(bt);
+		//bt = Nizovi::niz.findAny(10);
+		//print(bt);
 		
-			
+		//for(bodovi = 1; bodovi < 5; bodovi++) bodovi = bodovi;
+		//%%Nizovi::niz;
+		//**Nizovi::niz;
+		bodovi = 2;
+		if(2 == 2) bodovi = 10;
+		else bodovi = 1;
+		print(bodovi);			
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

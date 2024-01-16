@@ -460,16 +460,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(StatementBreak sbr) {
     	if(whileForeach)
-			report_info("Break je u while ili foreach petlji " , sbr);
+			report_info("Break je u while ili foreach petlji ili for petlji " , sbr);
     	else
-			report_error("Semanticka greska na liniji " + sbr.getLine() + " : break nije u while ili foreach petlji!", null);
+			report_error("Semanticka greska na liniji " + sbr.getLine() + " : break nije u while ili foreach ili for petlji!", null);
     }
     
     public void visit(StatementContinue sco) {
     	if(whileForeach)
-			report_info("Continue je u while ili foreach petlji " , sco);
+			report_info("Continue je u while ili foreach ili for petlji " , sco);
     	else
-			report_error("Semanticka greska na liniji " + sco.getLine() + " : continue nije u while ili foreach petlji!", null);
+			report_error("Semanticka greska na liniji " + sco.getLine() + " : continue nije u while ili foreach ili for petlji!", null);
     }
     
     public void visit(StatementRead sre) {

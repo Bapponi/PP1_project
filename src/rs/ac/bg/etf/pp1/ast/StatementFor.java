@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/0/2024 18:32:14
+// 16/0/2024 16:43:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,14 +10,17 @@ public class StatementFor extends Statement {
     private For For;
     private ForBody ForBody;
     private Statement Statement;
+    private EndFor EndFor;
 
-    public StatementFor (For For, ForBody ForBody, Statement Statement) {
+    public StatementFor (For For, ForBody ForBody, Statement Statement, EndFor EndFor) {
         this.For=For;
         if(For!=null) For.setParent(this);
         this.ForBody=ForBody;
         if(ForBody!=null) ForBody.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.EndFor=EndFor;
+        if(EndFor!=null) EndFor.setParent(this);
     }
 
     public For getFor() {
@@ -44,6 +47,14 @@ public class StatementFor extends Statement {
         this.Statement=Statement;
     }
 
+    public EndFor getEndFor() {
+        return EndFor;
+    }
+
+    public void setEndFor(EndFor EndFor) {
+        this.EndFor=EndFor;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
@@ -52,6 +63,7 @@ public class StatementFor extends Statement {
         if(For!=null) For.accept(visitor);
         if(ForBody!=null) ForBody.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(EndFor!=null) EndFor.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
@@ -59,12 +71,14 @@ public class StatementFor extends Statement {
         if(For!=null) For.traverseTopDown(visitor);
         if(ForBody!=null) ForBody.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(EndFor!=null) EndFor.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(For!=null) For.traverseBottomUp(visitor);
         if(ForBody!=null) ForBody.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(EndFor!=null) EndFor.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -87,6 +101,12 @@ public class StatementFor extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(EndFor!=null)
+            buffer.append(EndFor.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
