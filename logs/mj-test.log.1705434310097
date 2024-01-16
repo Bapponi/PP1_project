@@ -1,0 +1,1838 @@
+INFO  20:39:46,243 - Compiling source file: C:\Users\Aleksandar\Desktop\Za faks\7 semestar\Programski prevodioci\The PP projekat\workspace\MJCompilerProject\test\test301.mj
+INFO  20:39:46,285 - #5 program
+INFO  20:39:46,286 - #50 test301
+INFO  20:39:46,286 - #47 namespace
+INFO  20:39:46,287 - #50 Konstante
+INFO  20:39:46,287 - #43 {
+INFO  20:39:46,287 - #9 const
+INFO  20:39:46,288 - #50 int
+INFO  20:39:46,288 - #50 nula
+INFO  20:39:46,289 - #33 =
+INFO  20:39:46,289 - #51 0
+INFO  20:39:46,289 - #36 ;
+INFO  20:39:46,290 - #9 const
+INFO  20:39:46,290 - #50 int
+INFO  20:39:46,291 - #50 jedan
+INFO  20:39:46,291 - #33 =
+INFO  20:39:46,291 - #51 1
+INFO  20:39:46,291 - #36 ;
+INFO  20:39:46,291 - #9 const
+INFO  20:39:46,291 - #50 int
+INFO  20:39:46,298 - #50 pet
+INFO  20:39:46,298 - #33 =
+INFO  20:39:46,298 - #51 5
+INFO  20:39:46,298 - #36 ;
+INFO  20:39:46,298 - #43 {
+INFO  20:39:46,298 - #44 }
+INFO  20:39:46,299 - #44 }
+INFO  20:39:46,299 - #47 namespace
+INFO  20:39:46,300 - #50 Nizovi
+INFO  20:39:46,300 - #43 {
+INFO  20:39:46,300 - #50 int
+INFO  20:39:46,300 - #50 niz
+INFO  20:39:46,301 - #41 [
+INFO  20:39:46,301 - #42 ]
+INFO  20:39:46,301 - #36 ;
+INFO  20:39:46,301 - #50 char
+INFO  20:39:46,302 - #50 nizch
+INFO  20:39:46,302 - #41 [
+INFO  20:39:46,302 - #42 ]
+INFO  20:39:46,302 - #36 ;
+INFO  20:39:46,302 - #43 {
+INFO  20:39:46,303 - #44 }
+INFO  20:39:46,303 - #44 }
+INFO  20:39:46,303 - #50 int
+INFO  20:39:46,303 - #50 a
+INFO  20:39:46,303 - #37 ,
+INFO  20:39:46,303 - #50 i
+INFO  20:39:46,303 - #36 ;
+INFO  20:39:46,304 - #50 int
+INFO  20:39:46,304 - #50 niz
+INFO  20:39:46,304 - #41 [
+INFO  20:39:46,304 - #42 ]
+INFO  20:39:46,304 - #36 ;
+INFO  20:39:46,304 - #43 {
+INFO  20:39:46,304 - #16 void
+INFO  20:39:46,304 - #50 main
+INFO  20:39:46,304 - #39 (
+INFO  20:39:46,305 - #40 )
+INFO  20:39:46,305 - #50 int
+INFO  20:39:46,306 - #50 bodovi
+INFO  20:39:46,306 - #36 ;
+INFO  20:39:46,306 - #50 bool
+INFO  20:39:46,306 - #50 bt
+INFO  20:39:46,306 - #36 ;
+INFO  20:39:46,306 - #43 {
+INFO  20:39:46,306 - #50 bodovi
+INFO  20:39:46,307 - #33 =
+INFO  20:39:46,308 - #51 0
+INFO  20:39:46,308 - #36 ;
+INFO  20:39:46,309 - #50 bodovi
+INFO  20:39:46,309 - #34 ++
+INFO  20:39:46,309 - #36 ;
+INFO  20:39:46,311 - #50 bodovi
+INFO  20:39:46,311 - #33 =
+INFO  20:39:46,311 - #50 bodovi
+INFO  20:39:46,311 - #20 +
+INFO  20:39:46,311 - #50 Konstante::jedan
+INFO  20:39:46,312 - #36 ;
+INFO  20:39:46,313 - #50 bodovi
+INFO  20:39:46,313 - #33 =
+INFO  20:39:46,313 - #50 bodovi
+INFO  20:39:46,313 - #22 *
+INFO  20:39:46,313 - #50 Konstante::pet
+INFO  20:39:46,314 - #36 ;
+INFO  20:39:46,314 - #50 bodovi
+INFO  20:39:46,314 - #35 --
+INFO  20:39:46,314 - #36 ;
+INFO  20:39:46,315 - #13 print
+INFO  20:39:46,315 - #39 (
+INFO  20:39:46,315 - #50 bodovi
+INFO  20:39:46,315 - #40 )
+INFO  20:39:46,315 - #36 ;
+INFO  20:39:46,315 - #50 Nizovi::niz
+INFO  20:39:46,316 - #33 =
+INFO  20:39:46,316 - #12 new
+INFO  20:39:46,316 - #50 int
+INFO  20:39:46,316 - #41 [
+INFO  20:39:46,316 - #51 3
+INFO  20:39:46,316 - #42 ]
+INFO  20:39:46,316 - #36 ;
+INFO  20:39:46,316 - #50 Nizovi::niz
+INFO  20:39:46,316 - #41 [
+INFO  20:39:46,316 - #50 Konstante::nula
+INFO  20:39:46,316 - #42 ]
+INFO  20:39:46,316 - #33 =
+INFO  20:39:46,317 - #50 Konstante::jedan
+INFO  20:39:46,317 - #36 ;
+INFO  20:39:46,317 - #50 Nizovi::niz
+INFO  20:39:46,317 - #41 [
+INFO  20:39:46,317 - #51 1
+INFO  20:39:46,317 - #42 ]
+INFO  20:39:46,317 - #33 =
+INFO  20:39:46,317 - #51 2
+INFO  20:39:46,317 - #36 ;
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,318 - #41 [
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,318 - #41 [
+INFO  20:39:46,318 - #50 Konstante::jedan
+INFO  20:39:46,318 - #42 ]
+INFO  20:39:46,318 - #42 ]
+INFO  20:39:46,318 - #33 =
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,318 - #41 [
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,318 - #41 [
+INFO  20:39:46,318 - #51 0
+INFO  20:39:46,318 - #42 ]
+INFO  20:39:46,318 - #42 ]
+INFO  20:39:46,318 - #22 *
+INFO  20:39:46,318 - #51 3
+INFO  20:39:46,318 - #36 ;
+INFO  20:39:46,318 - #50 bodovi
+INFO  20:39:46,318 - #33 =
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,318 - #41 [
+INFO  20:39:46,318 - #51 2
+INFO  20:39:46,318 - #42 ]
+INFO  20:39:46,318 - #23 /
+INFO  20:39:46,318 - #50 Nizovi::niz
+INFO  20:39:46,319 - #41 [
+INFO  20:39:46,319 - #51 0
+INFO  20:39:46,319 - #42 ]
+INFO  20:39:46,319 - #36 ;
+INFO  20:39:46,319 - #13 print
+INFO  20:39:46,319 - #39 (
+INFO  20:39:46,319 - #50 bodovi
+INFO  20:39:46,319 - #40 )
+INFO  20:39:46,319 - #36 ;
+INFO  20:39:46,319 - #13 print
+INFO  20:39:46,319 - #39 (
+INFO  20:39:46,319 - #50 Nizovi::niz
+INFO  20:39:46,319 - #41 [
+INFO  20:39:46,319 - #51 2
+INFO  20:39:46,319 - #42 ]
+INFO  20:39:46,319 - #40 )
+INFO  20:39:46,319 - #36 ;
+INFO  20:39:46,319 - #50 Nizovi::nizch
+INFO  20:39:46,319 - #33 =
+INFO  20:39:46,319 - #12 new
+INFO  20:39:46,320 - #50 char
+INFO  20:39:46,320 - #41 [
+INFO  20:39:46,320 - #51 3
+INFO  20:39:46,320 - #42 ]
+INFO  20:39:46,320 - #36 ;
+INFO  20:39:46,320 - #50 Nizovi::nizch
+INFO  20:39:46,320 - #41 [
+INFO  20:39:46,320 - #51 0
+INFO  20:39:46,320 - #42 ]
+INFO  20:39:46,320 - #33 =
+INFO  20:39:46,320 - #52 'a'
+INFO  20:39:46,320 - #36 ;
+INFO  20:39:46,320 - #50 Nizovi::nizch
+INFO  20:39:46,320 - #41 [
+INFO  20:39:46,320 - #50 Konstante::jedan
+INFO  20:39:46,320 - #42 ]
+INFO  20:39:46,320 - #33 =
+INFO  20:39:46,320 - #52 'b'
+INFO  20:39:46,320 - #36 ;
+INFO  20:39:46,320 - #50 Nizovi::nizch
+INFO  20:39:46,320 - #41 [
+INFO  20:39:46,320 - #50 Konstante::pet
+INFO  20:39:46,320 - #21 -
+INFO  20:39:46,320 - #51 3
+INFO  20:39:46,320 - #42 ]
+INFO  20:39:46,320 - #33 =
+INFO  20:39:46,320 - #52 'c'
+INFO  20:39:46,320 - #36 ;
+INFO  20:39:46,320 - #13 print
+INFO  20:39:46,320 - #39 (
+INFO  20:39:46,322 - #50 Nizovi::nizch
+INFO  20:39:46,322 - #41 [
+INFO  20:39:46,322 - #51 1
+INFO  20:39:46,322 - #42 ]
+INFO  20:39:46,322 - #40 )
+INFO  20:39:46,322 - #36 ;
+INFO  20:39:46,322 - #13 print
+INFO  20:39:46,322 - #39 (
+INFO  20:39:46,322 - #50 Nizovi::nizch
+INFO  20:39:46,322 - #41 [
+INFO  20:39:46,322 - #50 Konstante::jedan
+INFO  20:39:46,322 - #22 *
+INFO  20:39:46,322 - #51 2
+INFO  20:39:46,322 - #42 ]
+INFO  20:39:46,322 - #40 )
+INFO  20:39:46,322 - #36 ;
+INFO  20:39:46,322 - #50 a
+INFO  20:39:46,322 - #33 =
+INFO  20:39:46,322 - #51 1
+INFO  20:39:46,322 - #36 ;
+INFO  20:39:46,322 - #14 read
+INFO  20:39:46,322 - #39 (
+INFO  20:39:46,322 - #50 bodovi
+INFO  20:39:46,322 - #40 )
+INFO  20:39:46,322 - #36 ;
+INFO  20:39:46,322 - #50 bodovi
+INFO  20:39:46,322 - #33 =
+INFO  20:39:46,322 - #21 -
+INFO  20:39:46,323 - #50 bodovi
+INFO  20:39:46,323 - #20 +
+INFO  20:39:46,323 - #39 (
+INFO  20:39:46,323 - #50 Konstante::pet
+INFO  20:39:46,323 - #22 *
+INFO  20:39:46,323 - #50 a
+INFO  20:39:46,323 - #23 /
+INFO  20:39:46,325 - #51 2
+INFO  20:39:46,325 - #21 -
+INFO  20:39:46,325 - #50 Konstante::jedan
+INFO  20:39:46,325 - #40 )
+INFO  20:39:46,325 - #22 *
+INFO  20:39:46,325 - #50 bodovi
+INFO  20:39:46,325 - #21 -
+INFO  20:39:46,325 - #39 (
+INFO  20:39:46,325 - #51 3
+INFO  20:39:46,325 - #24 %
+INFO  20:39:46,325 - #51 2
+INFO  20:39:46,326 - #20 +
+INFO  20:39:46,326 - #51 3
+INFO  20:39:46,326 - #22 *
+INFO  20:39:46,326 - #51 2
+INFO  20:39:46,326 - #21 -
+INFO  20:39:46,326 - #51 3
+INFO  20:39:46,326 - #40 )
+INFO  20:39:46,326 - #36 ;
+INFO  20:39:46,326 - #13 print
+INFO  20:39:46,326 - #39 (
+INFO  20:39:46,326 - #50 bodovi
+INFO  20:39:46,326 - #40 )
+INFO  20:39:46,326 - #36 ;
+INFO  20:39:46,326 - #48 for
+INFO  20:39:46,326 - #39 (
+INFO  20:39:46,327 - #50 bodovi
+INFO  20:39:46,327 - #33 =
+INFO  20:39:46,327 - #51 1
+INFO  20:39:46,327 - #36 ;
+INFO  20:39:46,327 - #50 bodovi
+INFO  20:39:46,327 - #29 <
+INFO  20:39:46,328 - #51 5
+INFO  20:39:46,329 - #36 ;
+INFO  20:39:46,329 - #50 bodovi
+INFO  20:39:46,329 - #34 ++
+INFO  20:39:46,329 - #40 )
+INFO  20:39:46,329 - #50 bodovi
+INFO  20:39:46,329 - #33 =
+INFO  20:39:46,329 - #50 bodovi
+INFO  20:39:46,329 - #36 ;
+INFO  20:39:46,329 - #13 print
+INFO  20:39:46,330 - #39 (
+INFO  20:39:46,330 - #50 bodovi
+INFO  20:39:46,330 - #40 )
+INFO  20:39:46,330 - #36 ;
+INFO  20:39:46,330 - #44 }
+INFO  20:39:46,330 - #44 }
+INFO  20:39:46,339 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  AllNamespaceList(
+    AllNamespaceList(
+      NoNamespaceList(
+      ) [NoNamespaceList]
+      Namespace(
+        NamespaceName(
+         Konstante
+        ) [NamespaceName]
+        ProgramBody(
+          AllDeclarationsList(
+            AllDeclarationsList(
+              AllDeclarationsList(
+                NoAllDecl(
+                ) [NoAllDecl]
+                ConstDeclarations(
+                  ConstDecl(
+                    ConstDeclTypeName(
+                      Type(
+                       int
+                      ) [Type]
+                    ) [ConstDeclTypeName]
+                   nula
+                    AllConstNum(
+                      Num(
+                       0
+                      ) [Num]
+                    ) [AllConstNum]
+                    NoConstDeclBodyList(
+                    ) [NoConstDeclBodyList]
+                  ) [ConstDecl]
+                ) [ConstDeclarations]
+              ) [AllDeclarationsList]
+              ConstDeclarations(
+                ConstDecl(
+                  ConstDeclTypeName(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [ConstDeclTypeName]
+                 jedan
+                  AllConstNum(
+                    Num(
+                     1
+                    ) [Num]
+                  ) [AllConstNum]
+                  NoConstDeclBodyList(
+                  ) [NoConstDeclBodyList]
+                ) [ConstDecl]
+              ) [ConstDeclarations]
+            ) [AllDeclarationsList]
+            ConstDeclarations(
+              ConstDecl(
+                ConstDeclTypeName(
+                  Type(
+                   int
+                  ) [Type]
+                ) [ConstDeclTypeName]
+               pet
+                AllConstNum(
+                  Num(
+                   5
+                  ) [Num]
+                ) [AllConstNum]
+                NoConstDeclBodyList(
+                ) [NoConstDeclBodyList]
+              ) [ConstDecl]
+            ) [ConstDeclarations]
+          ) [AllDeclarationsList]
+          NoMethodDeclListList(
+          ) [NoMethodDeclListList]
+        ) [ProgramBody]
+      ) [Namespace]
+    ) [AllNamespaceList]
+    Namespace(
+      NamespaceName(
+       Nizovi
+      ) [NamespaceName]
+      ProgramBody(
+        AllDeclarationsList(
+          AllDeclarationsList(
+            NoAllDecl(
+            ) [NoAllDecl]
+            VarDeclarations(
+              VarDecl(
+                VarDeclTypeName(
+                  Type(
+                   int
+                  ) [Type]
+                ) [VarDeclTypeName]
+               niz
+                SingleBrackets(
+                ) [SingleBrackets]
+                NoVarDeclBodyList(
+                ) [NoVarDeclBodyList]
+              ) [VarDecl]
+            ) [VarDeclarations]
+          ) [AllDeclarationsList]
+          VarDeclarations(
+            VarDecl(
+              VarDeclTypeName(
+                Type(
+                 char
+                ) [Type]
+              ) [VarDeclTypeName]
+             nizch
+              SingleBrackets(
+              ) [SingleBrackets]
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+            ) [VarDecl]
+          ) [VarDeclarations]
+        ) [AllDeclarationsList]
+        NoMethodDeclListList(
+        ) [NoMethodDeclListList]
+      ) [ProgramBody]
+    ) [Namespace]
+  ) [AllNamespaceList]
+  ProgramBody(
+    AllDeclarationsList(
+      AllDeclarationsList(
+        NoAllDecl(
+        ) [NoAllDecl]
+        VarDeclarations(
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclTypeName]
+           a
+            NoBrackets(
+            ) [NoBrackets]
+            AllVarDeclBodyList(
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+              VarDeclBody(
+               i
+                NoBrackets(
+                ) [NoBrackets]
+              ) [VarDeclBody]
+            ) [AllVarDeclBodyList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+      ) [AllDeclarationsList]
+      VarDeclarations(
+        VarDecl(
+          VarDeclTypeName(
+            Type(
+             int
+            ) [Type]
+          ) [VarDeclTypeName]
+         niz
+          SingleBrackets(
+          ) [SingleBrackets]
+          NoVarDeclBodyList(
+          ) [NoVarDeclBodyList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+    ) [AllDeclarationsList]
+    AllMethodDeclList(
+      NoMethodDeclListList(
+      ) [NoMethodDeclListList]
+      MethodDecl(
+        MethodTypeName(
+          VoidPart(
+          ) [VoidPart]
+         main
+        ) [MethodTypeName]
+        NoFormParsListB(
+        ) [NoFormParsListB]
+        AllVarDeclList(
+          AllVarDeclList(
+            NoVarDeclList(
+            ) [NoVarDeclList]
+            VarDecl(
+              VarDeclTypeName(
+                Type(
+                 int
+                ) [Type]
+              ) [VarDeclTypeName]
+             bodovi
+              NoBrackets(
+              ) [NoBrackets]
+              NoVarDeclBodyList(
+              ) [NoVarDeclBodyList]
+            ) [VarDecl]
+          ) [AllVarDeclList]
+          VarDecl(
+            VarDeclTypeName(
+              Type(
+               bool
+              ) [Type]
+            ) [VarDeclTypeName]
+           bt
+            NoBrackets(
+            ) [NoBrackets]
+            NoVarDeclBodyList(
+            ) [NoVarDeclBodyList]
+          ) [VarDecl]
+        ) [AllVarDeclList]
+        AllStatementList(
+          AllStatementList(
+            AllStatementList(
+              AllStatementList(
+                AllStatementList(
+                  AllStatementList(
+                    AllStatementList(
+                      AllStatementList(
+                        AllStatementList(
+                          AllStatementList(
+                            AllStatementList(
+                              AllStatementList(
+                                AllStatementList(
+                                  AllStatementList(
+                                    AllStatementList(
+                                      AllStatementList(
+                                        AllStatementList(
+                                          AllStatementList(
+                                            AllStatementList(
+                                              AllStatementList(
+                                                AllStatementList(
+                                                  AllStatementList(
+                                                    AllStatementList(
+                                                      AllStatementList(
+                                                        AllStatementList(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          StatementDesign(
+                                                            DesignatorStatementAssign(
+                                                              Designator(
+                                                                DesignatorName(
+                                                                 bodovi
+                                                                ) [DesignatorName]
+                                                                NoDesignatorBodyList(
+                                                                ) [NoDesignatorBodyList]
+                                                              ) [Designator]
+                                                              ExprPlus(
+                                                                Term(
+                                                                  FactorNum(
+                                                                   0
+                                                                  ) [FactorNum]
+                                                                  NoTermBodyList(
+                                                                  ) [NoTermBodyList]
+                                                                ) [Term]
+                                                                NoExprBodyList(
+                                                                ) [NoExprBodyList]
+                                                              ) [ExprPlus]
+                                                            ) [DesignatorStatementAssign]
+                                                          ) [StatementDesign]
+                                                        ) [AllStatementList]
+                                                        StatementDesign(
+                                                          DesignatorStatementInc(
+                                                            Designator(
+                                                              DesignatorName(
+                                                               bodovi
+                                                              ) [DesignatorName]
+                                                              NoDesignatorBodyList(
+                                                              ) [NoDesignatorBodyList]
+                                                            ) [Designator]
+                                                          ) [DesignatorStatementInc]
+                                                        ) [StatementDesign]
+                                                      ) [AllStatementList]
+                                                      StatementDesign(
+                                                        DesignatorStatementAssign(
+                                                          Designator(
+                                                            DesignatorName(
+                                                             bodovi
+                                                            ) [DesignatorName]
+                                                            NoDesignatorBodyList(
+                                                            ) [NoDesignatorBodyList]
+                                                          ) [Designator]
+                                                          ExprPlus(
+                                                            Term(
+                                                              FactorDesignatorAll(
+                                                                Designator(
+                                                                  DesignatorName(
+                                                                   bodovi
+                                                                  ) [DesignatorName]
+                                                                  NoDesignatorBodyList(
+                                                                  ) [NoDesignatorBodyList]
+                                                                ) [Designator]
+                                                                NoFactorDesignatorBodyListB(
+                                                                ) [NoFactorDesignatorBodyListB]
+                                                              ) [FactorDesignatorAll]
+                                                              NoTermBodyList(
+                                                              ) [NoTermBodyList]
+                                                            ) [Term]
+                                                            AllExprBodyList(
+                                                              NoExprBodyList(
+                                                              ) [NoExprBodyList]
+                                                              ExprBody(
+                                                                AddopPlus(
+                                                                ) [AddopPlus]
+                                                                Term(
+                                                                  FactorDesignatorAll(
+                                                                    Designator(
+                                                                      DesignatorName(
+                                                                       Konstante::jedan
+                                                                      ) [DesignatorName]
+                                                                      NoDesignatorBodyList(
+                                                                      ) [NoDesignatorBodyList]
+                                                                    ) [Designator]
+                                                                    NoFactorDesignatorBodyListB(
+                                                                    ) [NoFactorDesignatorBodyListB]
+                                                                  ) [FactorDesignatorAll]
+                                                                  NoTermBodyList(
+                                                                  ) [NoTermBodyList]
+                                                                ) [Term]
+                                                              ) [ExprBody]
+                                                            ) [AllExprBodyList]
+                                                          ) [ExprPlus]
+                                                        ) [DesignatorStatementAssign]
+                                                      ) [StatementDesign]
+                                                    ) [AllStatementList]
+                                                    StatementDesign(
+                                                      DesignatorStatementAssign(
+                                                        Designator(
+                                                          DesignatorName(
+                                                           bodovi
+                                                          ) [DesignatorName]
+                                                          NoDesignatorBodyList(
+                                                          ) [NoDesignatorBodyList]
+                                                        ) [Designator]
+                                                        ExprPlus(
+                                                          Term(
+                                                            FactorDesignatorAll(
+                                                              Designator(
+                                                                DesignatorName(
+                                                                 bodovi
+                                                                ) [DesignatorName]
+                                                                NoDesignatorBodyList(
+                                                                ) [NoDesignatorBodyList]
+                                                              ) [Designator]
+                                                              NoFactorDesignatorBodyListB(
+                                                              ) [NoFactorDesignatorBodyListB]
+                                                            ) [FactorDesignatorAll]
+                                                            AllTermBodyList(
+                                                              NoTermBodyList(
+                                                              ) [NoTermBodyList]
+                                                              TermBody(
+                                                                MulopMul(
+                                                                ) [MulopMul]
+                                                                FactorDesignatorAll(
+                                                                  Designator(
+                                                                    DesignatorName(
+                                                                     Konstante::pet
+                                                                    ) [DesignatorName]
+                                                                    NoDesignatorBodyList(
+                                                                    ) [NoDesignatorBodyList]
+                                                                  ) [Designator]
+                                                                  NoFactorDesignatorBodyListB(
+                                                                  ) [NoFactorDesignatorBodyListB]
+                                                                ) [FactorDesignatorAll]
+                                                              ) [TermBody]
+                                                            ) [AllTermBodyList]
+                                                          ) [Term]
+                                                          NoExprBodyList(
+                                                          ) [NoExprBodyList]
+                                                        ) [ExprPlus]
+                                                      ) [DesignatorStatementAssign]
+                                                    ) [StatementDesign]
+                                                  ) [AllStatementList]
+                                                  StatementDesign(
+                                                    DesignatorStatementDec(
+                                                      Designator(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                        NoDesignatorBodyList(
+                                                        ) [NoDesignatorBodyList]
+                                                      ) [Designator]
+                                                    ) [DesignatorStatementDec]
+                                                  ) [StatementDesign]
+                                                ) [AllStatementList]
+                                                StatementPrint(
+                                                  ExprPlus(
+                                                    Term(
+                                                      FactorDesignatorAll(
+                                                        Designator(
+                                                          DesignatorName(
+                                                           bodovi
+                                                          ) [DesignatorName]
+                                                          NoDesignatorBodyList(
+                                                          ) [NoDesignatorBodyList]
+                                                        ) [Designator]
+                                                        NoFactorDesignatorBodyListB(
+                                                        ) [NoFactorDesignatorBodyListB]
+                                                      ) [FactorDesignatorAll]
+                                                      NoTermBodyList(
+                                                      ) [NoTermBodyList]
+                                                    ) [Term]
+                                                    NoExprBodyList(
+                                                    ) [NoExprBodyList]
+                                                  ) [ExprPlus]
+                                                  NoNumConstListB(
+                                                  ) [NoNumConstListB]
+                                                ) [StatementPrint]
+                                              ) [AllStatementList]
+                                              StatementDesign(
+                                                DesignatorStatementAssign(
+                                                  Designator(
+                                                    DesignatorName(
+                                                     Nizovi::niz
+                                                    ) [DesignatorName]
+                                                    NoDesignatorBodyList(
+                                                    ) [NoDesignatorBodyList]
+                                                  ) [Designator]
+                                                  ExprPlus(
+                                                    Term(
+                                                      FactorNew(
+                                                        Type(
+                                                         int
+                                                        ) [Type]
+                                                        NewTypeBodyOne(
+                                                          ExprPlus(
+                                                            Term(
+                                                              FactorNum(
+                                                               3
+                                                              ) [FactorNum]
+                                                              NoTermBodyList(
+                                                              ) [NoTermBodyList]
+                                                            ) [Term]
+                                                            NoExprBodyList(
+                                                            ) [NoExprBodyList]
+                                                          ) [ExprPlus]
+                                                        ) [NewTypeBodyOne]
+                                                      ) [FactorNew]
+                                                      NoTermBodyList(
+                                                      ) [NoTermBodyList]
+                                                    ) [Term]
+                                                    NoExprBodyList(
+                                                    ) [NoExprBodyList]
+                                                  ) [ExprPlus]
+                                                ) [DesignatorStatementAssign]
+                                              ) [StatementDesign]
+                                            ) [AllStatementList]
+                                            StatementDesign(
+                                              DesignatorStatementAssign(
+                                                Designator(
+                                                  DesignatorName(
+                                                   Nizovi::niz
+                                                  ) [DesignatorName]
+                                                  AllDesignatorBodyList(
+                                                    NoDesignatorBodyList(
+                                                    ) [NoDesignatorBodyList]
+                                                    DesignatorBody(
+                                                      ExprPlus(
+                                                        Term(
+                                                          FactorDesignatorAll(
+                                                            Designator(
+                                                              DesignatorName(
+                                                               Konstante::nula
+                                                              ) [DesignatorName]
+                                                              NoDesignatorBodyList(
+                                                              ) [NoDesignatorBodyList]
+                                                            ) [Designator]
+                                                            NoFactorDesignatorBodyListB(
+                                                            ) [NoFactorDesignatorBodyListB]
+                                                          ) [FactorDesignatorAll]
+                                                          NoTermBodyList(
+                                                          ) [NoTermBodyList]
+                                                        ) [Term]
+                                                        NoExprBodyList(
+                                                        ) [NoExprBodyList]
+                                                      ) [ExprPlus]
+                                                    ) [DesignatorBody]
+                                                  ) [AllDesignatorBodyList]
+                                                ) [Designator]
+                                                ExprPlus(
+                                                  Term(
+                                                    FactorDesignatorAll(
+                                                      Designator(
+                                                        DesignatorName(
+                                                         Konstante::jedan
+                                                        ) [DesignatorName]
+                                                        NoDesignatorBodyList(
+                                                        ) [NoDesignatorBodyList]
+                                                      ) [Designator]
+                                                      NoFactorDesignatorBodyListB(
+                                                      ) [NoFactorDesignatorBodyListB]
+                                                    ) [FactorDesignatorAll]
+                                                    NoTermBodyList(
+                                                    ) [NoTermBodyList]
+                                                  ) [Term]
+                                                  NoExprBodyList(
+                                                  ) [NoExprBodyList]
+                                                ) [ExprPlus]
+                                              ) [DesignatorStatementAssign]
+                                            ) [StatementDesign]
+                                          ) [AllStatementList]
+                                          StatementDesign(
+                                            DesignatorStatementAssign(
+                                              Designator(
+                                                DesignatorName(
+                                                 Nizovi::niz
+                                                ) [DesignatorName]
+                                                AllDesignatorBodyList(
+                                                  NoDesignatorBodyList(
+                                                  ) [NoDesignatorBodyList]
+                                                  DesignatorBody(
+                                                    ExprPlus(
+                                                      Term(
+                                                        FactorNum(
+                                                         1
+                                                        ) [FactorNum]
+                                                        NoTermBodyList(
+                                                        ) [NoTermBodyList]
+                                                      ) [Term]
+                                                      NoExprBodyList(
+                                                      ) [NoExprBodyList]
+                                                    ) [ExprPlus]
+                                                  ) [DesignatorBody]
+                                                ) [AllDesignatorBodyList]
+                                              ) [Designator]
+                                              ExprPlus(
+                                                Term(
+                                                  FactorNum(
+                                                   2
+                                                  ) [FactorNum]
+                                                  NoTermBodyList(
+                                                  ) [NoTermBodyList]
+                                                ) [Term]
+                                                NoExprBodyList(
+                                                ) [NoExprBodyList]
+                                              ) [ExprPlus]
+                                            ) [DesignatorStatementAssign]
+                                          ) [StatementDesign]
+                                        ) [AllStatementList]
+                                        StatementDesign(
+                                          DesignatorStatementAssign(
+                                            Designator(
+                                              DesignatorName(
+                                               Nizovi::niz
+                                              ) [DesignatorName]
+                                              AllDesignatorBodyList(
+                                                NoDesignatorBodyList(
+                                                ) [NoDesignatorBodyList]
+                                                DesignatorBody(
+                                                  ExprPlus(
+                                                    Term(
+                                                      FactorDesignatorAll(
+                                                        Designator(
+                                                          DesignatorName(
+                                                           Nizovi::niz
+                                                          ) [DesignatorName]
+                                                          AllDesignatorBodyList(
+                                                            NoDesignatorBodyList(
+                                                            ) [NoDesignatorBodyList]
+                                                            DesignatorBody(
+                                                              ExprPlus(
+                                                                Term(
+                                                                  FactorDesignatorAll(
+                                                                    Designator(
+                                                                      DesignatorName(
+                                                                       Konstante::jedan
+                                                                      ) [DesignatorName]
+                                                                      NoDesignatorBodyList(
+                                                                      ) [NoDesignatorBodyList]
+                                                                    ) [Designator]
+                                                                    NoFactorDesignatorBodyListB(
+                                                                    ) [NoFactorDesignatorBodyListB]
+                                                                  ) [FactorDesignatorAll]
+                                                                  NoTermBodyList(
+                                                                  ) [NoTermBodyList]
+                                                                ) [Term]
+                                                                NoExprBodyList(
+                                                                ) [NoExprBodyList]
+                                                              ) [ExprPlus]
+                                                            ) [DesignatorBody]
+                                                          ) [AllDesignatorBodyList]
+                                                        ) [Designator]
+                                                        NoFactorDesignatorBodyListB(
+                                                        ) [NoFactorDesignatorBodyListB]
+                                                      ) [FactorDesignatorAll]
+                                                      NoTermBodyList(
+                                                      ) [NoTermBodyList]
+                                                    ) [Term]
+                                                    NoExprBodyList(
+                                                    ) [NoExprBodyList]
+                                                  ) [ExprPlus]
+                                                ) [DesignatorBody]
+                                              ) [AllDesignatorBodyList]
+                                            ) [Designator]
+                                            ExprPlus(
+                                              Term(
+                                                FactorDesignatorAll(
+                                                  Designator(
+                                                    DesignatorName(
+                                                     Nizovi::niz
+                                                    ) [DesignatorName]
+                                                    AllDesignatorBodyList(
+                                                      NoDesignatorBodyList(
+                                                      ) [NoDesignatorBodyList]
+                                                      DesignatorBody(
+                                                        ExprPlus(
+                                                          Term(
+                                                            FactorDesignatorAll(
+                                                              Designator(
+                                                                DesignatorName(
+                                                                 Nizovi::niz
+                                                                ) [DesignatorName]
+                                                                AllDesignatorBodyList(
+                                                                  NoDesignatorBodyList(
+                                                                  ) [NoDesignatorBodyList]
+                                                                  DesignatorBody(
+                                                                    ExprPlus(
+                                                                      Term(
+                                                                        FactorNum(
+                                                                         0
+                                                                        ) [FactorNum]
+                                                                        NoTermBodyList(
+                                                                        ) [NoTermBodyList]
+                                                                      ) [Term]
+                                                                      NoExprBodyList(
+                                                                      ) [NoExprBodyList]
+                                                                    ) [ExprPlus]
+                                                                  ) [DesignatorBody]
+                                                                ) [AllDesignatorBodyList]
+                                                              ) [Designator]
+                                                              NoFactorDesignatorBodyListB(
+                                                              ) [NoFactorDesignatorBodyListB]
+                                                            ) [FactorDesignatorAll]
+                                                            NoTermBodyList(
+                                                            ) [NoTermBodyList]
+                                                          ) [Term]
+                                                          NoExprBodyList(
+                                                          ) [NoExprBodyList]
+                                                        ) [ExprPlus]
+                                                      ) [DesignatorBody]
+                                                    ) [AllDesignatorBodyList]
+                                                  ) [Designator]
+                                                  NoFactorDesignatorBodyListB(
+                                                  ) [NoFactorDesignatorBodyListB]
+                                                ) [FactorDesignatorAll]
+                                                AllTermBodyList(
+                                                  NoTermBodyList(
+                                                  ) [NoTermBodyList]
+                                                  TermBody(
+                                                    MulopMul(
+                                                    ) [MulopMul]
+                                                    FactorNum(
+                                                     3
+                                                    ) [FactorNum]
+                                                  ) [TermBody]
+                                                ) [AllTermBodyList]
+                                              ) [Term]
+                                              NoExprBodyList(
+                                              ) [NoExprBodyList]
+                                            ) [ExprPlus]
+                                          ) [DesignatorStatementAssign]
+                                        ) [StatementDesign]
+                                      ) [AllStatementList]
+                                      StatementDesign(
+                                        DesignatorStatementAssign(
+                                          Designator(
+                                            DesignatorName(
+                                             bodovi
+                                            ) [DesignatorName]
+                                            NoDesignatorBodyList(
+                                            ) [NoDesignatorBodyList]
+                                          ) [Designator]
+                                          ExprPlus(
+                                            Term(
+                                              FactorDesignatorAll(
+                                                Designator(
+                                                  DesignatorName(
+                                                   Nizovi::niz
+                                                  ) [DesignatorName]
+                                                  AllDesignatorBodyList(
+                                                    NoDesignatorBodyList(
+                                                    ) [NoDesignatorBodyList]
+                                                    DesignatorBody(
+                                                      ExprPlus(
+                                                        Term(
+                                                          FactorNum(
+                                                           2
+                                                          ) [FactorNum]
+                                                          NoTermBodyList(
+                                                          ) [NoTermBodyList]
+                                                        ) [Term]
+                                                        NoExprBodyList(
+                                                        ) [NoExprBodyList]
+                                                      ) [ExprPlus]
+                                                    ) [DesignatorBody]
+                                                  ) [AllDesignatorBodyList]
+                                                ) [Designator]
+                                                NoFactorDesignatorBodyListB(
+                                                ) [NoFactorDesignatorBodyListB]
+                                              ) [FactorDesignatorAll]
+                                              AllTermBodyList(
+                                                NoTermBodyList(
+                                                ) [NoTermBodyList]
+                                                TermBody(
+                                                  MulopDiv(
+                                                  ) [MulopDiv]
+                                                  FactorDesignatorAll(
+                                                    Designator(
+                                                      DesignatorName(
+                                                       Nizovi::niz
+                                                      ) [DesignatorName]
+                                                      AllDesignatorBodyList(
+                                                        NoDesignatorBodyList(
+                                                        ) [NoDesignatorBodyList]
+                                                        DesignatorBody(
+                                                          ExprPlus(
+                                                            Term(
+                                                              FactorNum(
+                                                               0
+                                                              ) [FactorNum]
+                                                              NoTermBodyList(
+                                                              ) [NoTermBodyList]
+                                                            ) [Term]
+                                                            NoExprBodyList(
+                                                            ) [NoExprBodyList]
+                                                          ) [ExprPlus]
+                                                        ) [DesignatorBody]
+                                                      ) [AllDesignatorBodyList]
+                                                    ) [Designator]
+                                                    NoFactorDesignatorBodyListB(
+                                                    ) [NoFactorDesignatorBodyListB]
+                                                  ) [FactorDesignatorAll]
+                                                ) [TermBody]
+                                              ) [AllTermBodyList]
+                                            ) [Term]
+                                            NoExprBodyList(
+                                            ) [NoExprBodyList]
+                                          ) [ExprPlus]
+                                        ) [DesignatorStatementAssign]
+                                      ) [StatementDesign]
+                                    ) [AllStatementList]
+                                    StatementPrint(
+                                      ExprPlus(
+                                        Term(
+                                          FactorDesignatorAll(
+                                            Designator(
+                                              DesignatorName(
+                                               bodovi
+                                              ) [DesignatorName]
+                                              NoDesignatorBodyList(
+                                              ) [NoDesignatorBodyList]
+                                            ) [Designator]
+                                            NoFactorDesignatorBodyListB(
+                                            ) [NoFactorDesignatorBodyListB]
+                                          ) [FactorDesignatorAll]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [ExprPlus]
+                                      NoNumConstListB(
+                                      ) [NoNumConstListB]
+                                    ) [StatementPrint]
+                                  ) [AllStatementList]
+                                  StatementPrint(
+                                    ExprPlus(
+                                      Term(
+                                        FactorDesignatorAll(
+                                          Designator(
+                                            DesignatorName(
+                                             Nizovi::niz
+                                            ) [DesignatorName]
+                                            AllDesignatorBodyList(
+                                              NoDesignatorBodyList(
+                                              ) [NoDesignatorBodyList]
+                                              DesignatorBody(
+                                                ExprPlus(
+                                                  Term(
+                                                    FactorNum(
+                                                     2
+                                                    ) [FactorNum]
+                                                    NoTermBodyList(
+                                                    ) [NoTermBodyList]
+                                                  ) [Term]
+                                                  NoExprBodyList(
+                                                  ) [NoExprBodyList]
+                                                ) [ExprPlus]
+                                              ) [DesignatorBody]
+                                            ) [AllDesignatorBodyList]
+                                          ) [Designator]
+                                          NoFactorDesignatorBodyListB(
+                                          ) [NoFactorDesignatorBodyListB]
+                                        ) [FactorDesignatorAll]
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                      ) [Term]
+                                      NoExprBodyList(
+                                      ) [NoExprBodyList]
+                                    ) [ExprPlus]
+                                    NoNumConstListB(
+                                    ) [NoNumConstListB]
+                                  ) [StatementPrint]
+                                ) [AllStatementList]
+                                StatementDesign(
+                                  DesignatorStatementAssign(
+                                    Designator(
+                                      DesignatorName(
+                                       Nizovi::nizch
+                                      ) [DesignatorName]
+                                      NoDesignatorBodyList(
+                                      ) [NoDesignatorBodyList]
+                                    ) [Designator]
+                                    ExprPlus(
+                                      Term(
+                                        FactorNew(
+                                          Type(
+                                           char
+                                          ) [Type]
+                                          NewTypeBodyOne(
+                                            ExprPlus(
+                                              Term(
+                                                FactorNum(
+                                                 3
+                                                ) [FactorNum]
+                                                NoTermBodyList(
+                                                ) [NoTermBodyList]
+                                              ) [Term]
+                                              NoExprBodyList(
+                                              ) [NoExprBodyList]
+                                            ) [ExprPlus]
+                                          ) [NewTypeBodyOne]
+                                        ) [FactorNew]
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                      ) [Term]
+                                      NoExprBodyList(
+                                      ) [NoExprBodyList]
+                                    ) [ExprPlus]
+                                  ) [DesignatorStatementAssign]
+                                ) [StatementDesign]
+                              ) [AllStatementList]
+                              StatementDesign(
+                                DesignatorStatementAssign(
+                                  Designator(
+                                    DesignatorName(
+                                     Nizovi::nizch
+                                    ) [DesignatorName]
+                                    AllDesignatorBodyList(
+                                      NoDesignatorBodyList(
+                                      ) [NoDesignatorBodyList]
+                                      DesignatorBody(
+                                        ExprPlus(
+                                          Term(
+                                            FactorNum(
+                                             0
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                          NoExprBodyList(
+                                          ) [NoExprBodyList]
+                                        ) [ExprPlus]
+                                      ) [DesignatorBody]
+                                    ) [AllDesignatorBodyList]
+                                  ) [Designator]
+                                  ExprPlus(
+                                    Term(
+                                      FactorChar(
+                                       'a'
+                                      ) [FactorChar]
+                                      NoTermBodyList(
+                                      ) [NoTermBodyList]
+                                    ) [Term]
+                                    NoExprBodyList(
+                                    ) [NoExprBodyList]
+                                  ) [ExprPlus]
+                                ) [DesignatorStatementAssign]
+                              ) [StatementDesign]
+                            ) [AllStatementList]
+                            StatementDesign(
+                              DesignatorStatementAssign(
+                                Designator(
+                                  DesignatorName(
+                                   Nizovi::nizch
+                                  ) [DesignatorName]
+                                  AllDesignatorBodyList(
+                                    NoDesignatorBodyList(
+                                    ) [NoDesignatorBodyList]
+                                    DesignatorBody(
+                                      ExprPlus(
+                                        Term(
+                                          FactorDesignatorAll(
+                                            Designator(
+                                              DesignatorName(
+                                               Konstante::jedan
+                                              ) [DesignatorName]
+                                              NoDesignatorBodyList(
+                                              ) [NoDesignatorBodyList]
+                                            ) [Designator]
+                                            NoFactorDesignatorBodyListB(
+                                            ) [NoFactorDesignatorBodyListB]
+                                          ) [FactorDesignatorAll]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [ExprPlus]
+                                    ) [DesignatorBody]
+                                  ) [AllDesignatorBodyList]
+                                ) [Designator]
+                                ExprPlus(
+                                  Term(
+                                    FactorChar(
+                                     'b'
+                                    ) [FactorChar]
+                                    NoTermBodyList(
+                                    ) [NoTermBodyList]
+                                  ) [Term]
+                                  NoExprBodyList(
+                                  ) [NoExprBodyList]
+                                ) [ExprPlus]
+                              ) [DesignatorStatementAssign]
+                            ) [StatementDesign]
+                          ) [AllStatementList]
+                          StatementDesign(
+                            DesignatorStatementAssign(
+                              Designator(
+                                DesignatorName(
+                                 Nizovi::nizch
+                                ) [DesignatorName]
+                                AllDesignatorBodyList(
+                                  NoDesignatorBodyList(
+                                  ) [NoDesignatorBodyList]
+                                  DesignatorBody(
+                                    ExprPlus(
+                                      Term(
+                                        FactorDesignatorAll(
+                                          Designator(
+                                            DesignatorName(
+                                             Konstante::pet
+                                            ) [DesignatorName]
+                                            NoDesignatorBodyList(
+                                            ) [NoDesignatorBodyList]
+                                          ) [Designator]
+                                          NoFactorDesignatorBodyListB(
+                                          ) [NoFactorDesignatorBodyListB]
+                                        ) [FactorDesignatorAll]
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                      ) [Term]
+                                      AllExprBodyList(
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                        ExprBody(
+                                          AddopMinus(
+                                          ) [AddopMinus]
+                                          Term(
+                                            FactorNum(
+                                             3
+                                            ) [FactorNum]
+                                            NoTermBodyList(
+                                            ) [NoTermBodyList]
+                                          ) [Term]
+                                        ) [ExprBody]
+                                      ) [AllExprBodyList]
+                                    ) [ExprPlus]
+                                  ) [DesignatorBody]
+                                ) [AllDesignatorBodyList]
+                              ) [Designator]
+                              ExprPlus(
+                                Term(
+                                  FactorChar(
+                                   'c'
+                                  ) [FactorChar]
+                                  NoTermBodyList(
+                                  ) [NoTermBodyList]
+                                ) [Term]
+                                NoExprBodyList(
+                                ) [NoExprBodyList]
+                              ) [ExprPlus]
+                            ) [DesignatorStatementAssign]
+                          ) [StatementDesign]
+                        ) [AllStatementList]
+                        StatementPrint(
+                          ExprPlus(
+                            Term(
+                              FactorDesignatorAll(
+                                Designator(
+                                  DesignatorName(
+                                   Nizovi::nizch
+                                  ) [DesignatorName]
+                                  AllDesignatorBodyList(
+                                    NoDesignatorBodyList(
+                                    ) [NoDesignatorBodyList]
+                                    DesignatorBody(
+                                      ExprPlus(
+                                        Term(
+                                          FactorNum(
+                                           1
+                                          ) [FactorNum]
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                        ) [Term]
+                                        NoExprBodyList(
+                                        ) [NoExprBodyList]
+                                      ) [ExprPlus]
+                                    ) [DesignatorBody]
+                                  ) [AllDesignatorBodyList]
+                                ) [Designator]
+                                NoFactorDesignatorBodyListB(
+                                ) [NoFactorDesignatorBodyListB]
+                              ) [FactorDesignatorAll]
+                              NoTermBodyList(
+                              ) [NoTermBodyList]
+                            ) [Term]
+                            NoExprBodyList(
+                            ) [NoExprBodyList]
+                          ) [ExprPlus]
+                          NoNumConstListB(
+                          ) [NoNumConstListB]
+                        ) [StatementPrint]
+                      ) [AllStatementList]
+                      StatementPrint(
+                        ExprPlus(
+                          Term(
+                            FactorDesignatorAll(
+                              Designator(
+                                DesignatorName(
+                                 Nizovi::nizch
+                                ) [DesignatorName]
+                                AllDesignatorBodyList(
+                                  NoDesignatorBodyList(
+                                  ) [NoDesignatorBodyList]
+                                  DesignatorBody(
+                                    ExprPlus(
+                                      Term(
+                                        FactorDesignatorAll(
+                                          Designator(
+                                            DesignatorName(
+                                             Konstante::jedan
+                                            ) [DesignatorName]
+                                            NoDesignatorBodyList(
+                                            ) [NoDesignatorBodyList]
+                                          ) [Designator]
+                                          NoFactorDesignatorBodyListB(
+                                          ) [NoFactorDesignatorBodyListB]
+                                        ) [FactorDesignatorAll]
+                                        AllTermBodyList(
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                          TermBody(
+                                            MulopMul(
+                                            ) [MulopMul]
+                                            FactorNum(
+                                             2
+                                            ) [FactorNum]
+                                          ) [TermBody]
+                                        ) [AllTermBodyList]
+                                      ) [Term]
+                                      NoExprBodyList(
+                                      ) [NoExprBodyList]
+                                    ) [ExprPlus]
+                                  ) [DesignatorBody]
+                                ) [AllDesignatorBodyList]
+                              ) [Designator]
+                              NoFactorDesignatorBodyListB(
+                              ) [NoFactorDesignatorBodyListB]
+                            ) [FactorDesignatorAll]
+                            NoTermBodyList(
+                            ) [NoTermBodyList]
+                          ) [Term]
+                          NoExprBodyList(
+                          ) [NoExprBodyList]
+                        ) [ExprPlus]
+                        NoNumConstListB(
+                        ) [NoNumConstListB]
+                      ) [StatementPrint]
+                    ) [AllStatementList]
+                    StatementDesign(
+                      DesignatorStatementAssign(
+                        Designator(
+                          DesignatorName(
+                           a
+                          ) [DesignatorName]
+                          NoDesignatorBodyList(
+                          ) [NoDesignatorBodyList]
+                        ) [Designator]
+                        ExprPlus(
+                          Term(
+                            FactorNum(
+                             1
+                            ) [FactorNum]
+                            NoTermBodyList(
+                            ) [NoTermBodyList]
+                          ) [Term]
+                          NoExprBodyList(
+                          ) [NoExprBodyList]
+                        ) [ExprPlus]
+                      ) [DesignatorStatementAssign]
+                    ) [StatementDesign]
+                  ) [AllStatementList]
+                  StatementRead(
+                    Designator(
+                      DesignatorName(
+                       bodovi
+                      ) [DesignatorName]
+                      NoDesignatorBodyList(
+                      ) [NoDesignatorBodyList]
+                    ) [Designator]
+                  ) [StatementRead]
+                ) [AllStatementList]
+                StatementDesign(
+                  DesignatorStatementAssign(
+                    Designator(
+                      DesignatorName(
+                       bodovi
+                      ) [DesignatorName]
+                      NoDesignatorBodyList(
+                      ) [NoDesignatorBodyList]
+                    ) [Designator]
+                    ExprMinus(
+                      Term(
+                        FactorDesignatorAll(
+                          Designator(
+                            DesignatorName(
+                             bodovi
+                            ) [DesignatorName]
+                            NoDesignatorBodyList(
+                            ) [NoDesignatorBodyList]
+                          ) [Designator]
+                          NoFactorDesignatorBodyListB(
+                          ) [NoFactorDesignatorBodyListB]
+                        ) [FactorDesignatorAll]
+                        NoTermBodyList(
+                        ) [NoTermBodyList]
+                      ) [Term]
+                      AllExprBodyList(
+                        AllExprBodyList(
+                          NoExprBodyList(
+                          ) [NoExprBodyList]
+                          ExprBody(
+                            AddopPlus(
+                            ) [AddopPlus]
+                            Term(
+                              FactorExpr(
+                                Lparen(
+                                ) [Lparen]
+                                ExprPlus(
+                                  Term(
+                                    FactorDesignatorAll(
+                                      Designator(
+                                        DesignatorName(
+                                         Konstante::pet
+                                        ) [DesignatorName]
+                                        NoDesignatorBodyList(
+                                        ) [NoDesignatorBodyList]
+                                      ) [Designator]
+                                      NoFactorDesignatorBodyListB(
+                                      ) [NoFactorDesignatorBodyListB]
+                                    ) [FactorDesignatorAll]
+                                    AllTermBodyList(
+                                      AllTermBodyList(
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                        TermBody(
+                                          MulopMul(
+                                          ) [MulopMul]
+                                          FactorDesignatorAll(
+                                            Designator(
+                                              DesignatorName(
+                                               a
+                                              ) [DesignatorName]
+                                              NoDesignatorBodyList(
+                                              ) [NoDesignatorBodyList]
+                                            ) [Designator]
+                                            NoFactorDesignatorBodyListB(
+                                            ) [NoFactorDesignatorBodyListB]
+                                          ) [FactorDesignatorAll]
+                                        ) [TermBody]
+                                      ) [AllTermBodyList]
+                                      TermBody(
+                                        MulopDiv(
+                                        ) [MulopDiv]
+                                        FactorNum(
+                                         2
+                                        ) [FactorNum]
+                                      ) [TermBody]
+                                    ) [AllTermBodyList]
+                                  ) [Term]
+                                  AllExprBodyList(
+                                    NoExprBodyList(
+                                    ) [NoExprBodyList]
+                                    ExprBody(
+                                      AddopMinus(
+                                      ) [AddopMinus]
+                                      Term(
+                                        FactorDesignatorAll(
+                                          Designator(
+                                            DesignatorName(
+                                             Konstante::jedan
+                                            ) [DesignatorName]
+                                            NoDesignatorBodyList(
+                                            ) [NoDesignatorBodyList]
+                                          ) [Designator]
+                                          NoFactorDesignatorBodyListB(
+                                          ) [NoFactorDesignatorBodyListB]
+                                        ) [FactorDesignatorAll]
+                                        NoTermBodyList(
+                                        ) [NoTermBodyList]
+                                      ) [Term]
+                                    ) [ExprBody]
+                                  ) [AllExprBodyList]
+                                ) [ExprPlus]
+                                Rparen(
+                                ) [Rparen]
+                              ) [FactorExpr]
+                              AllTermBodyList(
+                                NoTermBodyList(
+                                ) [NoTermBodyList]
+                                TermBody(
+                                  MulopMul(
+                                  ) [MulopMul]
+                                  FactorDesignatorAll(
+                                    Designator(
+                                      DesignatorName(
+                                       bodovi
+                                      ) [DesignatorName]
+                                      NoDesignatorBodyList(
+                                      ) [NoDesignatorBodyList]
+                                    ) [Designator]
+                                    NoFactorDesignatorBodyListB(
+                                    ) [NoFactorDesignatorBodyListB]
+                                  ) [FactorDesignatorAll]
+                                ) [TermBody]
+                              ) [AllTermBodyList]
+                            ) [Term]
+                          ) [ExprBody]
+                        ) [AllExprBodyList]
+                        ExprBody(
+                          AddopMinus(
+                          ) [AddopMinus]
+                          Term(
+                            FactorExpr(
+                              Lparen(
+                              ) [Lparen]
+                              ExprPlus(
+                                Term(
+                                  FactorNum(
+                                   3
+                                  ) [FactorNum]
+                                  AllTermBodyList(
+                                    NoTermBodyList(
+                                    ) [NoTermBodyList]
+                                    TermBody(
+                                      MulopMod(
+                                      ) [MulopMod]
+                                      FactorNum(
+                                       2
+                                      ) [FactorNum]
+                                    ) [TermBody]
+                                  ) [AllTermBodyList]
+                                ) [Term]
+                                AllExprBodyList(
+                                  AllExprBodyList(
+                                    NoExprBodyList(
+                                    ) [NoExprBodyList]
+                                    ExprBody(
+                                      AddopPlus(
+                                      ) [AddopPlus]
+                                      Term(
+                                        FactorNum(
+                                         3
+                                        ) [FactorNum]
+                                        AllTermBodyList(
+                                          NoTermBodyList(
+                                          ) [NoTermBodyList]
+                                          TermBody(
+                                            MulopMul(
+                                            ) [MulopMul]
+                                            FactorNum(
+                                             2
+                                            ) [FactorNum]
+                                          ) [TermBody]
+                                        ) [AllTermBodyList]
+                                      ) [Term]
+                                    ) [ExprBody]
+                                  ) [AllExprBodyList]
+                                  ExprBody(
+                                    AddopMinus(
+                                    ) [AddopMinus]
+                                    Term(
+                                      FactorNum(
+                                       3
+                                      ) [FactorNum]
+                                      NoTermBodyList(
+                                      ) [NoTermBodyList]
+                                    ) [Term]
+                                  ) [ExprBody]
+                                ) [AllExprBodyList]
+                              ) [ExprPlus]
+                              Rparen(
+                              ) [Rparen]
+                            ) [FactorExpr]
+                            NoTermBodyList(
+                            ) [NoTermBodyList]
+                          ) [Term]
+                        ) [ExprBody]
+                      ) [AllExprBodyList]
+                    ) [ExprMinus]
+                  ) [DesignatorStatementAssign]
+                ) [StatementDesign]
+              ) [AllStatementList]
+              StatementPrint(
+                ExprPlus(
+                  Term(
+                    FactorDesignatorAll(
+                      Designator(
+                        DesignatorName(
+                         bodovi
+                        ) [DesignatorName]
+                        NoDesignatorBodyList(
+                        ) [NoDesignatorBodyList]
+                      ) [Designator]
+                      NoFactorDesignatorBodyListB(
+                      ) [NoFactorDesignatorBodyListB]
+                    ) [FactorDesignatorAll]
+                    NoTermBodyList(
+                    ) [NoTermBodyList]
+                  ) [Term]
+                  NoExprBodyList(
+                  ) [NoExprBodyList]
+                ) [ExprPlus]
+                NoNumConstListB(
+                ) [NoNumConstListB]
+              ) [StatementPrint]
+            ) [AllStatementList]
+            StatementFor(
+              For(
+              ) [For]
+              ForBody(
+                SingleDesignatorStmListB(
+                  DesignatorStatementAssign(
+                    Designator(
+                      DesignatorName(
+                       bodovi
+                      ) [DesignatorName]
+                      NoDesignatorBodyList(
+                      ) [NoDesignatorBodyList]
+                    ) [Designator]
+                    ExprPlus(
+                      Term(
+                        FactorNum(
+                         1
+                        ) [FactorNum]
+                        NoTermBodyList(
+                        ) [NoTermBodyList]
+                      ) [Term]
+                      NoExprBodyList(
+                      ) [NoExprBodyList]
+                    ) [ExprPlus]
+                  ) [DesignatorStatementAssign]
+                ) [SingleDesignatorStmListB]
+                CondStart(
+                ) [CondStart]
+                YesCondFact(
+                  DoubleCondFact(
+                    ExprPlus(
+                      Term(
+                        FactorDesignatorAll(
+                          Designator(
+                            DesignatorName(
+                             bodovi
+                            ) [DesignatorName]
+                            NoDesignatorBodyList(
+                            ) [NoDesignatorBodyList]
+                          ) [Designator]
+                          NoFactorDesignatorBodyListB(
+                          ) [NoFactorDesignatorBodyListB]
+                        ) [FactorDesignatorAll]
+                        NoTermBodyList(
+                        ) [NoTermBodyList]
+                      ) [Term]
+                      NoExprBodyList(
+                      ) [NoExprBodyList]
+                    ) [ExprPlus]
+                    RelopLess(
+                    ) [RelopLess]
+                    ExprPlus(
+                      Term(
+                        FactorNum(
+                         5
+                        ) [FactorNum]
+                        NoTermBodyList(
+                        ) [NoTermBodyList]
+                      ) [Term]
+                      NoExprBodyList(
+                      ) [NoExprBodyList]
+                    ) [ExprPlus]
+                  ) [DoubleCondFact]
+                ) [YesCondFact]
+                SingleDesignatorStmListB(
+                  DesignatorStatementInc(
+                    Designator(
+                      DesignatorName(
+                       bodovi
+                      ) [DesignatorName]
+                      NoDesignatorBodyList(
+                      ) [NoDesignatorBodyList]
+                    ) [Designator]
+                  ) [DesignatorStatementInc]
+                ) [SingleDesignatorStmListB]
+              ) [ForBody]
+              StatementDesign(
+                DesignatorStatementAssign(
+                  Designator(
+                    DesignatorName(
+                     bodovi
+                    ) [DesignatorName]
+                    NoDesignatorBodyList(
+                    ) [NoDesignatorBodyList]
+                  ) [Designator]
+                  ExprPlus(
+                    Term(
+                      FactorDesignatorAll(
+                        Designator(
+                          DesignatorName(
+                           bodovi
+                          ) [DesignatorName]
+                          NoDesignatorBodyList(
+                          ) [NoDesignatorBodyList]
+                        ) [Designator]
+                        NoFactorDesignatorBodyListB(
+                        ) [NoFactorDesignatorBodyListB]
+                      ) [FactorDesignatorAll]
+                      NoTermBodyList(
+                      ) [NoTermBodyList]
+                    ) [Term]
+                    NoExprBodyList(
+                    ) [NoExprBodyList]
+                  ) [ExprPlus]
+                ) [DesignatorStatementAssign]
+              ) [StatementDesign]
+              EndFor(
+              ) [EndFor]
+            ) [StatementFor]
+          ) [AllStatementList]
+          StatementPrint(
+            ExprPlus(
+              Term(
+                FactorDesignatorAll(
+                  Designator(
+                    DesignatorName(
+                     bodovi
+                    ) [DesignatorName]
+                    NoDesignatorBodyList(
+                    ) [NoDesignatorBodyList]
+                  ) [Designator]
+                  NoFactorDesignatorBodyListB(
+                  ) [NoFactorDesignatorBodyListB]
+                ) [FactorDesignatorAll]
+                NoTermBodyList(
+                ) [NoTermBodyList]
+              ) [Term]
+              NoExprBodyList(
+              ) [NoExprBodyList]
+            ) [ExprPlus]
+            NoNumConstListB(
+            ) [NoNumConstListB]
+          ) [StatementPrint]
+        ) [AllStatementList]
+      ) [MethodDecl]
+    ) [AllMethodDeclList]
+  ) [ProgramBody]
+) [Program]
+INFO  20:39:46,341 - ===================================
+INFO  20:39:46,344 - Deklarisan namespace Konstante na liniji 5
+INFO  20:39:46,344 - Deklarisana konstanta nula na liniji 6
+INFO  20:39:46,344 - Deklarisana konstanta jedan na liniji 7
+INFO  20:39:46,344 - Deklarisana konstanta pet na liniji 8
+INFO  20:39:46,344 - Deklarisan namespace Nizovi na liniji 13
+INFO  20:39:46,345 - Deklarisana promenljiva niz na liniji 14
+INFO  20:39:46,345 - Deklarisana promenljiva nizch na liniji 15
+INFO  20:39:46,345 - Deklarisana promenljiva i na liniji 20
+INFO  20:39:46,345 - Deklarisana promenljiva a na liniji 20
+INFO  20:39:46,345 - Deklarisana promenljiva niz na liniji 21
+INFO  20:39:46,345 - Obradjuje se funkcija main na liniji 24
+INFO  20:39:46,345 - Deklarisana promenljiva bodovi na liniji 25
+INFO  20:39:46,345 - Deklarisana promenljiva bt na liniji 26
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: bodovi na liniji 29
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 29
+INFO  20:39:46,345 - Obradjuje se inkrement nad integer-om: bodovi na liniji 30
+INFO  20:39:46,345 - Addop-uju se int-ovi sto je ok na liniji 31
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: bodovi na liniji 31
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 31
+INFO  20:39:46,345 - Mulop-uju se int-ovi sto je ok na liniji 32
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: bodovi na liniji 32
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 32
+INFO  20:39:46,345 - Obradjuje se dekrement nad integer-om: bodovi na liniji 33
+INFO  20:39:46,345 - Expr je tipa int, char ili bool.  na liniji 34
+INFO  20:39:46,345 - Expr je tipa int za new sekciju na liniji 36
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 36
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 36
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 37
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 37
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 37
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 38
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 38
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 38
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 39
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 39
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 39
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 39
+INFO  20:39:46,345 - Mulop-uju se int-ovi sto je ok na liniji 39
+INFO  20:39:46,345 - Designator je promenljiva ili klasa: Nizovi::niz na liniji 39
+INFO  20:39:46,345 - Expr je istog tipa kao i designator.  na liniji 39
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 40
+INFO  20:39:46,345 - Expr je int tipa u nizu na liniji 40
+INFO  20:39:46,346 - Mulop-uju se int-ovi sto je ok na liniji 40
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: bodovi na liniji 40
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 40
+INFO  20:39:46,346 - Expr je tipa int, char ili bool.  na liniji 41
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 42
+INFO  20:39:46,346 - Expr je tipa int, char ili bool.  na liniji 42
+INFO  20:39:46,346 - Expr je tipa int za new sekciju na liniji 45
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 45
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 45
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 46
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 46
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 46
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 47
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 47
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 47
+INFO  20:39:46,346 - Addop-uju se int-ovi sto je ok na liniji 48
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 48
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: Nizovi::nizch na liniji 48
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 48
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 49
+INFO  20:39:46,346 - Expr je tipa int, char ili bool.  na liniji 49
+INFO  20:39:46,346 - Mulop-uju se int-ovi sto je ok na liniji 50
+INFO  20:39:46,346 - Expr je int tipa u nizu na liniji 50
+INFO  20:39:46,346 - Expr je tipa int, char ili bool.  na liniji 50
+INFO  20:39:46,346 - Designator je promenljiva ili klasa: a na liniji 52
+INFO  20:39:46,346 - Expr je istog tipa kao i designator.  na liniji 52
+INFO  20:39:46,346 - Čita se promenljiva: bodovi na liniji 53
+INFO  20:39:46,346 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,346 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,346 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,346 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,346 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,347 - Mulop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,347 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,347 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,347 - Addop-uju se int-ovi sto je ok na liniji 54
+INFO  20:39:46,347 - Minus je ispred int-a sto je ok na liniji 54
+INFO  20:39:46,347 - Designator je promenljiva ili klasa: bodovi na liniji 54
+INFO  20:39:46,347 - Expr je istog tipa kao i designator.  na liniji 54
+INFO  20:39:46,347 - Expr je tipa int, char ili bool.  na liniji 55
+INFO  20:39:46,347 - Designator je promenljiva ili klasa: bodovi na liniji 60
+INFO  20:39:46,347 - Expr je istog tipa kao i designator.  na liniji 60
+INFO  20:39:46,347 - Expr-i su istog tipa u relacionom izrazu na liniji 60
+INFO  20:39:46,347 - Obradjuje se inkrement nad integer-om: bodovi na liniji 60
+INFO  20:39:46,347 - Designator je promenljiva ili klasa: bodovi na liniji 60
+INFO  20:39:46,347 - Expr je istog tipa kao i designator.  na liniji 60
+INFO  20:39:46,347 - Expr je tipa int, char ili bool.  na liniji 68
+INFO  20:39:46,347 -  Broj poziva print funkcije = 7
+INFO  20:39:46,347 -  Deklarisanih promenljivih ima = 7
+INFO  20:39:46,347 -  U programu ima 3 konstanti
+INFO  20:39:46,347 -  U programu ima 2 namespace-ova
+INFO  20:39:46,347 -  Deklarisanih metoda ima = 1
+INFO  20:39:46,352 - Parsiranje uspesno zavrseno!

@@ -67,7 +67,7 @@ terminal Integer NUMBER;
 terminal String CHAR;
 terminal String BOOL;
 
-nonterminal FormPars, Label, Assignop, Relop, Addop, Mulop, EndIf, Else, EndElse, EndFor;
+nonterminal FormPars, Label, Assignop, Relop, Addop, Mulop, EndIf, Else, EndElse, EndFor, CondStart;
 
 nonterminal AllDeclList, AllDecl, MethodDeclList, ConstDeclBodyList;
 nonterminal ConstDeclBody, Brackets, BracketsList, VarDeclBodyList, VarDeclBody;
@@ -255,6 +255,7 @@ EndIf ::= (EndIf);
 Else ::= (Else) ELSE;
 EndElse ::= (EndElse);
 EndFor ::= (EndFor);
+CondStart ::= (CondStart);
 			 
 While ::= (While) WHILE;
 
@@ -262,7 +263,7 @@ Foreach ::= (Foreach) FOREACH;
 
 For ::= (For) FOR;
 
-ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2;
+ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI CondStart MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2;
 
 MaybeCondFact ::= (YesCondFact) CondFact:condFact
 				|

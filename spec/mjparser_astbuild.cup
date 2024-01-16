@@ -77,6 +77,7 @@ nonterminal EndIf EndIf;
 nonterminal Else Else;
 nonterminal EndElse EndElse;
 nonterminal EndFor EndFor;
+nonterminal CondStart CondStart;
 
 nonterminal AllDeclList AllDeclList;
 nonterminal AllDecl AllDecl;
@@ -287,6 +288,7 @@ EndIf ::= (EndIf) {: RESULT=new EndIf(); :};
 Else ::= (Else) ELSE {: RESULT=new Else(); :};
 EndElse ::= (EndElse) {: RESULT=new EndElse(); :};
 EndFor ::= (EndFor) {: RESULT=new EndFor(); :};
+CondStart ::= (CondStart) {: RESULT=new CondStart(); :};
 			 
 While ::= (While) WHILE {: RESULT=new While(); :};
 
@@ -294,7 +296,7 @@ Foreach ::= (Foreach) FOREACH {: RESULT=new Foreach(); :};
 
 For ::= (For) FOR {: RESULT=new For(); :};
 
-ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2 {: RESULT=new ForBody(desStmListB1, mcf, desStmListB2); RESULT.setLine(desStmListB1left); :};
+ForBody ::= (ForBody) DesignatorStatementListB:desStmListB1 SEMI CondStart:C1 MaybeCondFact:mcf SEMI DesignatorStatementListB:desStmListB2 {: RESULT=new ForBody(desStmListB1, C1, mcf, desStmListB2); RESULT.setLine(desStmListB1left); :};
 
 MaybeCondFact ::= (YesCondFact) CondFact:condFact {: RESULT=new YesCondFact(condFact); RESULT.setLine(condFactleft); :}
 				|

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/0/2024 16:43:44
+// 16/0/2024 20:44:56
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -137,6 +137,7 @@ public interface Visitor {
     public void visit(For For);
     public void visit(Foreach Foreach);
     public void visit(While While);
+    public void visit(CondStart CondStart);
     public void visit(EndFor EndFor);
     public void visit(EndElse EndElse);
     public void visit(Else Else);

@@ -59,11 +59,13 @@ namespace Nizovi{
 		
 		//for(bodovi = 1; bodovi < 5; bodovi++) bodovi = bodovi;
 		//%%Nizovi::niz;
+		//Nizovi::niz[0] = 2;
+		//Nizovi::niz[2] = 2;
 		//**Nizovi::niz;
-		bodovi = 2;
-		if(2 == 2) bodovi = 10;
-		else bodovi = 1;
-		print(bodovi);			
+		//bodovi = 2;
+		//if(2 != 2) bodovi = 10;
+		//else bodovi = 1;
+		//print(bodovi);			
 	}
 }
 

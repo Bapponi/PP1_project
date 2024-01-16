@@ -32,8 +32,8 @@ public class MJParserTest {
 		Reader br = null;
 		try {
 //			File sourceCode = new File("test/program.mj");
-			File sourceCode = new File("test/test301.mj");
-//			File sourceCode = new File("test/test302.mj");
+//			File sourceCode = new File("test/test301.mj");
+			File sourceCode = new File("test/test302.mj");
 //			File sourceCode = new File("test/test303.mj");
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
@@ -65,7 +65,7 @@ public class MJParserTest {
 			
 			log.info(" U programu ima " + v.constDeclCount + " konstanti");
 			
-			log.info(" U programu ima " + v.classDeclCount + " klasa");
+			log.info(" U programu ima " + v.namespaceDeclCount + " namespace-ova");
 			
 			log.info(" Deklarisanih metoda ima = " + v.methodCount);
 			

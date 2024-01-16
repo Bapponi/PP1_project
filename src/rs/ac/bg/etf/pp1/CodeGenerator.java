@@ -75,24 +75,25 @@ public class CodeGenerator extends VisitorAdaptor {
 		}else {
 			Code.store(dsa.getDesignator().obj);
 		}
+		
+		if(dsa.getParent().getParent().getClass() == ForBody.class) {
+			Code.load(dsa.getDesignator().obj);
+			Code.loadConst(1);
+			Code.put(Code.sub);
+			Code.store(dsa.getDesignator().obj);
+		}
 	}
-	
+		
 	public void visit(DesignatorStatementInc dsi) {
 		
-		//posto se samo ovo koristi u for-u na testu
-		if(dsi.getParent().getClass() != SingleDesignatorStmListB.class) {
-			Obj con = new Obj(Obj.Con, "$", Tab.intType);
-			con.setAdr(1);
-			con.setLevel(0);
-			
-			Code.load(con);
-			Code.put(Code.add);
-			
-			Code.store(dsi.getDesignator().obj);
-		}else {
-			Code.put(Code.pop);
-		}
+		Obj con = new Obj(Obj.Con, "$", Tab.intType);
+		con.setAdr(1);
+		con.setLevel(0);
 		
+		Code.load(con);
+		Code.put(Code.add);
+			
+		Code.store(dsi.getDesignator().obj);
 	}
 	
 	public void visit(DesignatorStatementDec dsd) {
@@ -337,52 +338,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(1);
 	}
 	
-	public void visit(FactorHash fh) {
-		Obj con = Tab.insert(Obj.Con, "$", fh.obj.getType()); 
-		
-		con.setLevel(0);
-		
-		int value = fh.getValueH();
-		if(value % 2 == 0) {
-			value = value * value;
-		}else {
-			value = value * value * value;
-		}
-		
-		con.setAdr(value);
-		
-		Code.load(con);
-	}
 	
-	public void visit(FactorHashDes fda) {
-		Obj con = fda.getDesignator().obj;
-		
-		Code.load(con);
-		Code.load(con); //dupliram zbog provera
-		Code.loadConst(2);
-		Code.put(Code.rem);
-		Code.loadConst(0);
-		Code.putFalseJump(Code.ne, 0);
-		int nonpair = Code.pc - 2;
-		Code.load(con);
-		Code.load(con);
-		Code.put(Code.mul);
-		Code.put(Code.mul);
-		Code.loadConst(1);
-		Code.loadConst(1);
-		Code.putFalseJump(Code.ne, 0);
-		int endIf = Code.pc - 2;
-		
-		Code.fixup(nonpair);
-		Code.load(con);
-		Code.put(Code.mul);
-		Code.fixup(endIf);
-		if (con.getType().getKind() == Struct.Array) {
-			Code.put(Code.dup_x1);
-			Code.put(Code.pop);
-			Code.put(Code.aload);
-		}
-	}
 	
 public void visit(DesignatorStatementMultiple dsm) {
 	for(int i = 0, j = designators.size() - 1; i < designators.size(); i++, j--) {
@@ -403,9 +359,11 @@ public void visit(SingleDesignatorListB sdlb) {
 int jumpEnd = 0;
 int jumpElse = 0;
 int jumpEndElse = 0;
+int jumpEndFor = 0;
+int jumpCondStart = 0;
 
 public void visit(EndIf ei) {
-	System.out.println("Banana if: " + jumpEnd);
+	System.out.println("If end: " + jumpEnd);
 	Code.fixup(jumpEnd);
 }
 
@@ -415,60 +373,26 @@ public void visit(Else ei) {
 	Code.putFalseJump(Code.ne, 0);
 	jumpEndElse = Code.pc - 2;
 	
-	System.out.println("Banana else: " + jumpElse);
+	System.out.println("Else start: " + jumpElse);
 	Code.fixup(jumpElse);
 }
 
 public void visit(EndElse ee) {
-	System.out.println("Banana end else: " + jumpEndElse);
+	System.out.println("Else end: " + jumpEndElse);
 	Code.fixup(jumpEndElse);
 }
 
-//trebam da ga povezem da dobro funkcionisu skokovi sa jednog visit-a na drugi
-
-//moze da je i = i - 1 na pocetku zbog i++ a
-public void visit(StatementFor sf) {
-	visit(sf.getForBody().getDesignatorStatementListB());
-	
-	int jumpCond = Code.pc;
-	visit(sf.getForBody().getMaybeCondFact()); //ovde treba dohvatiti doubleCondFact
-	
-	//ovde vec treba da stoji 1 ili nula od condFact-a
-	Code.loadConst(1);
-	Code.putFalseJump(Code.eq, 0);
-	int jumpEnd = Code.pc - 2;
-	
-	visit(sf.getStatement());
-	visit(sf.getForBody().getDesignatorStatementListB1());
-	
-	Code.putJump(jumpCond);
-	Code.fixup(jumpEnd);
+public void visit(CondStart cs) {
+	jumpCondStart = Code.pc;
+	System.out.println("Cond start: " + jumpCondStart);
 }
 
-public void visit(YesCondFact cf) {
-	if(currentRelop.equals("eqv")) {
-		Code.putFalseJump(Code.ne, 0);
-	}else if(currentRelop.equals("noeqv")) {
-		Code.putFalseJump(Code.eq, 0);
-	}else if(currentRelop.equals("more")) {
-		Code.putFalseJump(Code.le, 0);	
-	}else if(currentRelop.equals("moreeqv")) {
-		Code.putFalseJump(Code.lt, 0);	
-	}else if(currentRelop.equals("less")) {
-		Code.putFalseJump(Code.ge, 0);	
-	}else if(currentRelop.equals("lesseqv")) {
-		Code.putFalseJump(Code.gt, 0);	
-	}
-	int jumpEqv = Code.pc - 2;
-	Code.loadConst(0);
-	Code.loadConst(1);
-	Code.loadConst(1);
-	Code.putFalseJump(Code.ne, 0);
-	int jumpEqvNo = Code.pc - 2;
-	Code.fixup(jumpEqv);
-	Code.loadConst(1);
-	Code.fixup(jumpEqvNo);
+public void visit(EndFor ef) {
+	Code.putJump(jumpCondStart);
 	
+	System.out.println("Banana end for: " + jumpEndFor);
+	Code.fixup(jumpEndFor);
+	Code.loadConst(0); //!!!!!!!!!ne znam zasto, ali zbog ovoga radi
 }
 
 //public void visit(ConditionSingle cond) {
@@ -528,43 +452,44 @@ public void visit(CondTermAll cta) {
 
 public void visit(DoubleCondFact dcf) {
 		
-	if(dcf.getParent().getClass() != YesCondFact.class) {
-		if(currentRelop.equals("eqv")) {
-			Code.putFalseJump(Code.ne, 0);
-		}else if(currentRelop.equals("noeqv")) {
-			Code.putFalseJump(Code.eq, 0);
-		}else if(currentRelop.equals("more")) {
-			Code.putFalseJump(Code.le, 0);	
-		}else if(currentRelop.equals("moreeqv")) {
-			Code.putFalseJump(Code.lt, 0);	
-		}else if(currentRelop.equals("less")) {
-			Code.putFalseJump(Code.ge, 0);	
-		}else if(currentRelop.equals("lesseqv")) {
-			Code.putFalseJump(Code.gt, 0);	
-		}
-		int jumpEqv = Code.pc - 2;
-		Code.loadConst(0);
-		Code.loadConst(1);
-		Code.loadConst(1);
+	if(currentRelop.equals("eqv")) {
 		Code.putFalseJump(Code.ne, 0);
-		int jumpEqvNo = Code.pc - 2;
-		Code.fixup(jumpEqv);
-		Code.loadConst(1);
-		Code.fixup(jumpEqvNo);
-		
-//		System.out.println("Roditelj: " + dcf.getParent().getClass());
-//		if(dcf.getParent().getClass() != CondTermSingle.class) {
-			Code.loadConst(1);
-			Code.putFalseJump(Code.eq, 0);
-
-			if(dcf.getParent().getParent().getParent().getClass() == StatementIf.class){
-				jumpEnd = Code.pc - 2;
-			}
-			if(dcf.getParent().getParent().getParent().getClass() == StatementElse.class){
-				jumpElse = Code.pc - 2;
-			}
-//		}
+	}else if(currentRelop.equals("noeqv")) {
+		Code.putFalseJump(Code.eq, 0);
+	}else if(currentRelop.equals("more")) {
+		Code.putFalseJump(Code.le, 0);	
+	}else if(currentRelop.equals("moreeqv")) {
+		Code.putFalseJump(Code.lt, 0);	
+	}else if(currentRelop.equals("less")) {
+		Code.putFalseJump(Code.ge, 0);	
+	}else if(currentRelop.equals("lesseqv")) {
+		Code.putFalseJump(Code.gt, 0);	
 	}
+	int jumpEqv = Code.pc - 2;
+	Code.loadConst(0);
+	Code.loadConst(1);
+	Code.loadConst(1);
+	Code.putFalseJump(Code.ne, 0);
+	int jumpEqvNo = Code.pc - 2;
+	Code.fixup(jumpEqv);
+	Code.loadConst(1);
+	Code.fixup(jumpEqvNo);
+	
+//	if(dcf.getParent().getClass() != CondTermSingle.class) {
+		Code.loadConst(1);
+		Code.putFalseJump(Code.eq, 0);
+
+		if(dcf.getParent().getParent().getParent().getClass() == StatementIf.class){
+			jumpEnd = Code.pc - 2;
+		}
+		if(dcf.getParent().getParent().getParent().getClass() == StatementElse.class){
+			jumpElse = Code.pc - 2;
+		}
+		if(dcf.getParent().getParent().getParent().getClass() == StatementFor.class){
+			jumpEndFor = Code.pc - 2;
+		}
+//	}
+
 }
 
 public void visit(RelopEqv rel) {
@@ -591,111 +516,165 @@ public void visit(RelopLesseqv rel) {
 	currentRelop = "lesseqv";
 }
 
-//nek bude trazenje maksimuma
-public void visit(StatementArray sa) {
-	Obj br = new Obj(Obj.Var, "$", Tab.intType);
-	
-	Code.loadConst(0);
-	Code.store(br);
-	Code.loadConst(0); //pocetni max
-	
-	int whileBegin = Code.pc;
-	
-	Code.load(br);
-	
-	Code.load(sa.getDesignator().obj); 
-	Code.put(Code.arraylength);
-	
-	Code.putFalseJump(Code.lt, 0); 
-	int arrayEnd = Code.pc - 2;
-			
+////primer 1 - maksimum
+//public void visit(StatementArray sa) {
+//	Obj br = new Obj(Obj.Var, "$", Tab.intType);
+//	
+//	Code.loadConst(0);
+//	Code.store(br);
+//	Code.loadConst(0); //pocetni max
+//	
+//	int whileBegin = Code.pc;
+//	
+//	Code.load(br);
+//	
+//	Code.load(sa.getDesignator().obj); 
+//	Code.put(Code.arraylength);
+//	
+//	Code.putFalseJump(Code.lt, 0); 
+//	int arrayEnd = Code.pc - 2;
+//			
+////	Code.put(Code.dup); // neki element koji je ubacen u funkciju
+//		
+//	Code.load(br);
+//	Code.loadConst(1);
+//	Code.put(Code.add);
+//	Code.store(br);
+//		
+//	Code.load(sa.getDesignator().obj);
+//	Code.load(br);
+//	
+//	Code.loadConst(1); //da se dohvati dobar indeks
+//	
+//	Code.put(Code.sub);
+//	Code.put(Code.aload);
+//	Code.put(Code.dup2); //moraju da se dupliraju da znamo koja da ostane
+//		
+//	Code.putFalseJump(Code.ge, 0); 	//ovde menjati
+//	int notMax = Code.pc - 2;
+//	//menjaj
+//	Code.put(Code.pop);		 
+//	//do ovde	
+//	Code.loadConst(1);
+//	Code.loadConst(1);
+//	Code.putFalseJump(Code.ne, 0);
+//	int isNewMax = Code.pc - 2;
+//	
+//	Code.fixup(notMax);
+//	//menjaj
+//	Code.put(Code.dup_x1);
+//	Code.put(Code.pop);
+//	Code.put(Code.pop);
+//	//do ovde
+//	Code.fixup(isNewMax);
+//	Code.putJump(whileBegin);
+//	Code.fixup(arrayEnd);  
+//}
+//
+//// primer 2 - pronalazak broja ponavljanja nekog broja
+//public void visit(StatementArray2 sa) {
+//	Obj br = new Obj(Obj.Var, "$", Tab.intType);
+//	
+//	Code.loadConst(0);
+//	Code.store(br);
+//	Code.loadConst(0); //brojac tih elemenata u nizu
+//	Code.loadConst(2); //broj koji tražimo - npr
+//	
+//	int whileBegin = Code.pc;
+//	
+//	Code.load(br);
+//	
+//	Code.load(sa.getDesignator().obj); 
+//	Code.put(Code.arraylength);
+//	
+//	Code.putFalseJump(Code.lt, 0); 
+//	int arrayEnd = Code.pc - 2;
+//			
 //	Code.put(Code.dup); // neki element koji je ubacen u funkciju
-		
-	Code.load(br);
-	Code.loadConst(1);
-	Code.put(Code.add);
-	Code.store(br);
-		
-	Code.load(sa.getDesignator().obj);
-	Code.load(br);
-	
-	Code.loadConst(1); //da se dohvati dobar indeks
-	
-	Code.put(Code.sub);
-	Code.put(Code.aload);
-	Code.put(Code.dup2); //moraju da se dupliraju da znamo koja da ostane
-		
-	Code.putFalseJump(Code.ge, 0); 	//ovde menjati
-	int notMax = Code.pc - 2;
-	//menjaj
-	Code.put(Code.pop);		 
-	//do ovde	
-	Code.loadConst(1);
-	Code.loadConst(1);
-	Code.putFalseJump(Code.ne, 0);
-	int isNewMax = Code.pc - 2;
-	
-	Code.fixup(notMax);
-	//menjaj
-	Code.put(Code.dup_x1);
-	Code.put(Code.pop);
-	Code.put(Code.pop);
-	//do ovde
-	Code.fixup(isNewMax);
-	Code.putJump(whileBegin);
-	Code.fixup(arrayEnd);  
-}
+//		
+//	Code.load(br);
+//	Code.loadConst(1);
+//	Code.put(Code.add);
+//	Code.store(br);
+//		
+//	Code.load(sa.getDesignator().obj);
+//	Code.load(br);
+//	
+//	Code.loadConst(1); //da se dohvati dobar indeks
+//	
+//	Code.put(Code.sub);
+//	Code.put(Code.aload);
+//		
+//	Code.putFalseJump(Code.ne, 0); 	
+//	int notEqual = Code.pc - 2;
+//	//menjaj - ovde se nije podudarilo
+//		//nemoj uraditi nista
+//	//do ovde	
+//	Code.loadConst(1);
+//	Code.loadConst(1);
+//	Code.putFalseJump(Code.ne, 0);
+//	int equal = Code.pc - 2;
+//	
+//	Code.fixup(notEqual);
+//	//menjaj
+//	Code.put(Code.dup_x1);
+//	Code.put(Code.pop);
+//	Code.loadConst(1);
+//	Code.put(Code.add);
+//	Code.put(Code.dup_x1);
+//	Code.put(Code.pop);
+//	//do ovde
+//	Code.fixup(equal);
+//	Code.putJump(whileBegin);
+//	Code.fixup(arrayEnd); 
+//	Code.put(Code.pop);
+//}
 
-//pronalazak broja ponavljanja nekog broja
-public void visit(StatementArray2 sa) {
-	Obj br = new Obj(Obj.Var, "$", Tab.intType);
-	
-	Code.loadConst(0);
-	Code.store(br);
-	Code.loadConst(6); //broj koji tražimo
-	
-	int whileBegin = Code.pc;
-	
-	Code.load(br);
-	
-	Code.load(sa.getDesignator().obj); 
-	Code.put(Code.arraylength);
-	
-	Code.putFalseJump(Code.lt, 0); 
-	int arrayEnd = Code.pc - 2;
-			
-	Code.put(Code.dup); // neki element koji je ubacen u funkciju
-		
-	Code.load(br);
-	Code.loadConst(1);
-	Code.put(Code.add);
-	Code.store(br);
-		
-	Code.load(sa.getDesignator().obj);
-	Code.load(br);
-	
-	Code.loadConst(1); //da se dohvati dobar indeks
-	
-	Code.put(Code.sub);
-	Code.put(Code.aload);
-		
-	Code.putFalseJump(Code.ne, 0); 	
-	int notEqual = Code.pc - 2;
-	//menjaj
-
-	//do ovde	
-	Code.loadConst(1);
-	Code.loadConst(1);
-	Code.putFalseJump(Code.ne, 0);
-	int equal = Code.pc - 2;
-	
-	Code.fixup(notEqual);
-	//menjaj
-	
-	//do ovde
-	Code.fixup(equal);
-	Code.putJump(whileBegin);
-	Code.fixup(arrayEnd); 
-}
+//public void visit(FactorHash fh) {
+//	Obj con = Tab.insert(Obj.Con, "$", fh.obj.getType()); 
+//	
+//	con.setLevel(0);
+//	
+//	int value = fh.getValueH();
+//	if(value % 2 == 0) {
+//		value = value * value;
+//	}else {
+//		value = value * value * value;
+//	}
+//	
+//	con.setAdr(value);
+//	
+//	Code.load(con);
+//}
+//
+//public void visit(FactorHashDes fda) {
+//	Obj con = fda.getDesignator().obj;
+//	
+//	Code.load(con);
+//	Code.load(con); //dupliram zbog provera
+//	Code.loadConst(2);
+//	Code.put(Code.rem);
+//	Code.loadConst(0);
+//	Code.putFalseJump(Code.ne, 0);
+//	int nonpair = Code.pc - 2;
+//	Code.load(con);
+//	Code.load(con);
+//	Code.put(Code.mul);
+//	Code.put(Code.mul);
+//	Code.loadConst(1);
+//	Code.loadConst(1);
+//	Code.putFalseJump(Code.ne, 0);
+//	int endIf = Code.pc - 2;
+//	
+//	Code.fixup(nonpair);
+//	Code.load(con);
+//	Code.put(Code.mul);
+//	Code.fixup(endIf);
+//	if (con.getType().getKind() == Struct.Array) {
+//		Code.put(Code.dup_x1);
+//		Code.put(Code.pop);
+//		Code.put(Code.aload);
+//	}
+//}
 	
 }
